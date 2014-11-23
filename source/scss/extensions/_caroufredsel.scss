@@ -1,0 +1,52 @@
+//---------- CAROUFREDSEL ----------//
+
+.caroufredsel {
+  margin-bottom: $margin-element-bottom;
+}
+
+.caroufredsel-slider {
+  @include clearfix();
+  @include list-unstyled();
+
+  li {
+    float: left;
+  }
+
+}
+
+.caroufredsel-nav {
+
+  ul {
+    @include list-unstyled();
+  }
+
+}
+
+.caroufredsel-prev,
+.caroufredsel-next {
+
+}
+
+.caroufredsel-prev {
+
+}
+
+.caroufredsel-next {
+
+}
+
+@if ($rtl) {
+
+  html[dir="rtl"] {
+
+    .caroufredsel-slider {
+
+      li {
+        float: right;
+      }
+
+    }
+
+  }
+
+}

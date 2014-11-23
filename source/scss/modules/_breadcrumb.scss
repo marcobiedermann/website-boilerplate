@@ -1,0 +1,35 @@
+//---------- BREADCRUMB ----------//
+
+.breadcrumb {
+
+  ul {
+    @include clearfix();
+    @include list-unstyled();
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    display: block;
+    padding: .25em .5em;
+  }
+
+}
+
+@if (rtl == true) {
+
+  html[dir="rtl"] {
+
+    .breadcrumb {
+
+      li {
+        float: right;
+      }
+
+    }
+
+  }
+
+}

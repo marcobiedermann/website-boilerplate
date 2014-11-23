@@ -1,0 +1,27 @@
+//---------- SEARCH ----------//
+
+.form-search {
+
+  .input-search,
+  .input-submit {
+    float: left;
+  }
+
+}
+
+@if (rtl == true) {
+
+  html[dir="rtl"] {
+
+    .form-search {
+
+      .input-search,
+      .input-submit {
+        float: right;
+      }
+
+    }
+
+  }
+
+}

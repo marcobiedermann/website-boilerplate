@@ -1,0 +1,18 @@
+//---------- TAGS ----------//
+
+.tags {
+  @include clearfix();
+  @include list-unstyled();
+  margin: 0 -.5em;
+
+  li {
+    float: left;
+    margin: 0 .5em;
+
+    &:before {
+      content: '#';
+    }
+
+  }
+
+}

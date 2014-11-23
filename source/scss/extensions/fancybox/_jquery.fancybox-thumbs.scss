@@ -1,0 +1,57 @@
+#fancybox-thumbs {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 8050;
+
+	&bottom {
+		bottom: 2px;
+	}
+
+	&top {
+		top: 2px;
+	}
+
+	ul {
+		position: relative;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		float: left;
+		padding: 1px;
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 1;
+		}
+
+	}
+
+	.active {
+		opacity: 0.75;
+		padding: 0;
+		border: 1px solid #fff;
+	}
+
+	a {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		border: 1px solid #222;
+		background: #111;
+		outline: none;
+	}
+
+	img {
+		display: block;
+		position: relative;
+		border: 0;
+		padding: 0;
+		max-width: none;
+	}
+
+}

@@ -1,0 +1,45 @@
+//---------- PAGINATION ----------//
+
+.pagination {
+  @include clearfix();
+  @include list-unstyled();
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: .25em .5em;
+  }
+
+  .prev {
+    float: left;
+  }
+
+  .next {
+    float: right;
+  }
+
+}
+
+@if (rtl == true) {
+
+  html[dir="rtl"] {
+
+    .pagination {
+
+      .prev {
+        float: right;
+      }
+
+      .next {
+        float: left;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,60 @@
+//---------- NAVIGATIONS ----------//
+
+.nav {
+
+  ul {
+    @include list-unstyled();
+  }
+
+  li {
+    position: relative;
+  }
+
+  a {
+    display: block;
+  }
+
+}
+
+.nav-horizontal {
+
+  > ul {
+    @include clearfix();
+
+    > li {
+      float: left;
+    }
+
+  }
+
+}
+
+.nav-dropdown {
+
+  li {
+
+    &:hover {
+
+      ul {
+        display: block;
+      }
+
+    }
+
+    ul {
+      display: none;
+      position: absolute;
+    }
+
+  }
+
+}
+
+.nav-btn {
+  display: none;
+
+  @media screen and (max-width: $media-small) {
+    display: block;
+  }
+
+}

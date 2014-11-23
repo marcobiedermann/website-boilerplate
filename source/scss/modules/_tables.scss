@@ -1,0 +1,26 @@
+//---------- TABLES ----------//
+
+.table {
+  margin-bottom: $margin-element-bottom;
+
+  table {
+    width: 100%;
+  }
+
+  caption,
+  td,
+  th {
+    border: 1px solid $color-border;
+    padding: .5em;
+  }
+
+  caption {
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: $media-small) {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+  }
+
+}

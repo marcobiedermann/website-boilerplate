@@ -1,0 +1,34 @@
+//---------- ARTICLES ----------//
+
+article {
+  @include clearfix();
+  margin-bottom: $margin-element-bottom;
+
+  address,
+  blockquote,
+  dl,
+  hr,
+  p,
+  pre,
+  ol,
+  ul,
+  table {
+    margin-bottom: 1.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  li {
+    margin-bottom: .5em;
+
+    ol,
+    ul {
+      margin-top: .5em;
+    }
+
+  }
+
+}

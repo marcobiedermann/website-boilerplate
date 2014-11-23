@@ -1,0 +1,19 @@
+//---------- VIDEO ----------//
+
+.video {
+  height: 0;
+  margin-bottom: $margin-element-bottom;
+  padding-bottom: 100% / (16 / 9);
+  position: relative;
+
+  embed,
+  iframe,
+  object {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+}

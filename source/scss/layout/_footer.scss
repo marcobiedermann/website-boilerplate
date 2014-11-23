@@ -1,0 +1,12 @@
+//---------- FOOTER ----------//
+
+.footer {
+  background: $color-footer-bg;
+  display: table-row;
+  height: 1px;
+
+  .container {
+    padding: $margin-element-bottom 0;
+  }
+
+}

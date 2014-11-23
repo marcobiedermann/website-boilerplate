@@ -1,0 +1,37 @@
+//---------- COLORS ----------//
+
+$color: #686868;
+$color-bg: #fafafa;
+
+$color-headings: $color;
+
+$color-link: #2980b9;
+$color-link-active: lighten($color-link, $amount);
+$color-link-hover: darken($color-link, $amount);
+
+$color-border: #808080;
+$color-border-hover: darken($color-border, $amount * 2);
+
+$color-btn: #fff;
+$color-btn-bg: #95a5a6;
+$color-btn-hover: #fff;
+$color-btn-hover-bg: darken($color-btn-bg, $amount);
+
+$color-primary: $color-link;
+$color-primary-hover: darken($color-primary, $amount);
+$color-secondary: #9b59b6;
+$color-secondary-hover: darken($color-secondary, $amount);
+$color-success: #2ecc71;
+$color-success-hover: darken($color-success, $amount);
+$color-warning: #f1c40f;
+$color-warning-hover: darken($color-warning, $amount);
+$color-error: #e74c3c;
+$color-error-hover: darken($color-error, $amount);
+
+$color-header-bg: #fafafa;
+$color-footer-bg: #fafafa;
+
+$color-input: $color-bg;
+$color-input-bg: $color;
+
+$color-subline: #808080;

@@ -1,0 +1,83 @@
+//---------- BUTTONS ----------//
+
+.btn {
+  background: $color-btn-bg;
+  color: $color-btn;
+  display: inline-block;
+  padding: .5em 1em;
+
+  &:hover {
+    background: $color-btn-hover-bg;
+    color: $color-btn-hover;
+  }
+}
+
+.btn-large {
+  font-size: 2em;
+}
+
+.btn-small {
+  font-size: .75em;
+}
+
+.btn-rounded {
+  border-radius: .5em;
+}
+
+.btn-pill {
+  border-radius: 1em;
+  padding: .25em 1em;
+}
+
+.btn-full {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-primary {
+  background: $color-primary;
+
+  &:hover {
+    background: $color-primary-hover;
+  }
+
+}
+
+.btn-secondary {
+  background: $color-secondary;
+
+  &:hover {
+    background: $color-secondary-hover;
+  }
+
+}
+
+.btn-success {
+  background: $color-success;
+
+  &:hover {
+    background: $color-success-hover;
+  }
+
+}
+
+.btn-warning {
+  background: $color-warning;
+
+  &:hover {
+    background: $color-warning-hover;
+  }
+
+}
+
+.btn-error {
+  background: $color-error;
+
+  &:hover {
+    background: $color-error-hover;
+  }
+
+}
