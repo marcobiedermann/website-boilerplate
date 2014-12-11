@@ -5,12 +5,12 @@
 }
 
 * {
-  @include box-sizing(border-box);
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 
   &:before,
   &:after {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
   }
 
 }
@@ -87,7 +87,7 @@ a {
   border: 0;
   color: $color-link;
   text-decoration: none;
-  @include transition(all .3s);
+  transition: background-color .3s, color .3s;
 
   &:active {
     color: $color-link-active;
@@ -198,8 +198,8 @@ footer {
   h#{$i} {
     @extend %headings;
     font-size: nth($font-size-headings, $i);
-    line-height: 1em + (1 / (nth($font-size-headings, $i) / .5em));
-    margin: 0 0 1em / (nth($font-size-headings, $i) / .5em) 0;
+    // line-height: 1em + (1 / (nth($font-size-headings, $i) / .5em));
+    // margin: 0 0 1em / (nth($font-size-headings, $i) / .5em) 0;
   }
 
 }
@@ -212,7 +212,7 @@ header {
 hr {
   background-color: $color-border;
   border: 0;
-  @include box-sizing(content-box);
+  box-sizing: content-box;
   height: 1px;
   margin: 0 0 1.5em;
 }
@@ -240,7 +240,7 @@ textarea {
 }
 
 input {
-  @include transition(all .3s);
+  transition: all .3s;
 }
 
 select {

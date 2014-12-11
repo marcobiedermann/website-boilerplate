@@ -1,56 +1,5 @@
 //---------- MIXINS ----------//
 
-@mixin background-size($value) {
-  -webkit-background-size: $value;
-  -moz-background-size: $value;
-  -ms-behavior: url('#{$path-htc}/backgroundsize.min.htc');
-  background-size: $value;
-}
-
-@mixin border-radius($value) {
-  background-clip: padding-box;
-  border-radius: $value;
-  behavior: url('#{$path-htc}/PIE.htc');
-}
-
-@mixin box-shadow($value) {
-  -webkit-box-shadow: $value;
-  box-shadow: $value;
-  behavior: url('#{$path-htc}/PIE.htc');
-}
-
-@mixin box-sizing($value) {
-  -webkit-box-sizing: $value;
-  -moz-box-sizing: $value;
-  -ms-box-sizing: $value;
-  box-sizing: $value;
-  *behavior: url('#{$path-htc}/boxsizing.htc');
-}
-
-@mixin rotate($value) {
-  -webkit-transform: rotate($value);
-  -moz-transform: rotate($value);
-  -o-transform: rotate($value);
-  -ms-transform: rotate($value);
-  transform: rotate($value);
-}
-
-@mixin translate3d($value) {
-  -webkit-transform: translate3d($value);
-  -moz-transform: translate3d($value);
-  -o-transform: translate3d($value);
-  -ms-transform: translate3d($value);
-  transform: translate3d($value);
-}
-
-@mixin transition($value) {
-  -webkit-transition: $value;
-  -moz-transition: $value;
-  -o-transition: $value;
-  -ms-transition: $value;
-  transition: $value;
-}
-
 @mixin clearfix() {
 
   &:before,
@@ -70,7 +19,7 @@
   margin: 0;
   padding: 0;
 
-  li {
+  > li {
     margin: 0;
   }
 
