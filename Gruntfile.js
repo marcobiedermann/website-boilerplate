@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   require('load-grunt-tasks')(grunt);
 
@@ -246,7 +246,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['<%= config.source %>/js/**/*.js'],
-        tasks: []
+        tasks: ['jshint']
       },
       sass: {
         files: ['<%= config.source %>/scss/**/*.scss'],
