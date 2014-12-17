@@ -1,5 +1,3 @@
-//---------- GENERAL ----------//
-
 @-ms-viewport {
   width: device-width;
 }
@@ -45,12 +43,10 @@ html {
 body {
   background: $color-bg;
   color: $color;
-  display: table;
   font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
   height: 100%;
   margin: 0;
   position: relative;
-  width: 100%;
 }
 
 article,
