@@ -1,29 +1,18 @@
-$icons: (
-  'email',
-  'facebook',
-  'twitter'
-);
+.icons {
+  display: none;
+}
 
 .icon {
-  background-position: url('#{$path-img}/icons/icons.png') no-repeat;
   display: inline-block;
   height: 1em;
+  vertical-align: middle;
   width: 1em;
 }
 
 @for $i from 2 through 4 {
 
   .icon-#{$i}x {
-    height: 1em * $i;
-    width: 1em * $i;
-  }
-
-}
-
-@each $icon in $icons {
-
-  .icon-#{$icon} {
-    font-size: 1em;
+    font-size: 1em * $i;
   }
 
 }
