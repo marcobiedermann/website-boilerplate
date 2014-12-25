@@ -241,6 +241,7 @@ select {
 }
 
 textarea {
+  max-width: 100%;
   overflow: auto;
   resize: vertical;
   vertical-align: top;
