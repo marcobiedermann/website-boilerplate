@@ -49,10 +49,9 @@
 }
 
 .nav-btn {
-  display: none;
 
-  @media screen and (max-width: $media-small) {
-    display: block;
+  @media (min-width: $media-small) {
+    display: none;
   }
 
 }

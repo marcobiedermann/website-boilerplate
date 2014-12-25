@@ -1,5 +1,7 @@
 .table {
   margin-bottom: $margin-element-bottom;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
 
   table {
     width: 100%;
@@ -16,9 +18,9 @@
     font-weight: bold;
   }
 
-  @media screen and (max-width: $media-small) {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
+  @media (min-width: $media-small) {
+    -webkit-overflow-scrolling: none;
+    overflow-x: none;
   }
 
 }

@@ -34,18 +34,18 @@
   .radio-container {
     @include clearfix();
     float: left;
-    width: (100% / 3);
+    width: (100% / 1);
 
     label {
       overflow: hidden;
     }
 
-    @media screen and (max-width: $media-small) {
+    @media (min-width: $media-tiny) {
       width: (100% / 2);
     }
 
-    @media screen and (max-width: $media-tiny) {
-      width: (100% / 1);
+    @media (min-width: $media-small) {
+      width: (100% / 3);
     }
 
   }

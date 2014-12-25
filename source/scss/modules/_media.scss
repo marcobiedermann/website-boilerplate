@@ -10,22 +10,10 @@
 
 .media-obj-left {
   margin: 0 1em 1em 0;
-
-  @media screen and (max-width: $media-tiny) {
-    float: none;
-    margin-right: 0;
-  }
-
 }
 
 .media-obj-right {
   margin: 0 0 1em 1em;
-
-  @media screen and (max-width: $media-tiny) {
-    float: none;
-    margin-right: 0;
-  }
-
 }
 
 .media-obj-above {

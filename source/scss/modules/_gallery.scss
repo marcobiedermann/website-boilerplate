@@ -9,6 +9,12 @@
     li {
       float: left;
       padding: .25em;
+      width: (100% / 2);
+
+      @media (min-width: $media-tiny) {
+        width: (100% / 3);
+      }
+
     }
 
   }
@@ -20,14 +26,13 @@
   .images {
 
     li {
-      width: (100% / 4);
 
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
         width: (100% / 3);
       }
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
+      @media (min-width: $media-small) {
+        width: (100% / 4);
       }
 
     }
@@ -41,31 +46,9 @@
   .images {
 
     li {
-      width: (100% / 3);
 
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
-      }
-
-    }
-
-  }
-
-}
-
-.gallery-per-row-2 {
-
-  .images {
-
-    li {
-      width: (100% / 2);
-
-      @media screen and (max-width: $media-small) {
+      @media (min-width: $media-tiny) {
         width: (100% / 3);
-      }
-
-      @media screen and (max-width: $media-tiny) {
-        width: (100% / 2);
       }
 
     }
