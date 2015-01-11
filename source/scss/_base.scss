@@ -52,7 +52,6 @@ body {
 article,
 aside,
 details,
-dialog,
 figure,
 figcaption,
 footer,
@@ -142,11 +141,11 @@ button {
     background: $color-btn-hover-bg;
   }
 
-}
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
 }
 
 canvas {
@@ -156,6 +155,26 @@ canvas {
 code {
   font-family: $font-family-code, $font-family-code-fallback;
   font-size: 1em;
+}
+
+dialog {
+  border: 0;
+  display: none;
+  padding: 1em;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, .5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  &[open] {
+    display: block;
+  }
+
 }
 
 embed,
@@ -280,8 +299,6 @@ textarea {
   color: inherit;
 }
 
-
-
 label {
   color: inherit;
   display: inline-block;
@@ -371,10 +388,11 @@ sub {
 svg {
   height: auto;
   max-width: 100%;
-}
 
-svg:not(:root) {
-  overflow: hidden;
+  &:not(:root) {
+    overflow: hidden;
+  }
+
 }
 
 table {
