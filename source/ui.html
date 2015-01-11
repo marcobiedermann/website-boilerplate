@@ -74,8 +74,8 @@
         <p><em>Emphasis Text</em></p>
         <p><i>Italic Text</i></p>
         <p><small>Small Text</small></p>
-        <p>CO <sub>2</sub></p>
-        <p>m <sup>2</sup></p>
+        <p>CO<sub>2</sub></p>
+        <p>m<sup>2</sup></p>
         <p><ins>Inserted Text</ins></p>
         <p><del>Deleted Text</del></p>
         <p><mark>Marked Text</mark></p>
@@ -86,7 +86,8 @@
         <pre>Preformatted Text</pre>
         <p><abbr title="Cascading Style Sheet">CSS</abbr></p>
         <p><dfn>Definition</dfn></p>
-        <dialog open>This is an dialog window</dialog>
+        <button onclick="getElementById('dialog').showModal();">Open Dialog</button>
+        <dialog id="dialog"><button onclick="getElementById('dialog').close();">close</button>This is an dialog window</dialog>
         <p><time datetime="2014-01-01">1. Januar 2014</time></p>
 
       </section>
