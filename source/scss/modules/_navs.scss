@@ -12,46 +12,46 @@
     display: block;
   }
 
-}
+  &-horizontal {
 
-.nav-horizontal {
+    > ul {
+      @include clearfix();
 
-  > ul {
-    @include clearfix();
-
-    > li {
-      float: left;
-    }
-
-  }
-
-}
-
-.nav-dropdown {
-
-  li {
-
-    &:hover {
-
-      ul {
-        display: block;
+      > li {
+        float: left;
       }
 
     }
 
-    ul {
-      display: none;
-      position: absolute;
+  }
+
+  &-dropdown {
+
+    li {
+
+      &:hover {
+
+        ul {
+          display: block;
+        }
+
+      }
+
+      ul {
+        display: none;
+        position: absolute;
+      }
+
     }
 
   }
 
-}
+  &-btn {
 
-.nav-btn {
+    @media (min-width: $media-small) {
+      display: none;
+    }
 
-  @media (min-width: $media-small) {
-    display: none;
   }
 
 }

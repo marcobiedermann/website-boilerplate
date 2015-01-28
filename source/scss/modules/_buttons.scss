@@ -8,74 +8,75 @@
     background: $color-btn-hover-bg;
     color: $color-btn-hover;
   }
-}
 
-.btn-large {
-  font-size: 2em;
-}
-
-.btn-small {
-  font-size: .75em;
-}
-
-.btn-rounded {
-  border-radius: .5em;
-}
-
-.btn-pill {
-  border-radius: 1em;
-  padding: .25em 1em;
-}
-
-.btn-full {
-  display: block;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.btn-primary {
-  background: $color-primary;
-
-  &:hover {
-    background: $color-primary-hover;
+  &-large {
+    font-size: 2em;
   }
 
-}
-
-.btn-secondary {
-  background: $color-secondary;
-
-  &:hover {
-    background: $color-secondary-hover;
+  &-small {
+    font-size: .75em;
   }
 
-}
-
-.btn-success {
-  background: $color-success;
-
-  &:hover {
-    background: $color-success-hover;
+  &-rounded {
+    border-radius: .5em;
   }
 
-}
-
-.btn-warning {
-  background: $color-warning;
-
-  &:hover {
-    background: $color-warning-hover;
+  &-pill {
+    border-radius: 1em;
+    padding: .25em 1em;
   }
 
-}
+  &-full {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
 
-.btn-error {
-  background: $color-error;
+  &-primary {
+    background: $color-primary;
 
-  &:hover {
-    background: $color-error-hover;
+    &:hover {
+      background: $color-primary-hover;
+    }
+
+  }
+
+  &-secondary {
+    background: $color-secondary;
+
+    &:hover {
+      background: $color-secondary-hover;
+    }
+
+  }
+
+  &-success {
+    background: $color-success;
+
+    &:hover {
+      background: $color-success-hover;
+    }
+
+  }
+
+  &-warning {
+    background: $color-warning;
+
+    &:hover {
+      background: $color-warning-hover;
+    }
+
+  }
+
+  &-error {
+    background: $color-error;
+
+    &:hover {
+      background: $color-error-hover;
+    }
+
   }
 
 }
