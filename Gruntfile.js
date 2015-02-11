@@ -26,6 +26,22 @@ module.exports = function(grunt) {
       }
     },
 
+    browserSync: {
+      bsFiles: {
+        src: [
+          '<%= config.source %>/**/*.html',
+          '<%= config.source %>/css/*.css',
+          '<%= config.source %>/js/*.js',
+        ]
+      },
+      options: {
+        watchTask: true,
+        server: {
+          baseDir: 'source/'
+        }
+      }
+    },
+
     clean: {
       dist: ['<%= config.build %>'],
       tmp: ['.tmp'],
@@ -38,17 +54,6 @@ module.exports = function(grunt) {
         cwd: '.tmp/concat/css',
         dest: '.tmp/concat/css',
         src: '*.css'
-      }
-    },
-
-    connect: {
-      server: {
-        options: {
-          port: 9000,
-          open: true,
-          hostname: 'localhost',
-          livereload: true
-        }
       }
     },
 
@@ -157,9 +162,6 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      options: {
-        livereload: true
-      },
       css: {
         files: [
           '<%= config.source %>/css/**/*.css'
@@ -206,10 +208,10 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-combine-media-queries');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
@@ -222,7 +224,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
 
   grunt.registerTask('default', [
-    'connect',
+    'browserSync',
     'sass',
     'watch'
   ]);
