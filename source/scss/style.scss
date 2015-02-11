@@ -1,16 +1,18 @@
+// Settings
+
 @import '_variables';
 @import '_colors';
 @import '_fonts';
 
-//---------- HELPERS ----------//
+// Mixins
 
 @import 'helpers/_mixins';
 
-//---------- GENERAL ----------//
+// Base
 
 @import '_base';
 
-//---------- MODULES ----------//
+// Modules
 
 @import 'modules/_articles';
 @import 'modules/_audio';
@@ -26,25 +28,19 @@
 @import 'modules/_tags';
 @import 'modules/_video';
 
-//---------- LAYOUT ----------//
+// Layout
 
 @import 'layout/_header';
 @import 'layout/_main';
 @import 'layout/_footer';
 
-//---------- EXTENSIONS ----------//
+// Helpers
 
-// @import 'extensions/_caroufredsel';
-// @import 'extensions/_fancybox';
-// @import 'extensions/_google-maps';
-// @import 'extensions/_isotope';
-// @import 'extensions/_ui-accordion';
-// @import 'extensions/_ui-datepicker';
-// @import 'extensions/_ui-spinner';
-// @import 'extensions/_ui-tabs';
-// @import 'extensions/_ui-tooltip';
-
-@import 'helpers/_utilities';
+@import 'helpers/_animations';
 @import 'helpers/_grid';
+@import 'helpers/_icons';
+@import 'helpers/_utilities';
+
+// Print
 
 @import '_print';
