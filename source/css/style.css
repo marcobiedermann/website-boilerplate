@@ -729,7 +729,7 @@ article {
 .col-12 {
   width: 100%; }
 
-@media screen and (min-width: 41em) and (max-width: 60em) {
+@media (min-width: 41em) and (max-width: 60em) {
   .col-1-md {
     width: 8.33333%; }
 
@@ -765,7 +765,7 @@ article {
 
   .col-12-md {
     width: 100%; } }
-@media screen and (min-width: 31em) and (max-width: 40em) {
+@media (min-width: 31em) and (max-width: 40em) {
   .col-1-sm {
     width: 8.33333%; }
 
@@ -801,7 +801,7 @@ article {
 
   .col-12-sm {
     width: 100%; } }
-@media screen and (max-width: 40em) {
+@media (max-width: 40em) {
   .col-1 {
     width: 100%; }
 
@@ -837,7 +837,7 @@ article {
 
   .col-12 {
     width: 100%; } }
-@media screen and (max-width: 30em) {
+@media (max-width: 30em) {
   .col-1-xs {
     width: 8.33333%; }
 
