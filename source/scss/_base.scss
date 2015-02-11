@@ -88,6 +88,7 @@ a {
     color: $color-link-active;
   }
 
+  &:focus,
   &:hover {
     color: $color-link-hover;
   }
@@ -127,19 +128,15 @@ blockquote {
 }
 
 button {
-  background: $color-btn-bg;
+  background: transparent;
   border: 0;
-  color: $color-btn;
+  color: inherit;
   cursor: pointer;
   font: inherit;
   margin: 0;
   overflow: visible;
   padding: 0;
   text-transform: none;
-
-  &:hover {
-    background: $color-btn-hover-bg;
-  }
 
   &::-moz-focus-inner {
     border: 0;
@@ -191,7 +188,8 @@ fieldset {
 }
 
 figure,
-figcaption {
+figcaption,
+header {
   display: block;
   margin: 0;
 }
@@ -213,15 +211,10 @@ footer {
   h#{$i} {
     @extend %headings;
     font-size: nth($font-size-headings, $i);
-    // line-height: 1em + (1 / (nth($font-size-headings, $i) / .5em));
-    // margin: 0 0 1em / (nth($font-size-headings, $i) / .5em) 0;
+    line-height: 1em + (1 / (nth($font-size-headings, $i) / .5em));
+    margin: 0 0 1em / (nth($font-size-headings, $i) / .5em) 0;
   }
 
-}
-
-header {
-  display: block;
-  margin: 0;
 }
 
 hr {
@@ -249,10 +242,28 @@ textarea {
   margin: 0;
   outline-color: $color-primary;
   padding: 0;
+  transition: all .3s;
 }
 
 input {
-  transition: all .3s;
+
+  &[type="reset"],
+  &[type="submit"] {
+    -webkit-appearance: button;
+    background: $color-btn-bg;
+    color: $color-btn;
+    cursor: pointer;
+
+    &:hover {
+      background: $color-btn-hover-bg;
+    }
+
+  }
+
+  &[type="search"] {
+    -webkit-appearance: textfield;
+  }
+
 }
 
 select {
@@ -265,22 +276,6 @@ textarea {
   resize: vertical;
   vertical-align: top;
   width: 100%;
-}
-
-.input-reset,
-.input-submit {
-  -webkit-appearance: button;
-  background: $color-btn-bg;
-  color: $color-btn;
-  cursor: pointer;
-
-  &:hover {
-    background: $color-btn-hover-bg;
-  }
-}
-
-.input-search {
-  -webkit-appearance: textfield;
 }
 
 ::-webkit-input-placeholder {
@@ -366,7 +361,11 @@ small {
 }
 
 summary {
-  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+
 }
 
 sub,
