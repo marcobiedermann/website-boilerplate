@@ -1,112 +1,95 @@
 'use strict';
 
-module.exports = function (grunt) {
-
-  require('load-grunt-tasks')(grunt);
+module.exports = function(grunt) {
 
   grunt.initConfig({
-
     pkg: grunt.file.readJSON('package.json'),
+    banner: '/*!\n' +
+            '<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            'Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            'Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+            '*/\n',
     config: {
       source: 'source',
-      build: 'build',
-      tmp: '.tmp'
+      build: 'dist'
     },
 
     autoprefixer: {
       options: {
-        browsers: ['last 3 versions'],
-        map: true
+        browsers: ['last 3 versions']
       },
       files: {
         expand: true,
-        cwd: '<%= config.source %>/css',
-        dest: '<%= config.source %>/css',
-        src: '**/*.css'
+        cwd: '.tmp/concat/css',
+        dest: '.tmp/concat/css',
+        src: '*.css'
       }
     },
 
     clean: {
-      build: ['<%= config.build %>'],
-      tmp: ['<%= config.tmp %>']
+      dist: ['<%= config.build %>'],
+      tmp: ['.tmp'],
+      sass: ['.sass-cache']
     },
 
     cmq: {
       files: {
         expand: true,
-        cwd: '<%= config.build %>/css',
-        dest: '<%= config.build %>/css',
-        src: '**/*.css'
+        cwd: '.tmp/concat/css',
+        dest: '.tmp/concat/css',
+        src: '*.css'
       }
     },
-
-    // concat: {
-    //   options: {
-    //   },
-    //   js: {
-    //     src: [
-    //       '<%= config.source %>/js/jquery-1.11.1.js',
-    //       '<%= config.source %>/js/jquery-ui-1.10.4.js',
-    //       '<%= config.source %>/js/jquery.carouFredSel-6.2.1.js',
-    //       '<%= config.source %>/js/jquery.fancybox-2.1.5.js',
-    //       '<%= config.source %>/js/jquery.fancybox-buttons-1.0.5.js',
-    //       '<%= config.source %>/js/jquery.fancybox-thumbs-1.0.7.js',
-    //       '<%= config.source %>/js/jquery.placeholder-2.0.8.js',
-    //       '<%= config.source %>/js/isotope.pkgd.js',
-    //       '<%= config.source %>/js/masonry.pkgd.js',
-    //       '<%= config.source %>/js/picturefill.js',
-    //       '<%= config.source %>/js/selectivizr.js',
-    //       '<%= config.source %>/js/script.js'
-    //     ],
-    //     dest: '<%= config.build %>/js/script.js',
-    //   }
-    // },
 
     connect: {
       server: {
         options: {
-          hostname: 'localhost',
-          livereload: true,
+          port: 9000,
           open: true,
-          port: 8888
+          hostname: 'localhost',
+          livereload: true
         }
       }
     },
 
     copy: {
+      htaccess: {
+        expand: true,
+        cwd: '<%= config.source %>',
+        dest: '<%= config.build %>',
+        src: '.htaccess',
+      },
+      browserconfig: {
+        expand: true,
+        cwd: '<%= config.source %>',
+        dest: '<%= config.build %>',
+        src: 'browserconfig.xml',
+      },
       fonts: {
         expand: true,
         cwd: '<%= config.source %>/fonts',
         dest: '<%= config.build %>/fonts',
-        src: '**/*'
+        src: '**/*.{otf,svg,ttf,woff,woff2}',
       },
       html: {
         expand: true,
         cwd: '<%= config.source %>',
         dest: '<%= config.build %>',
-        src: '**/*.html'
+        src: '*.html',
+      },
+      robots: {
+        expand: true,
+        cwd: '<%= config.source %>',
+        dest: '<%= config.build %>',
+        src: 'robots.txt',
+      },
+      sitemap: {
+        expand: true,
+        cwd: '<%= config.source %>',
+        dest: '<%= config.build %>',
+        src: 'sitemap.xml',
       }
     },
-
-    criticalcss: {
-
-    },
-
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      files: ['<%= config.source %>/css/**/*.css']
-    },
-
-    // cssmin: {
-    //   files: {
-    //     expand: true,
-    //     cwd: '<%= config.build %>/css',
-    //     dest: '<%= config.build %>/css',
-    //     src: '**/*.css'
-    //   }
-    // },
 
     htmlmin: {
       options: {
@@ -131,16 +114,16 @@ module.exports = function (grunt) {
         expand: true,
         cwd: '<%= config.build %>',
         dest: '<%= config.build %>',
-        src: '**/*.html'
+        src: '*.html'
       }
     },
 
     imagemin: {
       files: {
         expand: true,
-        cwd: '<%= config.source %>/img',
-        dest: '<%= config.build %>/img',
-        src: ['**/*.{png,jpg,gif}']
+        cwd: '<%= config.source %>',
+        src: '**/*.{gif,ico,jpg,jpeg,png}',
+        dest: '<%= config.build %>'
       }
     },
 
@@ -148,13 +131,10 @@ module.exports = function (grunt) {
       options: {
         jshintrc: true
       },
-      files: ['<%= config.source %>/js/script.js']
+      files: ['source/js/**.js']
     },
 
     sass: {
-      options: {
-        style: 'expanded'
-      },
       files: {
         expand: true,
         cwd: '<%= config.source %>/scss',
@@ -165,130 +145,108 @@ module.exports = function (grunt) {
     },
 
     svgmin: {
-      options: {
 
-      },
-      files: {
-        expand: true,
-        cwd: '<%= config.source %>/img',
-        dest: '<%= config.tmp %>/img',
-        src: ['**/*.svg'],
-        ext: '.svg',
-      }
-    },
-
-    // needs some tweaks
-
-    svgstore: {
-      options: {
-        prefix: 'icon-',
-        svg: {
-          viewBox: '0 0 100 100'
-        },
-      },
-      default: {
-        files: {
-          '<%= config.build %>/img/icons.svg': ['<%= config.tmp %>/img/icons/**/*.svg']
-        }
-      }
-    },
-
-    uncss: {
-      options: {
-
-      },
-      dist: {
-        files: {
-          '<%= config.build %>/css/styles.css': ['<%= config.source %>/**/*.html']
-        }
-      }
-    },
-
-    useminPrepare: {
-      options: {
-        dest: '<%= config.build %>'
-      },
-      html: '<%= config.source %>/**/*.html'
     },
 
     usemin: {
-      html: ['<%= config.build %>/**/*.html']
+      html: '<%= config.build %>/*.html'
     },
 
-    uglify: {
-      options: {
-        beautify: false,
-        compress: true,
-        mangle: true
-      }
-      // files : {
-      //   cwd: '<%= config.build %>/js',
-      //   dest: '<%= config.build %>/js',
-      //   expand: true,
-      //   src: '**/*.js'
-      // }
+    useminPrepare: {
+      html: '<%= config.source %>/*.html'
     },
 
     watch: {
       options: {
         livereload: true
       },
-      gruntfile: {
-        files: ['Gruntfile.js'],
-      },
-      html: {
-        files: ['<%= config.source %>/**/*.html'],
+      css: {
+        files: [
+          '<%= config.source %>/css/**/*.css'
+        ],
         tasks: []
       },
-      img: {
-        files: ['<%= config.source %>/img/**/*.{gif,jpeg,jpg,png}'],
+      gruntfile: {
+        files: ['gruntfile.js']
+      },
+      html: {
+        files: [
+          '<%= config.source %>/**/*.html'
+        ],
         tasks: []
       },
       js: {
-        files: ['<%= config.source %>/js/**/*.js'],
-        tasks: ['jshint']
+        files: [
+          '<%= config.source %>/js/**/*.js'
+        ],
+        tasks: []
+      },
+      img: {
+        files: [
+          '<%= config.source %>/**/*.{gif,ico,jpg,jpeg,png}'
+        ],
+        tasks: []
       },
       sass: {
-        files: ['<%= config.source %>/scss/**/*.scss'],
-        tasks: ['sass']
+        files: [
+          '<%= config.source %>/scss/**/*.scss'
+        ],
+        tasks: [
+          'sass'
+        ]
       },
       svg: {
-        files: ['<%= config.source %>/img/**/*.svg'],
-        tasks: ['svgstore']
+        files: [
+          '<%= config.source %>/svg/**/*.svg'
+        ],
+        tasks: []
       }
     }
 
   });
 
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'connect', 'watch']);
-  grunt.registerTask('test', [
-    'sass',
-    'autoprefixer',
-    'csslint',
-    'jshint',
+  grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-combine-media-queries');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-usemin');
+
+  grunt.registerTask('default', [
     'connect',
+    'sass',
     'watch'
   ]);
+
+  grunt.registerTask('test', [
+    'jshint'
+  ]);
+
   grunt.registerTask('build', [
-    // 'jshint',
-    'clean',
+    'jshint',
+    'clean:dist',
     'copy',
     'sass',
-    'autoprefixer',
     'useminPrepare',
     'concat',
+    'autoprefixer',
+    'cmq',
     'cssmin',
     'uglify',
-    'usemin'
-    // 'uncss',
-    // 'cmq',
-    // 'cssmin',
-    // 'uglify',
-    // 'imagemin',
-    // 'svgmin',
-    // 'svgstore',
-    // 'htmlmin',
-    // 'clean:tmp'
+    'usemin',
+    'htmlmin',
+    'imagemin',
+    'clean:tmp',
+    'clean:sass'
   ]);
 
 };
