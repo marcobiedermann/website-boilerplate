@@ -1,11 +1,11 @@
 .tags {
   @include clearfix();
   @include list-unstyled();
-  margin: 0 -.5em;
+  margin: 0 -.5rem;
 
   li {
     float: left;
-    margin: 0 .5em;
+    margin: 0 .5rem;
 
     &:before {
       content: '#';
