@@ -40,7 +40,7 @@
 
 }
 
-@media screen and (min-width: $media-small + 1) and (max-width: $media-medium) {
+@media and (min-width: $media-small + 1) and (max-width: $media-medium) {
 
   @for $i from 1 through $grid-columns {
 
@@ -52,7 +52,7 @@
 
 }
 
-@media screen and (min-width: $media-tiny + 1) and (max-width: $media-small) {
+@media and (min-width: $media-tiny + 1) and (max-width: $media-small) {
 
   @for $i from 1 through $grid-columns {
 
@@ -64,7 +64,7 @@
 
 }
 
-@media screen and (max-width: $media-small) {
+@media and (max-width: $media-small) {
 
   @for $i from 1 through $grid-columns {
 
@@ -76,7 +76,7 @@
 
 }
 
-@media screen and (max-width: $media-tiny) {
+@media and (max-width: $media-tiny) {
 
   @for $i from 1 through $grid-columns {
 
