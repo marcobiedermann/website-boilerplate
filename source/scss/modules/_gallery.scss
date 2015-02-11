@@ -21,42 +21,6 @@
 
 }
 
-.gallery-per-row-4 {
-
-  .images {
-
-    li {
-
-      @media (min-width: $media-tiny) {
-        width: (100% / 3);
-      }
-
-      @media (min-width: $media-small) {
-        width: (100% / 4);
-      }
-
-    }
-
-  }
-
-}
-
-.gallery-per-row-3 {
-
-  .images {
-
-    li {
-
-      @media (min-width: $media-tiny) {
-        width: (100% / 3);
-      }
-
-    }
-
-  }
-
-}
-
 @if (rtl == true) {
 
   html[dir="rtl"] {
