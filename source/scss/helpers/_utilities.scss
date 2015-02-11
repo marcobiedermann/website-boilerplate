@@ -1,13 +1,9 @@
 // Positioning //
 
-.center {
+.center-block {
   display: block;
-  margin: 0 auto;
-}
-
-.fixed {
-  position: fixed;
-  transform: translate3d(0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Typography //
