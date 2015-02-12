@@ -206,9 +206,7 @@ hr {
   margin: 0 0 1.5rem; }
 
 img {
-  border: 0;
   display: block;
-  height: auto;
   max-width: 100%; }
 
 input,
@@ -236,7 +234,7 @@ input[type="search"] {
 textarea {
   max-width: 100%;
   overflow: auto;
-  resize: vertical;
+  resize: none;
   vertical-align: top;
   width: 100%; }
 
@@ -471,6 +469,8 @@ article {
     .form textarea:hover,
     .form .input-text:hover {
       border-color: #4d4d4d; }
+  .form textarea {
+    height: 6rem; }
   .form .input-checkbox,
   .form .input-radio {
     float: left;
