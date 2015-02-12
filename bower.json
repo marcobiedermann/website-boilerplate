@@ -13,5 +13,6 @@
     "tests"
   ],
   "dependencies": {
+    "picturefill": "~2.2.0"
   }
 }

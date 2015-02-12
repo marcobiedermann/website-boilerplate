@@ -2,6 +2,8 @@
 
   'use strict';
 
+  document.createElement('picture');
+
   // scrollTo
 
   $('.scroll-to').on('click', function(e) {
