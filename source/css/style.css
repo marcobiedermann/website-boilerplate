@@ -471,8 +471,8 @@ article {
       border-color: #4d4d4d; }
   .form textarea {
     height: 6rem; }
-  .form .input-checkbox,
-  .form .input-radio {
+  .form input[type="checkbox"],
+  .form input[type="radio"] {
     float: left;
     margin: .25rem .5rem 0 0; }
   .form .checkbox-container,

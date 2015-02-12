@@ -28,8 +28,8 @@
     height: 6rem;
   }
 
-  .input-checkbox,
-  .input-radio {
+  input[type="checkbox"],
+  input[type="radio"] {
     float: left;
     margin: .25rem .5rem 0 0;
   }
@@ -73,8 +73,8 @@
 
     .form {
 
-      .input-checkbox,
-      .input-radio {
+      input[type="checkbox"],
+      input[type="radio"] {
         float: right;
         margin: .25rem 0 0 .5rem;
       }
