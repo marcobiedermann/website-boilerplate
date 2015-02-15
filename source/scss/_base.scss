@@ -252,6 +252,7 @@ input {
     color: $color-btn;
     cursor: pointer;
 
+    &:focus
     &:hover {
       background: $color-btn-hover-bg;
     }

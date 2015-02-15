@@ -226,7 +226,11 @@ input[type="reset"], input[type="submit"] {
   background: #95a5a6;
   color: #fff;
   cursor: pointer; }
-  input[type="reset"]:hover, input[type="submit"]:hover {
+  input[type="reset"]:focus
+  input[type="reset"]:hover, input[type="submit"]:focus
+  input[type="reset"]:hover, input[type="reset"]:focus
+  input[type="submit"]:hover, input[type="submit"]:focus
+  input[type="submit"]:hover {
     background: #798d8f; }
 input[type="search"] {
   -webkit-appearance: textfield; }
@@ -390,7 +394,7 @@ article {
   color: #fff;
   display: inline-block;
   padding: .5rem 1rem; }
-  .btn:hover {
+  .btn:focus, .btn:hover {
     background: #798d8f;
     color: #fff; }
   .btn-large {
@@ -409,23 +413,23 @@ article {
     width: 100%; }
   .btn-primary {
     background: #2980b9; }
-    .btn-primary:hover {
+    .btn-primary:focus, .btn-primary:hover {
       background: #20638f; }
   .btn-secondary {
     background: #9b59b6; }
-    .btn-secondary:hover {
+    .btn-secondary:focus, .btn-secondary:hover {
       background: #804399; }
   .btn-success {
     background: #2ecc71; }
-    .btn-success:hover {
+    .btn-success:focus, .btn-success:hover {
       background: #25a25a; }
   .btn-warning {
     background: #f1c40f; }
-    .btn-warning:hover {
+    .btn-warning:focus, .btn-warning:hover {
       background: #c29d0b; }
   .btn-error {
     background: #e74c3c; }
-    .btn-error:hover {
+    .btn-error:focus, .btn-error:hover {
       background: #d62c1a; }
 
 .breadcrumb ul {
@@ -464,8 +468,10 @@ article {
     height: 2em;
     padding: .25rem .5rem;
     width: 100%; }
-    .form select:hover,
+    .form select:focus, .form select:hover,
+    .form textarea:focus,
     .form textarea:hover,
+    .form .input-text:focus,
     .form .input-text:hover {
       border-color: #4d4d4d; }
   .form textarea {
@@ -501,7 +507,8 @@ article {
   .form .input-submit {
     background-color: #2980b9;
     padding: .25rem 1rem; }
-    .form .input-reset:hover,
+    .form .input-reset:focus, .form .input-reset:hover,
+    .form .input-submit:focus,
     .form .input-submit:hover {
       background-color: #20638f; }
 
@@ -561,7 +568,7 @@ article {
   clear: both; }
 .nav-horizontal > ul > li {
   float: left; }
-.nav-dropdown li:hover ul {
+.nav-dropdown li:focus ul, .nav-dropdown li:hover ul {
   display: block; }
 .nav-dropdown li ul {
   display: none;

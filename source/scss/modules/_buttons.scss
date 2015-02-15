@@ -4,6 +4,7 @@
   display: inline-block;
   padding: .5rem 1rem;
 
+  &:focus,
   &:hover {
     background: $color-btn-hover-bg;
     color: $color-btn-hover;
@@ -36,6 +37,7 @@
   &-primary {
     background: $color-primary;
 
+    &:focus,
     &:hover {
       background: $color-primary-hover;
     }
@@ -45,6 +47,7 @@
   &-secondary {
     background: $color-secondary;
 
+    &:focus,
     &:hover {
       background: $color-secondary-hover;
     }
@@ -54,6 +57,7 @@
   &-success {
     background: $color-success;
 
+    &:focus,
     &:hover {
       background: $color-success-hover;
     }
@@ -63,6 +67,7 @@
   &-warning {
     background: $color-warning;
 
+    &:focus,
     &:hover {
       background: $color-warning-hover;
     }
@@ -72,6 +77,7 @@
   &-error {
     background: $color-error;
 
+    &:focus,
     &:hover {
       background: $color-error-hover;
     }

@@ -18,6 +18,7 @@
     padding: .25rem .5rem;
     width: 100%;
 
+    &:focus,
     &:hover {
       border-color: $color-border-hover;
     }
@@ -59,6 +60,7 @@
     background-color: $color-primary;
     padding: .25rem 1rem;
 
+    &:focus,
     &:hover {
       background-color: $color-primary-hover;
     }
