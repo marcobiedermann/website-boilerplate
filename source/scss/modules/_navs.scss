@@ -12,7 +12,7 @@
     display: block;
   }
 
-  &-horizontal {
+  &--horizontal {
 
     > ul {
       @include clearfix();
@@ -25,7 +25,7 @@
 
   }
 
-  &-dropdown {
+  &--dropdown {
 
     li {
 
@@ -47,7 +47,7 @@
 
   }
 
-  &-btn {
+  &__btn {
 
     @media (min-width: $media-small) {
       display: none;

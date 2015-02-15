@@ -10,23 +10,23 @@
     color: $color-btn-hover;
   }
 
-  &-large {
+  &--large {
     font-size: 2rem;
   }
 
-  &-small {
+  &--small {
     font-size: .75rem;
   }
 
-  &-rounded {
+  &--rounded {
     border-radius: .5rem;
   }
 
-  &-pill {
+  &--pill {
     border-radius: 9999px;
   }
 
-  &-full {
+  &--full {
     display: block;
     padding-left: 0;
     padding-right: 0;
@@ -34,7 +34,7 @@
     width: 100%;
   }
 
-  &-primary {
+  &--primary {
     background: $color-primary;
 
     &:focus,
@@ -44,7 +44,7 @@
 
   }
 
-  &-secondary {
+  &--secondary {
     background: $color-secondary;
 
     &:focus,
@@ -54,7 +54,7 @@
 
   }
 
-  &-success {
+  &--success {
     background: $color-success;
 
     &:focus,
@@ -64,7 +64,7 @@
 
   }
 
-  &-warning {
+  &--warning {
     background: $color-warning;
 
     &:focus,
@@ -74,7 +74,7 @@
 
   }
 
-  &-error {
+  &--error {
     background: $color-error;
 
     &:focus,

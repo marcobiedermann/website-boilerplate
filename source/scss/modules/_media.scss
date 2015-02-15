@@ -1,25 +1,29 @@
 .media {
   @include clearfix();
 
-  &-obj-left,
-  &-obj-right {
-    max-width: 50%;
-    width: auto;
+  &__obj {
+
+    &--left,
+    &--right {
+      max-width: 50%;
+      width: auto;
+    }
+
+    &--above {
+      margin-bottom: 1rem;
+    }
+
+    &--left {
+      margin: 0 1rem 1rem 0;
+    }
+
+    &--right {
+      margin: 0 0 1rem 1rem;
+    }
+
   }
 
-  &-obj-left {
-    margin: 0 1rem 1rem 0;
-  }
-
-  &-obj-right {
-    margin: 0 0 1rem 1rem;
-  }
-
-  &-obj-above {
-    margin-bottom: 1rem;
-  }
-
-  &-body {
+  &__body {
     overflow: hidden;
   }
 

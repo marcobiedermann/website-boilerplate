@@ -33,7 +33,7 @@
 
 @for $i from 1 through $grid-columns {
 
-  .col-#{$i} {
+  .col--#{$i} {
     @extend %col;
     width: ($i / $grid-columns) * 100%;
   }
@@ -44,7 +44,7 @@
 
   @for $i from 1 through $grid-columns {
 
-    .col-#{$i}-md {
+    .col--#{$i}--md {
       width: ($i / $grid-columns) * 100%;
     }
 
@@ -56,7 +56,7 @@
 
   @for $i from 1 through $grid-columns {
 
-    .col-#{$i}-sm {
+    .col--#{$i}--sm {
       width: ($i / $grid-columns) * 100%;
     }
 
@@ -68,7 +68,7 @@
 
   @for $i from 1 through $grid-columns {
 
-    .col-#{$i} {
+    .col--#{$i} {
       width: 100%;
     }
 
@@ -80,7 +80,7 @@
 
   @for $i from 1 through $grid-columns {
 
-    .col-#{$i}-xs {
+    .col--#{$i}--xs {
       width: ($i / $grid-columns) * 100%;
     }
 
