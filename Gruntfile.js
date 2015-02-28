@@ -150,7 +150,28 @@ module.exports = function(grunt) {
     },
 
     svgmin: {
+      files: {
+        expand: true,
+        cwd: '<%= config.source %>/img/icons',
+        dest: '.tmp/img/icons',
+        ext: '.svg',
+        src: ['**/*.svg']
+      }
+    },
 
+    svgstore: {
+      options: {
+        prefix : 'icon--',
+        svg: {
+          viewBox : '0 0 100 100',
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      },
+      default: {
+        files: {
+          '<%= config.source %>/img/icons.svg': ['.tmp/img/icons/*.svg'],
+        }
+      }
     },
 
     usemin: {
@@ -199,9 +220,9 @@ module.exports = function(grunt) {
       },
       svg: {
         files: [
-          '<%= config.source %>/svg/**/*.svg'
+          '<%= config.source %>/img/icons/*.svg'
         ],
-        tasks: []
+        tasks: ['svgmin', 'svgstore']
       }
     }
 
@@ -221,11 +242,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-svgstore');
   grunt.loadNpmTasks('grunt-usemin');
 
   grunt.registerTask('default', [
     'browserSync',
     'sass',
+    'svgmin',
+    'svgstore',
     'watch'
   ]);
 
@@ -246,6 +270,8 @@ module.exports = function(grunt) {
     'uglify',
     'usemin',
     'htmlmin',
+    'svgmin',
+    'svgstore',
     'imagemin',
     'clean:tmp',
     'clean:sass'
