@@ -175,11 +175,11 @@ module.exports = function(grunt) {
     },
 
     usemin: {
-      html: '<%= config.build %>/*.html'
+      html: '<%= config.build %>/index.html'
     },
 
     useminPrepare: {
-      html: '<%= config.source %>/*.html'
+      html: '<%= config.source %>/index.html'
     },
 
     watch: {
