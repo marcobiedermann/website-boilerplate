@@ -12,7 +12,23 @@
 
   select,
   textarea,
-  .input-text {
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="file"],
+  input[type="month"],
+  input[type="number"],
+  input[type="output"],
+  input[type="password"],
+  input[type="range"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"] {
     border: 1px solid $color-border;
     height: $line-height + (.25em * 2);
     padding: .25rem .5rem;
@@ -29,10 +45,26 @@
     height: 6rem;
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
-    float: left;
-    margin: .25rem .5rem 0 0;
+  input {
+
+    &[type="checkbox"],
+    &[type="radio"] {
+      float: left;
+      margin: .25rem .5rem 0 0;
+    }
+
+    &[type="reset"],
+    &[type="submit"] {
+      background-color: $color-primary;
+      padding: .25rem 1rem;
+
+      &:focus,
+      &:hover {
+        background-color: $color-primary-hover;
+      }
+
+    }
+
   }
 
   .checkbox-container,
@@ -51,18 +83,6 @@
 
     @media (min-width: $media-small) {
       width: (100% / 3);
-    }
-
-  }
-
-  .input-reset,
-  .input-submit {
-    background-color: $color-primary;
-    padding: .25rem 1rem;
-
-    &:focus,
-    &:hover {
-      background-color: $color-primary-hover;
     }
 
   }

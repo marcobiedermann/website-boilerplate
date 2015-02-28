@@ -463,7 +463,23 @@ article {
       clear: both; }
   .form select,
   .form textarea,
-  .form .input-text {
+  .form input[type="color"],
+  .form input[type="date"],
+  .form input[type="datetime"],
+  .form input[type="datetime-local"],
+  .form input[type="email"],
+  .form input[type="file"],
+  .form input[type="month"],
+  .form input[type="number"],
+  .form input[type="output"],
+  .form input[type="password"],
+  .form input[type="range"],
+  .form input[type="search"],
+  .form input[type="tel"],
+  .form input[type="text"],
+  .form input[type="time"],
+  .form input[type="url"],
+  .form input[type="week"] {
     border: 1px solid #808080;
     height: 2em;
     padding: .25rem .5rem;
@@ -471,15 +487,51 @@ article {
     .form select:focus, .form select:hover,
     .form textarea:focus,
     .form textarea:hover,
-    .form .input-text:focus,
-    .form .input-text:hover {
+    .form input[type="color"]:focus,
+    .form input[type="color"]:hover,
+    .form input[type="date"]:focus,
+    .form input[type="date"]:hover,
+    .form input[type="datetime"]:focus,
+    .form input[type="datetime"]:hover,
+    .form input[type="datetime-local"]:focus,
+    .form input[type="datetime-local"]:hover,
+    .form input[type="email"]:focus,
+    .form input[type="email"]:hover,
+    .form input[type="file"]:focus,
+    .form input[type="file"]:hover,
+    .form input[type="month"]:focus,
+    .form input[type="month"]:hover,
+    .form input[type="number"]:focus,
+    .form input[type="number"]:hover,
+    .form input[type="output"]:focus,
+    .form input[type="output"]:hover,
+    .form input[type="password"]:focus,
+    .form input[type="password"]:hover,
+    .form input[type="range"]:focus,
+    .form input[type="range"]:hover,
+    .form input[type="search"]:focus,
+    .form input[type="search"]:hover,
+    .form input[type="tel"]:focus,
+    .form input[type="tel"]:hover,
+    .form input[type="text"]:focus,
+    .form input[type="text"]:hover,
+    .form input[type="time"]:focus,
+    .form input[type="time"]:hover,
+    .form input[type="url"]:focus,
+    .form input[type="url"]:hover,
+    .form input[type="week"]:focus,
+    .form input[type="week"]:hover {
       border-color: #4d4d4d; }
   .form textarea {
     height: 6rem; }
-  .form input[type="checkbox"],
-  .form input[type="radio"] {
+  .form input[type="checkbox"], .form input[type="radio"] {
     float: left;
     margin: .25rem .5rem 0 0; }
+  .form input[type="reset"], .form input[type="submit"] {
+    background-color: #2980b9;
+    padding: .25rem 1rem; }
+    .form input[type="reset"]:focus, .form input[type="reset"]:hover, .form input[type="submit"]:focus, .form input[type="submit"]:hover {
+      background-color: #20638f; }
   .form .checkbox-container,
   .form .radio-container {
     float: left;
@@ -503,14 +555,6 @@ article {
       .form .checkbox-container,
       .form .radio-container {
         width: 33.33333%; } }
-  .form .input-reset,
-  .form .input-submit {
-    background-color: #2980b9;
-    padding: .25rem 1rem; }
-    .form .input-reset:focus, .form .input-reset:hover,
-    .form .input-submit:focus,
-    .form .input-submit:hover {
-      background-color: #20638f; }
 
 .gallery {
   margin-bottom: 3rem; }
@@ -884,9 +928,9 @@ article {
 
 .icon {
   display: inline-block;
-  height: 1rem;
+  height: 1em;
   vertical-align: middle;
-  width: 1rem; }
+  width: 1em; }
 
 .icon--2x {
   font-size: 2rem; }
