@@ -928,6 +928,7 @@ article {
 
 .icon {
   display: inline-block;
+  fill: #686868;
   height: 1em;
   vertical-align: middle;
   width: 1em; }
