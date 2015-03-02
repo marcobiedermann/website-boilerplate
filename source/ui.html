@@ -37,7 +37,7 @@
 
   <body>
 
-    <header class="header">
+    <header class="header" role="banner">
 
       <div class="container">
 
@@ -47,7 +47,7 @@
 
     </header>
 
-    <main class="main">
+    <main class="main" role="main">
 
       <div class="container">
 
@@ -692,8 +692,8 @@ add(a, b);</code></pre>
 
                 <div class="form__field">
 
-                  <label for="text">Text</label>
-                  <input type="text" class="input-text" id="text" placeholder="text" required >
+                  <label for="text-input" id="text-label">Text</label>
+                  <input type="text" id="text-input" placeholder="text" aria-describedby="text-label" required >
 
                 </div>
 
@@ -703,8 +703,8 @@ add(a, b);</code></pre>
 
                 <div class="form__field">
 
-                  <label for="password">Password</label>
-                  <input type="password" class="input-text" id="password" placeholder="password" required >
+                  <label for="password-input" id="password-label">Password</label>
+                  <input type="password" id="password-input" placeholder="password-label" aria-describedby="password" required >
 
                 </div>
 
@@ -714,8 +714,8 @@ add(a, b);</code></pre>
 
                 <div class="form__field">
 
-                  <label for="email">Email</label>
-                  <input type="email" class="input-text" id="email" autocapitalize="off" autocorrect="off" placeholder="email" required >
+                  <label for="email-input" id="email-label">Email</label>
+                  <input type="email" id="email-input" autocapitalize="off" autocorrect="off" placeholder="email" aria-describedby="email-label" required >
 
                 </div>
 
@@ -726,21 +726,21 @@ add(a, b);</code></pre>
             <div class="form__field">
 
               <label for="url">URL</label>
-              <input type="url" class="input-text" id="url">
+              <input type="url" id="url">
 
             </div>
 
             <div class="form__field">
 
               <label for="tel">Telephone</label>
-              <input type="tel" class="input-text" id="tel">
+              <input type="tel" id="tel">
 
             </div>
 
             <div class="form__field">
 
               <label for="search">Search</label>
-              <input type="search" class="input-text" id="search">
+              <input type="search" id="search">
 
             </div>
 
@@ -761,70 +761,70 @@ add(a, b);</code></pre>
             <div class="form__field">
 
               <label for="number">Number</label>
-              <input type="number" class="input-text" id="number">
+              <input type="number" id="number" aria-live="assertive">
 
             </div>
 
             <div class="form__field">
 
               <label for="range">Range</label>
-              <input type="range" class="input-text" id="range">
+              <input type="range" id="range">
 
             </div>
 
             <div class="form__field">
 
               <label for="image">Image</label>
-              <input type="image" alt="Alt Tag goes here" class="input-text" id="image">
+              <input type="image" alt="Alt Tag goes here" id="image">
 
             </div>
 
             <div class="form__field">
 
               <label for="date">Date</label>
-              <input type="date" class="input-text" id="date">
+              <input type="date" id="date">
 
             </div>
 
             <div class="form__field">
 
               <label for="datetime">Datetime</label>
-              <input type="datetime" class="input-text" id="datetime">
+              <input type="datetime" id="datetime">
 
             </div>
 
             <div class="form__field">
 
               <label for="datetime-local">Datetime-local</label>
-              <input type="datetime-local" class="input-text" id="datetime-local">
+              <input type="datetime-local" id="datetime-local">
 
             </div>
 
             <div class="form__field">
 
               <label for="week">Week</label>
-              <input type="week" class="input-text" id="week">
+              <input type="week" id="week">
 
             </div>
 
             <div class="form__field">
 
               <label for="month">Month</label>
-              <input type="month" class="input-text" id="month">
+              <input type="month" id="month">
 
             </div>
 
             <div class="form__field">
 
               <label for="time">Time</label>
-              <input type="time" class="input-text" id="time">
+              <input type="time" id="time">
 
             </div>
 
             <div class="form__field">
 
               <label for="file">File</label>
-              <input type="file" class="input-text" id="file">
+              <input type="file" id="file">
 
             </div>
 
@@ -948,19 +948,19 @@ add(a, b);</code></pre>
             <div class="form__field">
 
               <label for="textarea">Textarea</label>
-              <textarea class="input-textarea" id="textarea"></textarea>
+              <textarea id="textarea"></textarea>
 
             </div>
 
             <div class="form__field">
 
-              <input type="reset" value="Reset" class="input-reset">
+              <input type="reset" value="Reset">
 
             </div>
 
             <div class="form__field">
 
-              <input type="submit" value="Submit" class="input-submit">
+              <input type="submit" value="Submit">
 
             </div>
 
@@ -977,27 +977,27 @@ add(a, b);</code></pre>
             <div class="form__field">
 
               <label>Name</label>
-              <input type="text" class="input-text">
+              <input type="text">
 
             </div>
 
             <div class="form__field">
 
               <label>Password</label>
-              <input type="password" class="input-text">
+              <input type="password">
 
             </div>
 
             <div class="form__field">
 
               <label>Remember Password</label>
-              <input type="checkbox" class="input-checkbox">
+              <input type="checkbox">
 
             </div>
 
             <div class="form__field">
 
-              <input type="submit" value="Login" class="input-submit">
+              <input type="submit" value="Login">
 
             </div>
 
@@ -1013,8 +1013,8 @@ add(a, b);</code></pre>
 
             <div class="form__field">
 
-              <input type="search" class="input-search" placeholder="Search">
-              <input type="submit" class="input-submit">
+              <input type="search" placeholder="Search">
+              <input type="submit">
 
             </div>
 
@@ -1040,17 +1040,17 @@ add(a, b);</code></pre>
 
         <h2>Navigation</h2>
 
-        <nav class="nav nav--horizontal nav--dropdown">
+        <nav class="nav nav--horizontal nav--dropdown" role="navigation">
 
           <ul>
             <li><a href="#">Level 1 Item 1</a></li>
             <li><a href="#">Level 1 Item 2</a></li>
-            <li><a href="#">Level 1 Item 3</a>
-              <ul>
+            <li><a href="#" aria-haspopup="true">Level 1 Item 3</a>
+              <ul aria-hidden="true" aria-label="submenu">
                 <li><a href="#">Level 2 Item 1</a></li>
                 <li><a href="#">Level 2 Item 2</a></li>
-                <li><a href="#">Level 2 Item 3</a>
-                  <ul>
+                <li><a href="#" aria-haspopup="true">Level 2 Item 3</a>
+                  <ul aria-hidden="true" aria-label="submenu">
                     <li><a href="#">Level 3 Item 1</a></li>
                     <li><a href="#">Level 3 Item 2</a></li>
                     <li><a href="#">Level 3 Item 3</a></li>
@@ -1246,7 +1246,7 @@ add(a, b);</code></pre>
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
 
       <div class="container">
 
