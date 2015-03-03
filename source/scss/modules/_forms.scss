@@ -29,6 +29,7 @@
   input[type="time"],
   input[type="url"],
   input[type="week"] {
+    background-color: $color-input-bg;
     border: 1px solid $color-border;
     height: $line-height + (.25em * 2);
     padding: .25rem .5rem;

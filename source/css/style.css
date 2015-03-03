@@ -207,6 +207,7 @@ hr {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%; }
 
 input,
@@ -479,6 +480,7 @@ article {
   .form input[type="time"],
   .form input[type="url"],
   .form input[type="week"] {
+    background-color: #686868;
     border: 1px solid #808080;
     height: 2em;
     padding: .25rem .5rem;
@@ -588,8 +590,10 @@ article {
 .media__obj--above {
   margin-bottom: 1rem; }
 .media__obj--left {
+  float: left;
   margin: 0 1rem 1rem 0; }
 .media__obj--right {
+  float: right;
   margin: 0 0 1rem 1rem; }
 .media__body {
   overflow: hidden; }
@@ -698,7 +702,8 @@ article {
 
 .header {
   background: #fafafa;
-  padding: 3rem 0; }
+  color: #686868;
+  padding: 2rem 0; }
 
 .logo img {
   margin: 0 auto; }
@@ -708,7 +713,8 @@ article {
 
 .footer {
   background: #fafafa;
-  padding: 3rem 0; }
+  color: #686868;
+  padding: 2rem 0; }
 
 .animate {
   animation-duration: 1s;
