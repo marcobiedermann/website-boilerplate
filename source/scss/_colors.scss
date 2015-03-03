@@ -5,9 +5,31 @@ $color-bg: #fafafa;
 
 $color-headings: #686868;
 
+// Main Colors
+
+$color-primary: #2980b9;
+$color-primary-active: lighten($color-primary, 10%);
+$color-primary-hover: darken($color-primary, 10%);
+
+$color-secondary: #9b59b6;
+$color-secondary-active: lighten($color-secondary, 10%);
+$color-secondary-hover: darken($color-secondary, 10%);
+
+$color-success: #2ecc71;
+$color-success-active: lighten($color-success, 10%);
+$color-success-hover: darken($color-success, 10%);
+
+$color-warning: #f1c40f;
+$color-warning-active: lighten($color-warning, 10%);
+$color-warning-hover: darken($color-warning, 10%);
+
+$color-error: #e74c3c;
+$color-error-active: lighten($color-error, 10%);
+$color-error-hover: darken($color-error, 10%);
+
 // Links
 
-$color-link: #2980b9;
+$color-link: $color-primary;
 $color-link-active: lighten($color-link, 10%);
 $color-link-hover: darken($color-link, 10%);
 
@@ -36,26 +58,6 @@ $color-btn: #fff;
 $color-btn-bg: #95a5a6;
 $color-btn-hover: #fff;
 $color-btn-hover-bg: darken($color-btn-bg, 10%);
-
-$color-primary: $color-link;
-$color-primary-active: lighten($color-primary, 10%);
-$color-primary-hover: darken($color-primary, 10%);
-
-$color-secondary: #9b59b6;
-$color-secondary-active: lighten($color-secondary, 10%);
-$color-secondary-hover: darken($color-secondary, 10%);
-
-$color-success: #2ecc71;
-$color-success-active: lighten($color-success, 10%);
-$color-success-hover: darken($color-success, 10%);
-
-$color-warning: #f1c40f;
-$color-warning-active: lighten($color-warning, 10%);
-$color-warning-hover: darken($color-warning, 10%);
-
-$color-error: #e74c3c;
-$color-error-active: lighten($color-error, 10%);
-$color-error-hover: darken($color-error, 10%);
 
 // Input
 
