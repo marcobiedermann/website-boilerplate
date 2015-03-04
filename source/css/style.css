@@ -9,22 +9,6 @@
   *:before, *:after {
     box-sizing: border-box; }
 
-::-webkit-input-placeholder {
-  color: #808080;
-  font-style: italic; }
-
-::-moz-placeholder {
-  color: #808080;
-  font-style: italic; }
-
-:-moz-placeholder {
-  color: #808080;
-  font-style: italic; }
-
-:-ms-input-placeholder {
-  color: #808080;
-  font-style: italic; }
-
 -moz-::selection,
 ::selection {
   background: #686868;
@@ -244,16 +228,20 @@ textarea {
   width: 100%; }
 
 ::-webkit-input-placeholder {
-  color: inherit; }
+  color: #808080;
+  font-style: italic; }
 
 ::-moz-placeholder {
-  color: inherit; }
+  color: #808080;
+  font-style: italic; }
 
 :-moz-placeholder {
-  color: inherit; }
+  color: #808080;
+  font-style: italic; }
 
 :-ms-input-placeholder {
-  color: inherit; }
+  color: #808080;
+  font-style: italic; }
 
 label {
   color: inherit;

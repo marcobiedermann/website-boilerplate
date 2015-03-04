@@ -13,11 +13,6 @@
 
 }
 
-@include placeholder {
-  color: $color-border;
-  font-style: italic;
-}
-
 -moz-::selection,
 ::selection {
   background: $color;
@@ -278,20 +273,9 @@ textarea {
   width: 100%;
 }
 
-::-webkit-input-placeholder {
-  color: inherit;
-}
-
-::-moz-placeholder {
-  color: inherit;
-}
-
-:-moz-placeholder {
-  color: inherit;
-}
-
-:-ms-input-placeholder {
-  color: inherit;
+@include placeholder {
+  color: $color-border;
+  font-style: italic;
 }
 
 label {
