@@ -211,11 +211,7 @@ input[type="reset"], input[type="submit"] {
   background: #95a5a6;
   color: #fff;
   cursor: pointer; }
-  input[type="reset"]:focus
-  input[type="reset"]:hover, input[type="submit"]:focus
-  input[type="reset"]:hover, input[type="reset"]:focus
-  input[type="submit"]:hover, input[type="submit"]:focus
-  input[type="submit"]:hover {
+  input[type="reset"]:focus, input[type="reset"]:hover, input[type="submit"]:focus, input[type="submit"]:hover {
     background: #798d8f; }
 input[type="search"] {
   -webkit-appearance: textfield; }
