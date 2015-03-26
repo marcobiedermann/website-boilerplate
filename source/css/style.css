@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'FontName';
   src: url("../fonts/fontname.woff") format("woff"); }
+@-ms-viewport {
+  width: device-width; }
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
