@@ -1,46 +1,46 @@
 // Settings
 
-@import '_variables';
-@import '_colors';
-@import '_fonts';
+@import 'variables';
+@import 'colors';
+@import 'fonts';
 
 // Mixins
 
-@import 'helpers/_mixins';
+@import 'helpers/mixins';
 
 // Base
 
-@import '_base';
+@import 'base';
 
 // Modules
 
-@import 'modules/_articles';
-@import 'modules/_audio';
-@import 'modules/_buttons';
-@import 'modules/_breadcrumb';
-@import 'modules/_forms';
-@import 'modules/_gallery';
-@import 'modules/_media';
-@import 'modules/_navs';
-@import 'modules/_pagination';
-@import 'modules/_search';
-@import 'modules/_tables';
-@import 'modules/_tags';
-@import 'modules/_video';
+@import 'modules/articles';
+@import 'modules/audio';
+@import 'modules/buttons';
+@import 'modules/breadcrumb';
+@import 'modules/forms';
+@import 'modules/gallery';
+@import 'modules/media';
+@import 'modules/navs';
+@import 'modules/pagination';
+@import 'modules/search';
+@import 'modules/tables';
+@import 'modules/tags';
+@import 'modules/video';
 
 // Layout
 
-@import 'layout/_header';
-@import 'layout/_main';
-@import 'layout/_footer';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 
 // Helpers
 
-@import 'helpers/_animations';
-@import 'helpers/_grid';
-@import 'helpers/_icons';
-@import 'helpers/_utilities';
+@import 'helpers/animations';
+@import 'helpers/grid';
+@import 'helpers/icons';
+@import 'helpers/utilities';
 
 // Print
 
-@import '_print';
+@import 'print';
