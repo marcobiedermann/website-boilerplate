@@ -149,6 +149,10 @@ module.exports = function(grunt) {
       }
     },
 
+    scsslint: {
+      files: ['<%= config.source %>/scss/**/*.scss']
+    },
+
     svgmin: {
       files: {
         expand: true,
@@ -241,6 +245,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-svgstore');
   grunt.loadNpmTasks('grunt-usemin');
@@ -254,10 +259,12 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('test', [
+    'scsslint',
     'jshint'
   ]);
 
   grunt.registerTask('build', [
+    'sasslint',
     'jshint',
     'clean:dist',
     'copy',
