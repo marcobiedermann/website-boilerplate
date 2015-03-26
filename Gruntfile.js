@@ -2,6 +2,10 @@
 
 module.exports = function(grunt) {
 
+  require('jit-grunt')(grunt, {
+    useminPrepare: 'grunt-usemin'
+  });
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     config: {
@@ -260,25 +264,6 @@ module.exports = function(grunt) {
     }
 
   });
-
-  grunt.loadNpmTasks('grunt-assemble');
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-combine-media-queries');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.loadNpmTasks('grunt-svgmin');
-  grunt.loadNpmTasks('grunt-svgstore');
-  grunt.loadNpmTasks('grunt-usemin');
 
   grunt.registerTask('default', [
     // Linting
