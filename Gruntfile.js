@@ -4,11 +4,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*!\n' +
-            '<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            'Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            'Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-            '*/\n',
     config: {
       source: 'source',
       build: 'dist'
