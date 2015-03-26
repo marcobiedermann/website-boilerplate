@@ -6,7 +6,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     config: {
       source: 'source',
-      build: 'dist'
+      build: 'dist',
+      tmp: '.tmp'
     },
 
     assemble: {
@@ -29,8 +30,8 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true,
-        cwd: '.tmp/concat/css',
-        dest: '.tmp/concat/css',
+        cwd: '<%= config.tmp %>/concat/css',
+        dest: '<%= config.tmp %>/concat/css',
         src: '*.css'
       }
     },
@@ -53,15 +54,15 @@ module.exports = function(grunt) {
 
     clean: {
       dist: ['<%= config.build %>'],
-      tmp: ['.tmp'],
+      tmp: ['<%= config.tmp %>'],
       sass: ['.sass-cache']
     },
 
     cmq: {
       files: {
         expand: true,
-        cwd: '.tmp/concat/css',
-        dest: '.tmp/concat/css',
+        cwd: '<%= config.tmp %>/concat/css',
+        dest: '<%= config.tmp %>/concat/css',
         src: '*.css'
       }
     },
@@ -166,7 +167,7 @@ module.exports = function(grunt) {
       files: {
         expand: true,
         cwd: '<%= config.source %>/img/icons',
-        dest: '.tmp/img/icons',
+        dest: '<%= config.tmp %>/img/icons',
         ext: '.svg',
         src: ['**/*.svg']
       }
@@ -182,7 +183,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          '<%= config.source %>/img/icons.svg': ['.tmp/img/icons/*.svg'],
+          '<%= config.source %>/img/icons.svg': ['<%= config.tmp %>/img/icons/*.svg'],
         }
       }
     },
