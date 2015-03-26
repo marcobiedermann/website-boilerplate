@@ -68,18 +68,6 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      htaccess: {
-        expand: true,
-        cwd: '<%= config.source %>',
-        dest: '<%= config.build %>',
-        src: '.htaccess',
-      },
-      browserconfig: {
-        expand: true,
-        cwd: '<%= config.source %>',
-        dest: '<%= config.build %>',
-        src: 'browserconfig.xml',
-      },
       fonts: {
         expand: true,
         cwd: '<%= config.source %>/fonts',
@@ -92,17 +80,17 @@ module.exports = function(grunt) {
         dest: '<%= config.build %>',
         src: '*.html',
       },
-      robots: {
+      config: {
         expand: true,
         cwd: '<%= config.source %>',
         dest: '<%= config.build %>',
-        src: 'robots.txt',
+        src: ['.htaccess', '*.xml', '*.txt'],
       },
-      sitemap: {
+      svg: {
         expand: true,
-        cwd: '<%= config.source %>',
-        dest: '<%= config.build %>',
-        src: 'sitemap.xml',
+        cwd: '<%= config.source %>/img',
+        dest: '<%= config.build %>/img',
+        src: ['icons.svg'],
       }
     },
 
