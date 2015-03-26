@@ -3,6 +3,7 @@
 module.exports = function(grunt) {
 
   require('jit-grunt')(grunt, {
+    scsslint: 'grunt-scss-lint',
     useminPrepare: 'grunt-usemin'
   });
 
