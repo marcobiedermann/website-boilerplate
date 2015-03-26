@@ -36,22 +36,6 @@ module.exports = function(grunt) {
       }
     },
 
-    browserSync: {
-      bsFiles: {
-        src: [
-          '<%= config.source %>/**/*.html',
-          '<%= config.source %>/css/*.css',
-          '<%= config.source %>/js/*.js',
-        ]
-      },
-      options: {
-        watchTask: true,
-        server: {
-          baseDir: 'source/'
-        }
-      }
-    },
-
     clean: {
       dist: ['<%= config.build %>'],
       tmp: ['<%= config.tmp %>'],
@@ -64,6 +48,30 @@ module.exports = function(grunt) {
         cwd: '<%= config.tmp %>/concat/css',
         dest: '<%= config.tmp %>/concat/css',
         src: '*.css'
+      }
+    },
+
+    connect: {
+      options: {
+        hostname: 'localhost',
+        open: true,
+        livereload: true
+      },
+      develop: {
+        options: {
+          port: 4000,
+          base: {
+            path: '<%= config.source %>'
+          }
+        }
+      },
+      build: {
+        options: {
+          port: 3000,
+          base: {
+            path: '<%= config.build %>'
+          }
+        }
       }
     },
 
@@ -206,6 +214,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      options: {
+        livereload: true
+      },
       css: {
         files: [
           '<%= config.source %>/css/**/*.css'
@@ -252,10 +263,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-assemble');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-combine-media-queries');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
@@ -270,11 +281,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
 
   grunt.registerTask('default', [
-    'browserSync',
     'sass',
     'svgmin',
     'svgstore',
     'assemble',
+    'connect:develop',
     'watch'
   ]);
 
@@ -302,7 +313,10 @@ module.exports = function(grunt) {
     'svgstore',
     'imagemin',
     'clean:tmp',
-    'clean:sass'
+    'clean:sass',
+    'connect:develop',
+    'connect:build',
+    'watch'
   ]);
 
 };
