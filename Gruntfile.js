@@ -14,6 +14,20 @@ module.exports = function(grunt) {
       build: 'dist'
     },
 
+    assemble: {
+      options: {
+        layoutdir: '<%= config.source %>/templates/layout',
+        partials: '<%= config.source %>/templates/partials/**/*.html',
+        data: '<%= config.source %>/data/**/*.json'
+      },
+      files: {
+        expand: true,
+        cwd: '<%= config.source %>/templates/pages',
+        dest: '<%= config.source %>',
+        src: '**/*.html'
+      }
+    },
+
     autoprefixer: {
       options: {
         browsers: ['last 3 versions']
@@ -198,9 +212,9 @@ module.exports = function(grunt) {
       },
       html: {
         files: [
-          '<%= config.source %>/**/*.html'
+          '<%= config.source %>/templates/**/*.html'
         ],
-        tasks: []
+        tasks: ['assemble']
       },
       js: {
         files: [
@@ -232,6 +246,7 @@ module.exports = function(grunt) {
 
   });
 
+  grunt.loadNpmTasks('grunt-assemble');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-combine-media-queries');
@@ -255,6 +270,7 @@ module.exports = function(grunt) {
     'sass',
     'svgmin',
     'svgstore',
+    'assemble',
     'watch'
   ]);
 
@@ -267,6 +283,7 @@ module.exports = function(grunt) {
     'sasslint',
     'jshint',
     'clean:dist',
+    'assemble',
     'copy',
     'sass',
     'useminPrepare',
