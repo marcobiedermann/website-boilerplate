@@ -281,39 +281,69 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
 
   grunt.registerTask('default', [
+    // Linting
+    'jshint',
+    'scsslint',
+
+    // PreProcessors
     'sass',
+
+    // Images
     'svgmin',
     'svgstore',
+
+    // HTML
     'assemble',
+
+    // Server
     'connect:develop',
     'watch'
   ]);
 
   grunt.registerTask('test', [
-    'scsslint',
-    'jshint'
+    // Linting
+    'jshint',
+    'scsslint'
   ]);
 
   grunt.registerTask('build', [
-    'sasslint',
+    // Linting
     'jshint',
+    'scsslint',
+
+    // Clean
     'clean:dist',
-    'assemble',
-    'copy',
-    'sass',
-    'useminPrepare',
-    'concat',
-    'autoprefixer',
-    'cmq',
-    'cssmin',
-    'uglify',
-    'usemin',
-    'htmlmin',
+
     'svgmin',
     'svgstore',
+    'copy',
+
+    // PreProcessors
+    'sass',
+
+    // HTML
+    'assemble',
+
+    // Usemin
+    'useminPrepare',
+    'concat:generated',
+    'autoprefixer',
+    'cmq',
+    'cssmin:generated',
+    'uglify:generated',
+    'usemin',
+
+    // Minification
+    'htmlmin',
+
+    // Images
     'imagemin',
+
+    // Clean
     'clean:tmp',
     'clean:sass',
+
+    // Server
     'connect:develop',
     'connect:build',
     'watch'
