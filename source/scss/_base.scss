@@ -26,13 +26,14 @@ template {
 }
 
 html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  -webkit-font-font-smoothing: antialiased;
   font-size: $root-font-size;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
   height: 100%;
   text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
