@@ -140,7 +140,11 @@ module.exports = function(grunt) {
       options: {
         jshintrc: true
       },
-      files: ['source/js/**.js']
+      files: [
+        'gruntfile.js',
+        '<%= config.source %>/js/**/*.js',
+        '!source/js/libs/**/*.js'
+      ]
     },
 
     sass: {
