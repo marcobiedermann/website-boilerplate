@@ -213,7 +213,8 @@ module.exports = function(grunt) {
         tasks: []
       },
       gruntfile: {
-        files: ['gruntfile.js']
+        files: ['gruntfile.js'],
+        tasks: ['jshint']
       },
       html: {
         files: [
@@ -225,7 +226,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/js/**/*.js'
         ],
-        tasks: []
+        tasks: ['jshint']
       },
       img: {
         files: [
@@ -237,9 +238,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/scss/**/*.scss'
         ],
-        tasks: [
-          'sass'
-        ]
+        tasks: ['scsslint', 'sass']
       },
       svg: {
         files: [
