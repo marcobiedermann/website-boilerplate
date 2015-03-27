@@ -825,7 +825,7 @@ article {
   * {
     background: transparent;
     box-shadow: none;
-    color: #000;
+    color: #686868;
     text-shadow: none; }
 
   a,
@@ -849,13 +849,13 @@ article {
     page-break-inside: avoid; }
 
   blockquote {
-    border-left: 3px solid #000; }
+    border-left: 3px solid #686868; }
 
   thead {
     display: table-header-group; }
 
   select {
-    background: #fff; }
+    background: #fafafa; }
 
   .container {
     width: auto; }
