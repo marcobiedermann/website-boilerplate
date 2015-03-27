@@ -87,7 +87,7 @@ linters:
     convention: BEM # or 'BEM', or a regex pattern
 
   NestingDepth:
-    enabled: true
+    enabled: false
     max_depth: 3
 
   PlaceholderInExtend:
