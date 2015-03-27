@@ -10,7 +10,7 @@
     "url": "https://github.com/marcobiedermannn/website-template/issues"
   },
   "scripts": {
-    "test": "grunt test"
+    "build": "grunt build"
   },
   "author": "Marco Biedermann",
   "license": "ISC",
