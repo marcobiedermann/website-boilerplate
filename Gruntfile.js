@@ -3,6 +3,7 @@
 module.exports = function(grunt) {
 
   require('jit-grunt')(grunt, {
+    cmq: 'grunt-combine-media-queries',
     scsslint: 'grunt-scss-lint',
     useminPrepare: 'grunt-usemin'
   });
@@ -18,8 +19,7 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         layoutdir: '<%= config.source %>/templates/layout',
-        partials: '<%= config.source %>/templates/partials/**/*.html',
-        data: '<%= config.source %>/data/**/*.json'
+        partials: '<%= config.source %>/templates/partials/**/*.html'
       },
       files: {
         expand: true,
