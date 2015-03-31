@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         layout: 'default.html',
-        layoutdir: '<%= config.source %>/templates/layout',
+        layoutdir: '<%= config.source %>/templates/layouts',
         partials: '<%= config.source %>/templates/partials/**/*.html'
       },
       files: {
@@ -235,9 +235,7 @@ module.exports = function(grunt) {
         tasks: ['jshint']
       },
       html: {
-        files: [
-          '<%= config.source %>/templates/**/*.html'
-        ],
+        files: ['<%= config.source %>/templates/**/*.html'],
         tasks: ['assemble']
       },
       js: {
