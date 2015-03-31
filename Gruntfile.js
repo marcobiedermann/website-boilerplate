@@ -31,12 +31,13 @@ module.exports = function(grunt) {
 
     autoprefixer: {
       options: {
-        browsers: ['last 3 versions']
+        browsers: ['last 3 versions'],
+        map: true
       },
       files: {
         expand: true,
-        cwd: '<%= config.tmp %>/concat/css',
-        dest: '<%= config.tmp %>/concat/css',
+        cwd: '<%= config.source %>/concat/css',
+        dest: '<%= config.source %>/concat/css',
         src: '*.css'
       }
     },
@@ -226,7 +227,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/css/**/*.css'
         ],
-        tasks: []
+        tasks: ['autoprefixer']
       },
       gruntfile: {
         files: ['gruntfile.js'],
@@ -271,8 +272,9 @@ module.exports = function(grunt) {
     'jshint',
     'scsslint',
 
-    // PreProcessors
+    // CSS
     'sass',
+    'autoprefixer',
 
     // Images
     'svgmin',
@@ -304,8 +306,9 @@ module.exports = function(grunt) {
     'svgstore',
     'copy',
 
-    // PreProcessors
+    // cCSS
     'sass',
+    'autoprefixer',
 
     // HTML
     'assemble',
@@ -313,7 +316,6 @@ module.exports = function(grunt) {
     // Usemin
     'useminPrepare',
     'concat:generated',
-    'autoprefixer',
     'cmq',
     'cssmin:generated',
     'uglify:generated',
