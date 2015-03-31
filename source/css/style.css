@@ -9,7 +9,11 @@
   *:before, *:after {
     box-sizing: border-box; }
 
--moz-::selection,
+::-moz-selection {
+  background: #686868;
+  color: #fafafa;
+  text-shadow: none; }
+
 ::selection {
   background: #686868;
   color: #fafafa;
@@ -206,6 +210,21 @@ textarea {
   outline-color: #2980b9;
   padding: 0;
   transition: all .3s; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #808080;
+  font-style: italic; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #808080;
+  font-style: italic; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #808080;
+  font-style: italic; }
 
 input::placeholder,
 textarea::placeholder {
@@ -691,10 +710,13 @@ article {
   padding: 2rem 0; }
 
 .animate {
-  animation-duration: 1s;
-  animation-fill-mode: both; }
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
   .animate--infinite {
-    animation-iteration-count: infinite; }
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite; }
 
 .container {
   margin: 0 auto;
