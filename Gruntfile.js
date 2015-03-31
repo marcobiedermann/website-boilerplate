@@ -36,8 +36,8 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true,
-        cwd: '<%= config.source %>/concat/css',
-        dest: '<%= config.source %>/concat/css',
+        cwd: '<%= config.source %>/css',
+        dest: '<%= config.source %>/css',
         src: '*.css'
       }
     },
