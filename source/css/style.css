@@ -207,6 +207,11 @@ textarea {
   padding: 0;
   transition: all .3s; }
 
+input::placeholder,
+textarea::placeholder {
+  color: #808080;
+  font-style: italic; }
+
 input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   background: #95a5a6;
@@ -223,22 +228,6 @@ textarea {
   resize: none;
   vertical-align: top;
   width: 100%; }
-
-::-webkit-input-placeholder {
-  color: #808080;
-  font-style: italic; }
-
-::-moz-placeholder {
-  color: #808080;
-  font-style: italic; }
-
-:-moz-placeholder {
-  color: #808080;
-  font-style: italic; }
-
-:-ms-input-placeholder {
-  color: #808080;
-  font-style: italic; }
 
 label {
   color: inherit;

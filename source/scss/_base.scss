@@ -240,6 +240,16 @@ textarea {
   transition: all .3s;
 }
 
+input,
+textarea {
+
+  &::placeholder {
+    color: $color-border;
+    font-style: italic;
+  }
+
+}
+
 input {
 
   &[type="reset"],
@@ -268,11 +278,6 @@ textarea {
   resize: none;
   vertical-align: top;
   width: 100%;
-}
-
-@include placeholder {
-  color: $color-border;
-  font-style: italic;
 }
 
 label {
