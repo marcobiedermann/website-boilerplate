@@ -693,18 +693,18 @@ article {
     top: 0;
     width: 100%; }
 
-.header {
+.site__header {
   background: #fafafa;
   color: #686868;
   padding: 2rem 0; }
 
-.logo img {
+.site__logo img {
   margin: 0 auto; }
 
-.main {
+.site__main {
   padding: 3rem 0; }
 
-.footer {
+.site__footer {
   background: #fafafa;
   color: #686868;
   padding: 2rem 0; }
