@@ -14,8 +14,8 @@
 }
 
 ::selection {
-  background: $color;
-  color: $color-bg;
+  background: $color-base;
+  color: $color-base-bg;
   text-shadow: none;
 }
 
@@ -36,9 +36,9 @@ html {
 }
 
 body {
-  background: $color-bg;
-  color: $color;
-  font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
+  background: $color-base-bg;
+  color: $color-base;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, $base-font-family-fallback;
   height: 100%;
   margin: 0;
   position: relative;
@@ -197,7 +197,7 @@ footer {
 
 %headings {
   color: inherit;
-  font-family: $font-family-headings, $font-family-fallback;
+  font-family: $font-family-headings, $base-font-family-fallback;
   font-weight: $font-weight-headings;
 }
 
@@ -232,7 +232,7 @@ textarea {
   border: 0;
   border-radius: 0;
   color: inherit;
-  font: $font-weight #{$font-size}/#{$line-height} $font-family, $font-family-fallback;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, $base-font-family-fallback;
   margin: 0;
   outline-color: $color-primary;
   padding: 0;
@@ -243,7 +243,7 @@ input,
 textarea {
 
   &::placeholder {
-    color: $color-border;
+    color: $color-placeholder;
     font-style: italic;
   }
 

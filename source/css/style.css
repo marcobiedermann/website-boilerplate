@@ -10,12 +10,12 @@
     box-sizing: border-box; }
 
 ::-moz-selection {
-  background: #686868;
+  background: #303030;
   color: #fafafa;
   text-shadow: none; }
 
 ::selection {
-  background: #686868;
+  background: #303030;
   color: #fafafa;
   text-shadow: none; }
 
@@ -35,7 +35,7 @@ html {
 
 body {
   background: #fafafa;
-  color: #686868;
+  color: #303030;
   font: 400 1rem/1.5em Arial, sans-serif;
   height: 100%;
   margin: 0;
@@ -188,7 +188,7 @@ h6 {
   margin: 0 0 .5rem; }
 
 hr {
-  background-color: #808080;
+  background-color: #bdbdbd;
   border: 0;
   box-sizing: content-box;
   height: 1px;
@@ -213,22 +213,22 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #808080;
+  color: #bdbdbd;
   font-style: italic; }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #808080;
+  color: #bdbdbd;
   font-style: italic; }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #808080;
+  color: #bdbdbd;
   font-style: italic; }
 
 input::placeholder,
 textarea::placeholder {
-  color: #808080;
+  color: #bdbdbd;
   font-style: italic; }
 
 input[type="reset"], input[type="submit"] {
@@ -454,8 +454,8 @@ video {
   .form input[type="time"],
   .form input[type="url"],
   .form input[type="week"] {
-    background-color: #686868;
-    border: 1px solid #808080;
+    background-color: #e8e8e8;
+    border: 1px solid #bdbdbd;
     height: 2em;
     padding: .25rem .5rem;
     width: 100%; }
@@ -496,7 +496,7 @@ video {
     .form input[type="url"]:hover,
     .form input[type="week"]:focus,
     .form input[type="week"]:hover {
-      border-color: #4d4d4d; }
+      border-color: #8a8a8a; }
   .form textarea {
     height: 6rem; }
   .form input[type="checkbox"], .form input[type="radio"] {
@@ -636,7 +636,7 @@ video {
   .table caption,
   .table td,
   .table th {
-    border: 1px solid #808080;
+    border: 1px solid #bdbdbd;
     padding: .5rem; }
   .table caption {
     font-weight: bold; }
@@ -766,7 +766,7 @@ video {
 
 .icon {
   display: inline-block;
-  fill: #686868;
+  fill: #303030;
   height: 1em;
   vertical-align: middle;
   width: 1em; }
@@ -806,7 +806,7 @@ video {
   * {
     background: transparent;
     box-shadow: none;
-    color: #686868;
+    color: #303030;
     text-shadow: none; }
 
   a,
@@ -830,7 +830,7 @@ video {
     page-break-inside: avoid; }
 
   blockquote {
-    border-left: 3px solid #686868; }
+    border-left: 3px solid #303030; }
 
   thead {
     display: table-header-group; }
@@ -846,5 +846,4 @@ video {
 
   .main {
     width: 100%; } }
-
 /*# sourceMappingURL=style.css.map */

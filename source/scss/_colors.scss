@@ -1,7 +1,7 @@
 // Base
 
-$color: #686868;
-$color-bg: #fafafa;
+$color-base: #303030;
+$color-base-bg: #fafafa;
 
 $color-headings: #686868;
 
@@ -33,11 +33,9 @@ $color-link: $color-primary;
 $color-link-active: lighten($color-link, 10%);
 $color-link-hover: darken($color-link, 10%);
 
-$color-outline: $color-link;
-
 // Border
 
-$color-border: #808080;
+$color-border: #bdbdbd;
 $color-border-hover: darken($color-border, 20%);
 
 // Typography
@@ -61,5 +59,7 @@ $color-btn-hover-bg: darken($color-btn-bg, 10%);
 
 // Input
 
-$color-input: $color-bg;
-$color-input-bg: $color;
+$color-input: $color-base;
+$color-input-bg: #e8e8e8;
+
+$color-placeholder: $color-border;
