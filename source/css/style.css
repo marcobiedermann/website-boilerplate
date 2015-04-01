@@ -660,8 +660,8 @@ video {
       content: '#'; }
 
 .site__header {
-  background: #fafafa;
-  color: #686868;
+  background: inherit;
+  color: inherit;
   padding: 2rem 0; }
 
 .site__logo img {
@@ -671,8 +671,8 @@ video {
   padding: 3rem 0; }
 
 .site__footer {
-  background: #fafafa;
-  color: #686868;
+  background: inherit;
+  color: inherit;
   padding: 2rem 0; }
 
 .animate {
