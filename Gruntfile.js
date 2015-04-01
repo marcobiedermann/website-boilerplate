@@ -346,7 +346,7 @@ module.exports = function(grunt) {
     'svgstore',
     'copy',
 
-    // cCSS
+    // CSS
     'sass',
     'autoprefixer',
 
