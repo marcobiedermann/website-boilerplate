@@ -585,12 +585,12 @@ video {
   position: relative; }
 .nav a {
   display: block; }
-.nav--horizontal > ul:before, .nav--horizontal > ul:after {
+.nav--inline > ul:before, .nav--inline > ul:after {
   content: ' ';
   display: table; }
-.nav--horizontal > ul:after {
+.nav--inline > ul:after {
   clear: both; }
-.nav--horizontal > ul > li {
+.nav--inline > ul > li {
   float: left; }
 .nav--dropdown li:focus ul, .nav--dropdown li:hover ul {
   display: block; }
