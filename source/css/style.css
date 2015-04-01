@@ -213,23 +213,19 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #bdbdbd;
-  font-style: italic; }
+  color: #bdbdbd; }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #bdbdbd;
-  font-style: italic; }
+  color: #bdbdbd; }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #bdbdbd;
-  font-style: italic; }
+  color: #bdbdbd; }
 
 input::placeholder,
 textarea::placeholder {
-  color: #bdbdbd;
-  font-style: italic; }
+  color: #bdbdbd; }
 
 input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
@@ -846,4 +842,5 @@ video {
 
   .main {
     width: 100%; } }
+
 /*# sourceMappingURL=style.css.map */
