@@ -105,7 +105,7 @@ strong {
 }
 
 blockquote {
-  margin: 0;
+  margin: 0 0 1.5rem;
   quotes: '\201C' '\201D' '\2018' '\2019';
 
   p {
@@ -305,13 +305,13 @@ dl,
 ol,
 ul {
   margin: 0 0 1.5rem;
-  padding: 0 0 0 1.5rem;
+  padding: 0 0 0 1.25rem;
 
   dd,
   ol,
   ul {
     margin: .5rem 0 0;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
   }
 
   dd {
@@ -319,18 +319,18 @@ ul {
   }
 
   li {
-    margin-bottom: .5rem;
+    margin-bottom: .25rem;
   }
 
 }
 
 p {
-  margin: 0 0 .5rem;
+  margin: 0 0 1.5rem;
 }
 
 pre {
   display: block;
-  margin: 0;
+  margin: 0 0 1.5rem;
   overflow: auto;
   word-break: break-all;
   word-wrap: break-word;
@@ -381,6 +381,7 @@ svg {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin: 0 0 1.5rem;
   text-align: left;
   width: 100%;
 }
