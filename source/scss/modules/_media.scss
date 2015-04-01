@@ -1,32 +1,40 @@
 .media {
   @include clearfix();
 
+  &--middle {
+    vertical-align: middle;
+  }
+
   &__obj {
 
     &--left,
     &--right {
-      max-width: 50%;
-      width: auto;
+      display: table-cell;
+
+      img {
+        max-width: initial;
+      }
+
     }
 
     &--above {
-      margin-bottom: 1rem;
+      padding-bottom: 1rem;
     }
 
     &--left {
-      float: left;
-      margin: 0 1rem 1rem 0;
+      padding: 0 1rem 1rem 0;
     }
 
     &--right {
-      float: right;
-      margin: 0 0 1rem 1rem;
+      padding: 0 0 1rem 1rem;
     }
 
   }
 
   &__body {
+    display: table-cell;
     overflow: hidden;
+    vertical-align: middle;
   }
 
 }

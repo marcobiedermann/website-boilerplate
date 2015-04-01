@@ -577,19 +577,22 @@ article {
   display: table; }
 .media:after {
   clear: both; }
+.media--middle {
+  vertical-align: middle; }
 .media__obj--left, .media__obj--right {
-  max-width: 50%;
-  width: auto; }
+  display: table-cell; }
+  .media__obj--left img, .media__obj--right img {
+    max-width: initial; }
 .media__obj--above {
-  margin-bottom: 1rem; }
+  padding-bottom: 1rem; }
 .media__obj--left {
-  float: left;
-  margin: 0 1rem 1rem 0; }
+  padding: 0 1rem 1rem 0; }
 .media__obj--right {
-  float: right;
-  margin: 0 0 1rem 1rem; }
+  padding: 0 0 1rem 1rem; }
 .media__body {
-  overflow: hidden; }
+  display: table-cell;
+  overflow: hidden;
+  vertical-align: middle; }
 
 .nav ul {
   list-style: none;
@@ -876,5 +879,4 @@ article {
 
   .main {
     width: 100%; } }
-
 /*# sourceMappingURL=style.css.map */
