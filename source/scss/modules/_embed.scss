@@ -1,8 +1,12 @@
-.video {
+.embed {
   height: 0;
   margin-bottom: $margin-element-bottom;
-  padding-bottom: 100% / (16 / 9);
+  padding-bottom: 100%;
   position: relative;
+
+  &--16-9 {
+    padding-bottom: 100% / (16 / 9);
+  }
 
   embed,
   iframe,
