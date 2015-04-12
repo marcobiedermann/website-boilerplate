@@ -7,15 +7,15 @@ $color-headings: inherit;
 
 // Main Colors
 
-$color-primary: #2980b9;
+$color-primary: #2e719e;
 $color-primary-active: lighten($color-primary, 10%);
 $color-primary-hover: darken($color-primary, 10%);
 
-$color-secondary: #9b59b6;
+$color-secondary: #964db3;
 $color-secondary-active: lighten($color-secondary, 10%);
 $color-secondary-hover: darken($color-secondary, 10%);
 
-$color-success: #2ecc71;
+$color-success: #367d53;
 $color-success-active: lighten($color-success, 10%);
 $color-success-hover: darken($color-success, 10%);
 
@@ -23,7 +23,7 @@ $color-warning: #f1c40f;
 $color-warning-active: lighten($color-warning, 10%);
 $color-warning-hover: darken($color-warning, 10%);
 
-$color-error: #e74c3c;
+$color-error: #b83c2e;
 $color-error-active: lighten($color-error, 10%);
 $color-error-hover: darken($color-error, 10%);
 
