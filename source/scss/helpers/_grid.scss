@@ -7,14 +7,11 @@
 
 .row {
   @include clearfix();
-  margin-left: $grid-gutter / -2;
-  margin-right: $grid-gutter / -2;
+  margin: 0 $grid-gutter / -2;
 }
 
 %col {
-  height: auto;
-  margin-left: $grid-gutter / 2;
-  margin-right: $grid-gutter / 2;
+  margin: 0 $grid-gutter / 2;
   min-height: 1px;
 }
 

@@ -692,8 +692,7 @@ video {
     clear: both; }
 
 .row {
-  margin-left: -1%;
-  margin-right: -1%; }
+  margin: 0 -1%; }
   .row:before, .row:after {
     content: ' ';
     display: table; }
@@ -702,8 +701,7 @@ video {
 
 .col--1, .col--2, .col--3, .col--4, .col--5, .col--6, .col--7, .col--8, .col--9, .col--10, .col--11, .col--12 {
   height: auto;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin: 0 1%;
   min-height: 1px; }
 
 @media (min-width: 40rem) {
@@ -839,5 +837,4 @@ video {
 
   .main {
     width: 100%; } }
-
 /*# sourceMappingURL=style.css.map */
