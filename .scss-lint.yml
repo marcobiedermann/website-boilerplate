@@ -84,7 +84,7 @@ linters:
   NameFormat:
     enabled: true
     allow_leading_underscore: true
-    convention: BEM # or 'BEM', or a regex pattern
+    convention: hyphenated_lowercase # or 'BEM', or a regex pattern
 
   NestingDepth:
     enabled: false

@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
 gem 'sass', '~>3.4.13'
-gem 'scss-lint', '~> 0.36.0'
+gem 'scss-lint', '~> 0.37.0'
