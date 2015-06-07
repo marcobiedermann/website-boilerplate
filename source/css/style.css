@@ -786,6 +786,25 @@ video {
 .icon--4x {
   font-size: 4rem; }
 
+.align {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .align__item--top {
+    -ms-flex-item-align: start;
+            -webkit-align-self: flex-start;
+            align-self: flex-start; }
+  .align__item--bottom {
+    -ms-flex-item-align: end;
+            -webkit-align-self: flex-end;
+            align-self: flex-end; }
+
 .center-block {
   display: block;
   margin-left: auto;
