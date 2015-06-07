@@ -428,12 +428,19 @@ video {
   .form fieldset {
     margin: -.5rem 0; }
   .form__field {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     padding: .5rem 0; }
     .form__field:before, .form__field:after {
       content: ' ';
       display: table; }
     .form__field:after {
       clear: both; }
+  .form__input {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
   .form select,
   .form textarea,
   .form input[type="color"],
