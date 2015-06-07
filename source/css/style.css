@@ -33,9 +33,15 @@ html {
 body {
   background: #fafafa;
   color: #303030;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font: 400 1rem/1.5em Arial, sans-serif;
-  height: 100%;
   margin: 0;
+  min-height: 100%;
   position: relative; }
 
 article,
@@ -664,8 +670,18 @@ video {
 .site__logo img {
   margin: 0 auto; }
 
+.site__container {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
 .site__main {
   padding: 3rem 0; }
+
+.site__aside--left {
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1; }
 
 .site__footer {
   background: inherit;
@@ -836,5 +852,4 @@ video {
 
   .main {
     width: 100%; } }
-
 /*# sourceMappingURL=style.css.map */
