@@ -1,40 +1,26 @@
 .media {
-  @include clearfix();
+  display: flex;
 
-  &--middle {
-    vertical-align: middle;
+  &--center {
+    align-items: center;
   }
 
   &__obj {
-
-    &--left,
-    &--right {
-      display: table-cell;
-
-      img {
-        max-width: initial;
-      }
-
-    }
-
-    &--above {
-      padding-bottom: 1rem;
-    }
+    margin-bottom: 1.5rem;
 
     &--left {
-      padding: 0 1rem 1rem 0;
+      margin-right: 1rem;
     }
 
     &--right {
-      padding: 0 0 1rem 1rem;
+      margin-left: 1rem;
+      order: 1;
     }
 
   }
 
   &__body {
-    display: table-cell;
-    overflow: hidden;
-    vertical-align: middle;
+    flex: 1;
   }
 
 }
