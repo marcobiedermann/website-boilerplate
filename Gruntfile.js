@@ -257,7 +257,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/css/**/*.css'
         ],
-        tasks: ['autoprefixer']
+        tasks: []
       },
       gruntfile: {
         files: ['gruntfile.js'],
@@ -283,7 +283,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/scss/**/*.scss'
         ],
-        tasks: ['scsslint', 'sass']
+        tasks: ['scsslint', 'sass', 'autoprefixer']
       },
       svg: {
         files: [
