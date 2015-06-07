@@ -1,11 +1,13 @@
 // Settings
 
-@import 'variables';
-@import 'colors';
+@import
+'variables',
+'colors';
 
 // Mixins
 
-@import 'helpers/mixins';
+@import
+'helpers/mixins';
 
 // Base
 
@@ -13,34 +15,38 @@
 
 // Modules
 
-@import 'modules/breadcrumb';
-@import 'modules/buttons';
-@import 'modules/embed';
-@import 'modules/forms';
-@import 'modules/gallery';
-@import 'modules/media';
-@import 'modules/navs';
-@import 'modules/pagination';
-@import 'modules/search';
-@import 'modules/tables';
-@import 'modules/tags';
+@import
+'modules/breadcrumb',
+'modules/buttons',
+'modules/embed',
+'modules/forms',
+'modules/gallery',
+'modules/media',
+'modules/navs',
+'modules/pagination',
+'modules/search',
+'modules/tables',
+'modules/tags';
 
 // Layout
 
-@import 'layout/header';
-@import 'layout/container';
-@import 'layout/main';
-@import 'layout/left';
-@import 'layout/right';
-@import 'layout/footer';
+@import
+'layout/header',
+'layout/container',
+'layout/main',
+'layout/left',
+'layout/right',
+'layout/footer';
 
 // Helpers
 
-@import 'helpers/animations';
-@import 'helpers/grid';
-@import 'helpers/icons';
-@import 'helpers/utilities';
+@import
+'helpers/animations',
+'helpers/grid',
+'helpers/icons',
+'helpers/utilities';
 
 // Print
 
-@import 'print';
+@import
+'print';
