@@ -569,6 +569,9 @@ video {
             align-items: center; }
   .media__obj {
     margin-bottom: 1.5rem; }
+    @media (min-width: 30rem) {
+      .media__obj--left, .media__obj--right {
+        max-width: 50%; } }
     .media__obj--left {
       margin-right: 1rem; }
     .media__obj--right {
@@ -650,24 +653,6 @@ video {
     .table {
       -webkit-overflow-scrolling: none;
       overflow-x: none; } }
-
-.tags {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin: 0 -.5rem; }
-  .tags:before, .tags:after {
-    content: ' ';
-    display: table; }
-  .tags:after {
-    clear: both; }
-  .tags > li {
-    margin: 0; }
-  .tags li {
-    float: left;
-    margin: 0 .5rem; }
-    .tags li:before {
-      content: '#'; }
 
 .site__header {
   background: inherit;
