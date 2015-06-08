@@ -704,76 +704,63 @@ video {
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite; }
 
-.container {
+.grid__container {
   margin: 0 auto;
   max-width: 78rem;
   width: 90%; }
-  .container:before, .container:after {
+  .grid__container:before, .grid__container:after {
     content: ' ';
     display: table; }
-  .container:after {
+  .grid__container:after {
     clear: both; }
-
-.row {
+.grid__row {
   margin: 0 -1%; }
-  .row:before, .row:after {
+  .grid__row:before, .grid__row:after {
     content: ' ';
     display: table; }
-  .row:after {
+  .grid__row:after {
     clear: both; }
-
-.col--1, .col--2, .col--3, .col--4, .col--5, .col--6, .col--7, .col--8, .col--9, .col--10, .col--11, .col--12 {
+.grid__col {
   margin: 0 1%;
   min-height: 1px; }
+  @media (min-width: 40rem) {
+    .grid__col--1 {
+      float: left;
+      width: 6.33333%; }
+    .grid__col--2 {
+      float: left;
+      width: 14.66667%; }
+    .grid__col--3 {
+      float: left;
+      width: 23%; }
+    .grid__col--4 {
+      float: left;
+      width: 31.33333%; }
+    .grid__col--5 {
+      float: left;
+      width: 39.66667%; }
+    .grid__col--6 {
+      float: left;
+      width: 48%; }
+    .grid__col--7 {
+      float: left;
+      width: 56.33333%; }
+    .grid__col--8 {
+      float: left;
+      width: 64.66667%; }
+    .grid__col--9 {
+      float: left;
+      width: 73%; }
+    .grid__col--10 {
+      float: left;
+      width: 81.33333%; }
+    .grid__col--11 {
+      float: left;
+      width: 89.66667%; }
+    .grid__col--12 {
+      float: left;
+      width: 98%; } }
 
-@media (min-width: 40rem) {
-  .col--1 {
-    float: left;
-    width: 6.33333%; }
-
-  .col--2 {
-    float: left;
-    width: 14.66667%; }
-
-  .col--3 {
-    float: left;
-    width: 23%; }
-
-  .col--4 {
-    float: left;
-    width: 31.33333%; }
-
-  .col--5 {
-    float: left;
-    width: 39.66667%; }
-
-  .col--6 {
-    float: left;
-    width: 48%; }
-
-  .col--7 {
-    float: left;
-    width: 56.33333%; }
-
-  .col--8 {
-    float: left;
-    width: 64.66667%; }
-
-  .col--9 {
-    float: left;
-    width: 73%; }
-
-  .col--10 {
-    float: left;
-    width: 81.33333%; }
-
-  .col--11 {
-    float: left;
-    width: 89.66667%; }
-
-  .col--12 {
-    float: left;
-    width: 98%; } }
 .icons {
   display: none; }
 
