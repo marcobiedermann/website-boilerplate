@@ -162,35 +162,6 @@ module.exports = function(grunt) {
       ]
     },
 
-    parker: {
-      options: {
-        metrics: [
-          'TotalStylesheets',
-          'TotalStylesheetSize',
-          'TotalRules',
-          'TotalSelectors',
-          'TotalIdentifiers',
-          'TotalDeclarations',
-          'SelectorsPerRule',
-          'IdentifiersPerSelector',
-          'SpecificityPerSelector',
-          'TopSelectorSpecificity',
-          'TopSelectorSpecificitySelector',
-          'TotalIdSelectors',
-          'TotalUniqueColours',
-          'UniqueColours',
-          'TotalImportantKeywords',
-          'TotalMediaQueries',
-          'MediaQueries'
-        ],
-        colophon: true,
-        file: 'log/<%= new Date().getTime() %>-report.md'
-      },
-      src: [
-        '<%= config.source %>/css/**/*.css'
-      ]
-    },
-
     sass: {
       files: {
         expand: true,
@@ -320,18 +291,6 @@ module.exports = function(grunt) {
     // Linting
     'jshint',
     'scsslint'
-  ]);
-
-  grunt.registerTask('analyze', [
-    // Linting,
-    'scsslint',
-
-    // CSS,
-    'sass',
-    'autoprefixer',
-
-    // Analyze
-    'parker'
   ]);
 
   grunt.registerTask('build', [
