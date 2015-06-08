@@ -34,15 +34,15 @@
   input[type="time"],
   input[type="url"],
   input[type="week"] {
-    background-color: $color-input-bg;
-    border: 1px solid $color-border;
+    background-color: $input-bgcolor;
+    border: 1px solid $border-color;
     height: $base-line-height + (.25em * 2);
     padding: .25rem .5rem;
     width: 100%;
 
     &:focus,
     &:hover {
-      border-color: $color-border-hover;
+      border-color: $border-color-hover;
     }
 
   }
@@ -61,12 +61,12 @@
 
     &[type="reset"],
     &[type="submit"] {
-      background-color: $color-primary;
+      background-color: $primary-color;
       padding: .25rem 1rem;
 
       &:focus,
       &:hover {
-        background-color: $color-primary-hover;
+        background-color: $primary-color-hover;
       }
 
     }

@@ -18,16 +18,16 @@ $font-size-h6: .75rem;
 $font-weight-headings: 700;
 
 $font-size-headings: (
-	$font-size-h1,
-	$font-size-h2,
-	$font-size-h3,
-	$font-size-h4,
-	$font-size-h5,
-	$font-size-h6
+  $font-size-h1,
+  $font-size-h2,
+  $font-size-h3,
+  $font-size-h4,
+  $font-size-h5,
+  $font-size-h6
 );
 
-$font-family-code: 'Courier New';
-$font-family-code-fallback: monospace;
+$code-font-family: 'Courier New';
+$code-font-family-fallback: monospace;
 
 // Spacing
 
@@ -38,8 +38,8 @@ $rtl: false;
 // Grid
 
 $grid-columns: 12;
-$grid-gutter: 2%;
 $grid-container: 78rem;
+$grid-gutter: 2%;
 
 // Media Queries
 

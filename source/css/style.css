@@ -371,7 +371,7 @@ video {
   padding: .5rem 1rem; }
   .btn:focus, .btn:hover {
     background: #798d8f;
-    color: #fff; }
+    color: #798d8f; }
   .btn--large {
     font-size: 2rem; }
   .btn--small {

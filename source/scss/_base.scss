@@ -14,8 +14,8 @@
 }
 
 ::selection {
-  background: $color-base;
-  color: $color-base-bg;
+  background: $base-color;
+  color: $base-bgcolor;
   text-shadow: none;
 }
 
@@ -36,8 +36,8 @@ html {
 }
 
 body {
-  background: $color-base-bg;
-  color: $color-base;
+  background: $base-bgcolor;
+  color: $base-color;
   display: flex;
   flex-direction: column;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, $base-font-family-fallback;
@@ -77,17 +77,17 @@ audio:not([controls]) {
 a {
   background: transparent;
   border: 0;
-  color: $color-link;
+  color: $link-color;
   text-decoration: none;
   transition: background-color .3s, color .3s;
 
   &:active {
-    color: $color-link-active;
+    color: $link-color-active;
   }
 
   &:focus,
   &:hover {
-    color: $color-link-hover;
+    color: $link-color-hover;
   }
 
   &:focus {
@@ -147,7 +147,7 @@ canvas {
 }
 
 code {
-  font-family: $font-family-code, $font-family-code-fallback;
+  font-family: $code-font-family, $code-font-family-fallback;
   font-size: 1rem;
 }
 
@@ -198,7 +198,7 @@ footer {
 }
 
 %headings {
-  color: inherit;
+  color: $heading-color;
   font-family: $font-family-headings, $base-font-family-fallback;
   font-weight: $font-weight-headings;
 }
@@ -215,7 +215,7 @@ footer {
 }
 
 hr {
-  background-color: $color-border;
+  background-color: $border-color;
   border: 0;
   box-sizing: content-box;
   height: 1px;
@@ -236,7 +236,7 @@ textarea {
   color: inherit;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, $base-font-family-fallback;
   margin: 0;
-  outline-color: $color-primary;
+  outline-color: $primary-color;
   padding: 0;
   transition: all .3s;
 }
@@ -245,7 +245,7 @@ input,
 textarea {
 
   &::placeholder {
-    color: $color-placeholder;
+    color: $placeholder-color;
   }
 
 }
@@ -255,13 +255,13 @@ input {
   &[type="reset"],
   &[type="submit"] {
     -webkit-appearance: button;
-    background: $color-btn-bg;
-    color: $color-btn;
+    background: $btn-bgcolor;
+    color: $btn-color;
     cursor: pointer;
 
     &:focus,
     &:hover {
-      background: $color-btn-hover-bg;
+      background: $btn-bgcolor-hover;
     }
 
   }

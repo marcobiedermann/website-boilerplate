@@ -1,13 +1,13 @@
 .btn {
-  background: $color-btn-bg;
-  color: $color-btn;
+  background: $btn-bgcolor;
+  color: $btn-color;
   display: inline-block;
   padding: .5rem 1rem;
 
   &:focus,
   &:hover {
-    background: $color-btn-hover-bg;
-    color: $color-btn-hover;
+    background: $btn-bgcolor-hover;
+    color: $btn-bgcolor-hover;
   }
 
   &--large {
@@ -35,51 +35,51 @@
   }
 
   &--primary {
-    background: $color-primary;
+    background: $primary-color;
 
     &:focus,
     &:hover {
-      background: $color-primary-hover;
+      background: $primary-color-hover;
     }
 
   }
 
   &--secondary {
-    background: $color-secondary;
+    background: $secondary-color;
 
     &:focus,
     &:hover {
-      background: $color-secondary-hover;
+      background: $secondary-color-hover;
     }
 
   }
 
   &--success {
-    background: $color-success;
+    background: $success-color;
 
     &:focus,
     &:hover {
-      background: $color-success-hover;
+      background: $success-color-hover;
     }
 
   }
 
   &--warning {
-    background: $color-warning;
+    background: $warning-color;
 
     &:focus,
     &:hover {
-      background: $color-warning-hover;
+      background: $warning-color-hover;
     }
 
   }
 
   &--error {
-    background: $color-error;
+    background: $error-color;
 
     &:focus,
     &:hover {
-      background: $color-error-hover;
+      background: $error-color-hover;
     }
 
   }
