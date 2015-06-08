@@ -632,10 +632,6 @@ video {
   .pagination .next {
     float: right; }
 
-.form-search .input-search,
-.form-search .input-submit {
-  float: left; }
-
 .table {
   margin-bottom: 3rem;
   -webkit-overflow-scrolling: touch;
