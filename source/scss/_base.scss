@@ -212,7 +212,7 @@ footer {
   h#{$i} {
     @extend %headings;
     font-size: nth($font-size-headings, $i);
-    line-height: 1.2em;
+    line-height: 1.2;
     margin: 0 0 .5rem;
   }
 
