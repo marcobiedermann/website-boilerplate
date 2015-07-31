@@ -117,7 +117,7 @@ canvas {
 
 code {
   font-family: "Courier New", monospace;
-  font-size: 1rem; }
+  font-size: .75rem; }
 
 details {
   margin: 0 0 1.5rem; }
@@ -298,9 +298,11 @@ p {
   margin: 0 0 1.5rem; }
 
 pre {
+  background-color: #fff;
   display: block;
   margin: 0 0 1.5rem;
   overflow: auto;
+  padding: 1rem;
   word-break: break-all;
   word-wrap: break-word; }
 
