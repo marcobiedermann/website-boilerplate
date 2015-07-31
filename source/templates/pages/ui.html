@@ -132,12 +132,15 @@ description: "Description goes here"
       <div class="media__body">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
 
       </div>
 
     </div>
+
+    <pre><code>&lt;div class="media"&gt;
+  &lt;div class="media__obj media__obj--left"&gt;…&lt;/div&gt;
+  &lt;div class="media__body"&gt;…&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
     <h3>Media Right</h3>
 
@@ -150,30 +153,36 @@ description: "Description goes here"
       <div class="media__body">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
 
       </div>
 
     </div>
 
+        <pre><code>&lt;div class="media"&gt;
+  &lt;div class="media__obj media__obj--right"&gt;…&lt;/div&gt;
+  &lt;div class="media__body"&gt;…&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
     <h3>Media Center</h3>
 
     <div class="media media--center">
 
-      <figure class="media__obj media__obj--right">
+      <figure class="media__obj media__obj--left">
         <a href="#"><img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48"></a>
       </figure>
 
       <div class="media__body">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
 
       </div>
 
     </div>
+
+        <pre><code>&lt;div class="media media--center"&gt;
+  &lt;div class="media__obj media__obj--left"&gt;…&lt;/div&gt;
+  &lt;div class="media__body"&gt;…&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
     <h3>Media Nested</h3>
 
@@ -186,8 +195,6 @@ description: "Description goes here"
       <div class="media__body">
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
 
         <div class="media">
 
@@ -198,8 +205,6 @@ description: "Description goes here"
           <div class="media__body">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illum, facilis minima natus ipsam recusandae iste quis praesentium perspiciatis incidunt eius adipisci at voluptate sed atque inventore maiores quos eaque!</p>
 
           </div>
 
@@ -208,6 +213,18 @@ description: "Description goes here"
       </div>
 
     </div>
+
+    <pre><code>&lt;div class="media"&gt;
+  &lt;div class="media__obj media__obj--left"&gt;…&lt;/div&gt;
+  &lt;div class="media__body"&gt;
+
+    &lt;div class="media"&gt;
+      &lt;div class="media__obj media__obj--left"&gt;…&lt;/div&gt;
+      &lt;div class="media__body"&gt;…&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
   </section>
 
@@ -397,6 +414,16 @@ description: "Description goes here"
 
     </div>
 
+    <pre><code>&lt;div class="gallery"&gt;
+  &lt;ul class="images"&gt;
+    &lt;li&gt;
+      &lt;figure&gt;
+        &lt;a href="#" title=""&gt;&lt;img src="" width="" height="" alt=""&gt;&lt;/a&gt;
+      &lt;/figure&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
   </section>
 
   <section id="media">
@@ -466,6 +493,10 @@ description: "Description goes here"
       <param name="quality" value="high">
     </object>
 
+    <pre><code>&lt;div class="embed embed--16-9"&gt;
+  …
+&lt;/div&gt;</code></pre>
+
   </section>
 
   <section id="buttons">
@@ -482,6 +513,15 @@ description: "Description goes here"
     <button class="btn btn--success">Button</button>
     <button class="btn btn--warning">Button</button>
     <button class="btn btn--error">Button</button>
+
+    <pre><code>&lt;button class="btn&gt;Button&lt;/button&gt;
+&lt;button class="btn btn--rounded&gt;Button Rounded&lt;/button&gt;
+&lt;button class="btn btn--pill&gt;Button Pill&lt;/button&gt;
+&lt;button class="btn btn--primary&gt;Button Primary&lt;/button&gt;
+&lt;button class="btn btn--secondary&gt;Button Secondary&lt;/button&gt;
+&lt;button class="btn btn--success&gt;Button Success&lt;/button&gt;
+&lt;button class="btn btn--warning&gt;Button Warning&lt;/button&gt;
+&lt;button class="btn btn--error&gt;Button Error&lt;/button&gt;</code></pre>
 
   </section>
 
@@ -826,6 +866,13 @@ description: "Description goes here"
 
     </form>
 
+    <pre><code>&lt;form class="form"&gt;
+  &lt;div class="form__field"&gt;
+  &lt;label for=""&gt;Label&lt;/label&gt;
+  &lt;input type="text" name=""&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
   </section>
 
   <section>
@@ -874,6 +921,12 @@ description: "Description goes here"
 
     </nav>
 
+    <pre><code>&lt;nav class="navigation"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
     <h3>Navigation Dropdown Right</h3>
 
     <nav class="nav nav--dropdown nav--dropdown--right">
@@ -914,6 +967,12 @@ description: "Description goes here"
       </ul>
     </nav>
 
+    <pre><code>&lt;nav class="breadcrumb"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
     <h3>Pagination</h3>
 
     <ul class="pagination">
@@ -923,6 +982,12 @@ description: "Description goes here"
       <li><a href="#">3</a></li>
       <li class="next"><a href="#">→</a></li>
     </ul>
+
+    <pre><code>&lt;ul class="pagination"&gt;
+  &lt;li class="prev"&gt;&lt;a href="#"&gt;←&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="next"&gt;&lt;a href="#"&gt;→&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 
   </section>
 
@@ -1041,6 +1106,24 @@ description: "Description goes here"
       <div class="grid__col grid__col--12">col--12</div>
 
     </div>
+
+    <pre><code>&lt;div class="grid__row"&gt;
+  &lt;div class="grid__col grid__col--3"&gt;…&lt;/div&gt;
+  &lt;div class="grid__col grid__col--3"&gt;…&lt;/div&gt;
+  &lt;div class="grid__col grid__col--3"&gt;…&lt;/div&gt;
+  &lt;div class="grid__col grid__col--3"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid__row"&gt;
+  &lt;div class="grid__col grid__col--4"&gt;…&lt;/div&gt;
+  &lt;div class="grid__col grid__col--4"&gt;…&lt;/div&gt;
+  &lt;div class="grid__col grid__col--4"&gt;…&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="grid__row"&gt;
+  &lt;div class="grid__col grid__col--6"&gt;…&lt;/div&gt;
+  &lt;div class="grid__col grid__col--6"&gt;…&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
   </section>
 
