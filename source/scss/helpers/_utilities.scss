@@ -27,16 +27,20 @@
 
 // Typography //
 
-.lower {
-  text-transform: lowercase;
-}
+.text {
 
-.upper {
-  text-transform: uppercase;
-}
+  &--lower {
+    text-transform: lowercase;
+  }
 
-.text-center {
-  text-align: center;
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
 }
 
 // Visual //
