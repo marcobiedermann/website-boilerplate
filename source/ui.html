@@ -809,6 +809,13 @@ add(a, b);</code></pre>
             </fieldset>
           </form>
 
+          <pre><code>&lt;form class="form"&gt;
+  &lt;div class="form__field"&gt;
+    &lt;label for=""&gt;Label&lt;/label&gt;
+    &lt;input type="text" name=""&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
           <h3>Login</h3>
 
           <form action="#" class="form form-login">
@@ -836,11 +843,38 @@ add(a, b);</code></pre>
             </fieldset>
           </form>
 
-          <pre><code>&lt;form class="form"&gt;
-  &lt;div class="form__field"&gt;
-    &lt;label for=""&gt;Label&lt;/label&gt;
-    &lt;input type="text" name=""&gt;
-  &lt;/div&gt;
+          <h3>Search</h3>
+
+          <form action="#" class="form form-login" itemscope itemtype="http://schema.org/SearchAction">
+            <meta itemprop="target" content="http://www.example.com/search?q={query}">
+            <fieldset>
+
+              <div class="form__field">
+                <label>Search</label>
+                <input type="search" name="query" itemprop="query-input">
+              </div>
+
+              <div class="form__field">
+                <input type="submit" value="Search">
+              </div>
+
+            </fieldset>
+          </form>
+
+        <pre><code>&lt;form action="#" method="get" class="form form-login" itemscope itemtype="http://schema.org/SearchAction"&gt;
+  &lt;meta itemprop="target" content="http://www.example.com/search?q={query}"&gt;
+  &lt;fieldset&gt;
+
+    &lt;div class="form__field"&gt;
+      &lt;label&gt;Search&lt;/label&gt;
+      &lt;input type="search" name="query" itemprop="query-input"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="form__field"&gt;
+      &lt;input type="submit" value="Search"&gt;
+    &lt;/div&gt;
+
+  &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
 
         </section>
