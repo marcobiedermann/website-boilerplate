@@ -1011,19 +1011,55 @@ add(a, b);</code></pre>
 
           <h3>Breadcrumb</h3>
 
-          <nav class="breadcrumb">
-            <ul>
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 2</a></li>
-              <li><a href="#">Level 3</a></li>
-            </ul>
-          </nav>
+          <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
 
-          <pre><code>&lt;nav class="breadcrumb"&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#" itemprop="item">
+                <span itemprop="name">Level 1</span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#" itemprop="item">
+                <span itemprop="name">Level 2</span>
+              </a>
+              <meta itemprop="position" content="2">
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="#" itemprop="item">
+                <span itemprop="name">Level 3</span>
+              </a>
+              <meta itemprop="position" content="3">
+            </li>
+
+          </ol>
+
+          <pre><code>&lt;ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"&gt;
+
+  &lt;li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"&gt;
+    &lt;a href="#" itemprop="item"&gt;
+      &lt;span itemprop="name"&gt;Level 1&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;meta itemprop="position" content="1"&gt;
+  &lt;/li&gt;
+
+  &lt;li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"&gt;
+    &lt;a href="#" itemprop="item"&gt;
+      &lt;span itemprop="name"&gt;Level 2&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;meta itemprop="position" content="2"&gt;
+  &lt;/li&gt;
+
+  &lt;li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"&gt;
+    &lt;a href="#" itemprop="item"&gt;
+      &lt;span itemprop="name"&gt;Level 3&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;meta itemprop="position" content="3"&gt;
+  &lt;/li&gt;
+
+&lt;/ol&gt;</code></pre>
 
           <h3>Pagination</h3>
 
