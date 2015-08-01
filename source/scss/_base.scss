@@ -148,7 +148,7 @@ canvas {
 
 code {
   font-family: $code-font-family, $code-font-family-fallback;
-  font-size: .75rem;
+  font-size: .75em;
 }
 
 details {
@@ -340,7 +340,6 @@ pre {
   overflow: auto;
   padding: 1rem;
   word-break: break-all;
-  word-wrap: break-word;
 }
 
 q {
