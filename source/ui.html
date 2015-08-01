@@ -943,37 +943,51 @@ add(a, b);</code></pre>
 
           <h3>Navigation Dropdown</h3>
 
-          <nav class="nav nav--inline nav--dropdown" role="navigation">
-
+          <nav class="nav nav--inline nav--dropdown" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
-              <li><a href="#">Level 1 Item 1</a></li>
-              <li><a href="#">Level 1 Item 2</a></li>
-              <li><a href="#" aria-haspopup="true">Level 1 Item 3</a>
-                <ul aria-hidden="true" aria-label="submenu">
-                  <li><a href="#">Level 2 Item 1</a></li>
-                  <li><a href="#">Level 2 Item 2</a></li>
-                  <li><a href="#" aria-haspopup="true">Level 2 Item 3</a>
-                    <ul aria-hidden="true" aria-label="submenu">
-                      <li><a href="#">Level 3 Item 1</a></li>
-                      <li><a href="#">Level 3 Item 2</a></li>
-                      <li><a href="#">Level 3 Item 3</a></li>
-                      <li><a href="#">Level 3 Item 4</a></li>
-                      <li><a href="#">Level 3 Item 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Level 2 Item 4</a></li>
-                  <li><a href="#">Level 2 Item 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Level 1 Item 4</a></li>
-              <li><a href="#">Level 1 Item 5</a></li>
-            </ul>
+              <li><a href="#" itemprop="url"><span itemprop="name">Level 1 Item 1</span></a></li>
+              <li><a href="#" aria-haspopup="true" itemprop="url"><span itemprop="name">Level 1 Item 2</span></a>
 
+                <ul aria-hidden="true" aria-label="submenu">
+                  <li><a href="#" itemprop="url"><span itemprop="name">Level 2 Item 1</span></a></li>
+                  <li><a href="#" aria-haspopup="true" itemprop="url"><span itemprop="name">Level 2 Item 2</span></a>
+
+                    <ul aria-hidden="true" aria-label="submenu">
+                      <li><a href="#" itemprop="url"><span itemprop="name">Level 3 Item 1</span></a></li>
+                      <li><a href="#" itemprop="url"><span itemprop="name">Level 3 Item 2</span></a></li>
+                      <li><a href="#" itemprop="url"><span itemprop="name">Level 3 Item 3</span></a></li>
+                    </ul>
+
+                  </li>
+                  <li><a href="#" itemprop="url"><span itemprop="name">Level 2 Item 3</span></a></li>
+                </ul>
+
+              </li>
+              <li><a href="#" itemprop="url"><span itemprop="name">Level 1 Item 3</span></a></li>
+            </ul>
           </nav>
 
-          <pre><code>&lt;nav class="navigation"&gt;
+          <pre><code>&lt;nav class="nav nav--inline nav--dropdown" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement"&gt;
   &lt;ul&gt;
-    &lt;li&gt;&lt;a href="#"&gt;Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 1 Item 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-haspopup="true" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 1 Item 2&lt;/span&gt;&lt;/a&gt;
+
+      &lt;ul aria-hidden="true" aria-label="submenu"&gt;
+        &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 2 Item 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" aria-haspopup="true" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 2 Item 2&lt;/span&gt;&lt;/a&gt;
+
+          &lt;ul aria-hidden="true" aria-label="submenu"&gt;
+            &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 3 Item 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 3 Item 2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 3 Item 3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 2 Item 3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 1 Item 3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 
