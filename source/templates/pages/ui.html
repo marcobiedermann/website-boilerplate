@@ -48,16 +48,23 @@ description: "Description goes here"
 
           <h3>Address</h3>
 
-          <address>
-
+          <address itemtype="http://schema.org/PostalAddress" itemscope itemprop="address">
             <p>
-              <strong>Company Name</strong><br>
-              Address <br>
-              Zip <br>
-              Country <br>
+              <strong itemprop="name">Company Name</strong><br>
+              <span itemprop="streetAddress">Address</span><br>
+              <span itemprop="postalCode">ZIP</span><br>
+              <span itemprop="addressCountry">Country</span>
             </p>
-
           </address>
+
+          <pre><code>&lt;address itemtype="http://schema.org/PostalAddress" itemscope itemprop="address"&gt;
+  &lt;p&gt;
+    &lt;strong itemprop="name"&gt;Company Name&lt;/strong&gt;&lt;br&gt;
+    &lt;span itemprop="streetAddress"&gt;Address&lt;/span&gt;&lt;br&gt;
+    &lt;span itemprop="postalCode"&gt;ZIP&lt;/span&gt;&lt;br&gt;
+    &lt;span itemprop="addressCountry"&gt;Country&lt;/span&gt;
+  &lt;/p&gt;
+&lt;/address&gt;</code></pre>
 
           <h3>Quotations</h3>
 
