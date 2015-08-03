@@ -197,9 +197,9 @@ hr {
   margin: 0 0 1.5rem; }
 
 img {
-  display: block;
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  vertical-align: middle; }
 
 meter,
 progress {
