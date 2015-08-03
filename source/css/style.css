@@ -743,9 +743,6 @@ th {
       float: left;
       width: 98%; } }
 
-.icons {
-  display: none; }
-
 .icon {
   display: inline-block;
   fill: #303030;
