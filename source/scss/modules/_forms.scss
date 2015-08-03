@@ -11,7 +11,8 @@ $placeholder-color: $border-color;
 input,
 select,
 textarea {
-  border: 0;
+  background-color: $input-bgcolor;
+  border: 1px solid $border-color;
   border-radius: 0;
   color: inherit;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, $base-font-family-fallback;
@@ -19,6 +20,12 @@ textarea {
   outline-color: $primary-color;
   padding: 0;
   transition: all .3s;
+
+  &:focus,
+  &:hover {
+    border-color: $border-color-hover;
+  }
+
 }
 
 input,
@@ -112,17 +119,9 @@ legend {
   input[type="time"],
   input[type="url"],
   input[type="week"] {
-    background-color: $input-bgcolor;
-    border: 1px solid $border-color;
     height: $base-line-height + (.25em * 2);
     padding: .25rem .5rem;
     width: 100%;
-
-    &:focus,
-    &:hover {
-      border-color: $border-color-hover;
-    }
-
   }
 
   textarea {

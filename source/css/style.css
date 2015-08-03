@@ -357,7 +357,8 @@ pre {
 input,
 select,
 textarea {
-  border: 0;
+  background-color: #e8e8e8;
+  border: 1px solid #bdbdbd;
   border-radius: 0;
   color: inherit;
   font: 400 1rem/1.5 Arial, sans-serif;
@@ -365,6 +366,12 @@ textarea {
   outline-color: #2e719e;
   padding: 0;
   transition: all .3s; }
+  input:focus, input:hover,
+  select:focus,
+  select:hover,
+  textarea:focus,
+  textarea:hover {
+    border-color: #8a8a8a; }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -448,49 +455,9 @@ legend {
   .form input[type="time"],
   .form input[type="url"],
   .form input[type="week"] {
-    background-color: #e8e8e8;
-    border: 1px solid #bdbdbd;
     height: 2em;
     padding: .25rem .5rem;
     width: 100%; }
-    .form select:focus, .form select:hover,
-    .form textarea:focus,
-    .form textarea:hover,
-    .form input[type="color"]:focus,
-    .form input[type="color"]:hover,
-    .form input[type="date"]:focus,
-    .form input[type="date"]:hover,
-    .form input[type="datetime"]:focus,
-    .form input[type="datetime"]:hover,
-    .form input[type="datetime-local"]:focus,
-    .form input[type="datetime-local"]:hover,
-    .form input[type="email"]:focus,
-    .form input[type="email"]:hover,
-    .form input[type="file"]:focus,
-    .form input[type="file"]:hover,
-    .form input[type="month"]:focus,
-    .form input[type="month"]:hover,
-    .form input[type="number"]:focus,
-    .form input[type="number"]:hover,
-    .form input[type="output"]:focus,
-    .form input[type="output"]:hover,
-    .form input[type="password"]:focus,
-    .form input[type="password"]:hover,
-    .form input[type="range"]:focus,
-    .form input[type="range"]:hover,
-    .form input[type="search"]:focus,
-    .form input[type="search"]:hover,
-    .form input[type="tel"]:focus,
-    .form input[type="tel"]:hover,
-    .form input[type="text"]:focus,
-    .form input[type="text"]:hover,
-    .form input[type="time"]:focus,
-    .form input[type="time"]:hover,
-    .form input[type="url"]:focus,
-    .form input[type="url"]:hover,
-    .form input[type="week"]:focus,
-    .form input[type="week"]:hover {
-      border-color: #8a8a8a; }
   .form textarea {
     height: 6rem; }
   .form input[type="checkbox"], .form input[type="radio"] {
