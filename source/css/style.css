@@ -283,47 +283,47 @@ video {
     display: block;
     padding: .25rem .5rem; }
 
-.btn {
+.button {
   background: #95a5a6;
   color: #fff;
   display: inline-block;
   padding: .5rem 1rem; }
-  .btn:focus, .btn:hover {
+  .button:focus, .button:hover {
     background: #798d8f;
     color: #798d8f; }
-  .btn--large {
+  .button--large {
     font-size: 2rem; }
-  .btn--small {
+  .button--small {
     font-size: .75rem; }
-  .btn--rounded {
+  .button--rounded {
     border-radius: .5rem; }
-  .btn--pill {
+  .button--pill {
     border-radius: 9999px; }
-  .btn--full {
+  .button--full {
     display: block;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
     width: 100%; }
-  .btn--primary {
+  .button--primary {
     background: #2e719e; }
-    .btn--primary:focus, .btn--primary:hover {
+    .button--primary:focus, .button--primary:hover {
       background: #235577; }
-  .btn--secondary {
+  .button--secondary {
     background: #964db3; }
-    .btn--secondary:focus, .btn--secondary:hover {
+    .button--secondary:focus, .button--secondary:hover {
       background: #783d90; }
-  .btn--success {
+  .button--success {
     background: #367d53; }
-    .btn--success:focus, .btn--success:hover {
+    .button--success:focus, .button--success:hover {
       background: #27593b; }
-  .btn--warning {
+  .button--warning {
     background: #f1c40f; }
-    .btn--warning:focus, .btn--warning:hover {
+    .button--warning:focus, .button--warning:hover {
       background: #c29d0b; }
-  .btn--error {
+  .button--error {
     background: #b83c2e; }
-    .btn--error:focus, .btn--error:hover {
+    .button--error:focus, .button--error:hover {
       background: #8f2f24; }
 
 code {

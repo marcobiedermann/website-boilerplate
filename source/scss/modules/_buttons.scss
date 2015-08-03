@@ -1,18 +1,18 @@
-$btn-bgcolor: #95a5a6;
-$btn-bgcolor-hover: darken($btn-bgcolor, 10%);
-$btn-color: #fff;
-$btn-color-hover: darken($btn-color, 10%);
+$button-bgcolor: #95a5a6;
+$button-bgcolor-hover: darken($button-bgcolor, 10%);
+$button-color: #fff;
+$button-color-hover: darken($button-color, 10%);
 
-.btn {
-  background: $btn-bgcolor;
-  color: $btn-color;
+.button {
+  background: $button-bgcolor;
+  color: $button-color;
   display: inline-block;
   padding: .5rem 1rem;
 
   &:focus,
   &:hover {
-    background: $btn-bgcolor-hover;
-    color: $btn-bgcolor-hover;
+    background: $button-bgcolor-hover;
+    color: $button-bgcolor-hover;
   }
 
   &--large {
