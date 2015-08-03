@@ -4,7 +4,11 @@
 ## Requirements
 
 ## Installation
+* Install Node DevDependencies via `npm install`
 
 ## Usage
+* Development: `grunt`
+* Testing: `grunt test`
+* Production: `grunt build`
 
 ## Copyright
