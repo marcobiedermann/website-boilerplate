@@ -1,48 +1,46 @@
 // Fonts
-
 $root-font-size: 100%;
 
+$base-bgcolor: #fafafa;
+$base-color: #303030;
 $base-font-family: Arial;
 $base-font-family-fallback: sans-serif;
 $base-font-size: 1rem;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
-$font-family-headings: inherit;
-$font-size-h1: 2rem;
-$font-size-h2: 1.5rem;
-$font-size-h3: 1.25rem;
-$font-size-h4: 1rem;
-$font-size-h5: .875rem;
-$font-size-h6: .75rem;
-$font-weight-headings: 700;
+// Headings
+$heading-color: inherit;
+$headings-font-family: inherit;
+$headings-font-weight: 700;
 
-$font-size-headings: (
-  $font-size-h1,
-  $font-size-h2,
-  $font-size-h3,
-  $font-size-h4,
-  $font-size-h5,
-  $font-size-h6
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$h5-font-size: .875rem;
+$h6-font-size: .75rem;
+
+$headings-font-size: (
+  $h1-font-size,
+  $h2-font-size,
+  $h3-font-size,
+  $h4-font-size,
+  $h5-font-size,
+  $h6-font-size
 );
 
+// Code
+$code-bgcolor: #fff;
 $code-font-family: 'Courier New';
 $code-font-family-fallback: monospace;
 
 // Spacing
-
 $margin-element-bottom: 3rem;
 
 $rtl: false;
 
-// Grid
-
-$grid-columns: 12;
-$grid-container: 78rem;
-$grid-gutter: 2%;
-
 // Media Queries
-
 $media-micro: 20em; // 320
 $media-tiny: 30em; // 480
 $media-small: 48em; // 768
@@ -50,6 +48,38 @@ $media-medium: 60em; // 960
 $media-large: 80em; // 1280
 
 // Paths
-
 $path-fonts: '../fonts';
 $path-img: '../img';
+
+// Main Colors
+$primary-color: #2e719e;
+$primary-color-active: lighten($primary-color, 10%);
+$primary-color-hover: darken($primary-color, 10%);
+
+$secondary-color: #964db3;
+$secondary-color-active: lighten($secondary-color, 10%);
+$secondary-color-hover: darken($secondary-color, 10%);
+
+$success-color: #367d53;
+$success-color-active: lighten($success-color, 10%);
+$success-color-hover: darken($success-color, 10%);
+
+$warning-color: #f1c40f;
+$warning-color-active: lighten($warning-color, 10%);
+$warning-color-hover: darken($warning-color, 10%);
+
+$error-color: #b83c2e;
+$error-color-active: lighten($error-color, 10%);
+$error-color-hover: darken($error-color, 10%);
+
+// Links
+$link-color: $primary-color;
+$link-color-active: lighten($link-color, 10%);
+$link-color-hover: darken($link-color, 10%);
+
+// Border
+$border-color: #bdbdbd;
+$border-color-hover: darken($border-color, 20%);
+
+// Typography
+$subline-color: #808080;

@@ -1,3 +1,8 @@
+$btn-bgcolor: #95a5a6;
+$btn-bgcolor-hover: darken($btn-bgcolor, 10%);
+$btn-color: #fff;
+$btn-color-hover: darken($btn-color, 10%);
+
 .btn {
   background: $btn-bgcolor;
   color: $btn-color;

@@ -205,66 +205,6 @@ img {
   height: auto;
   max-width: 100%; }
 
-input,
-select,
-textarea {
-  border: 0;
-  border-radius: 0;
-  color: inherit;
-  font: 400 1rem/1.5 Arial, sans-serif;
-  margin: 0;
-  outline-color: #2e719e;
-  padding: 0;
-  transition: all .3s; }
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #bdbdbd; }
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #bdbdbd; }
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #bdbdbd; }
-
-input::placeholder,
-textarea::placeholder {
-  color: #bdbdbd; }
-
-input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  background: #95a5a6;
-  color: #fff;
-  cursor: pointer; }
-  input[type="reset"]:focus, input[type="reset"]:hover, input[type="submit"]:focus, input[type="submit"]:hover {
-    background: #798d8f; }
-input[type="search"] {
-  -webkit-appearance: textfield; }
-
-textarea {
-  max-width: 100%;
-  overflow: auto;
-  resize: none;
-  vertical-align: top;
-  width: 100%; }
-
-label {
-  color: inherit;
-  display: inline-block;
-  font: inherit;
-  margin: 0;
-  max-width: 100%;
-  padding: 0;
-  width: auto; }
-
-legend {
-  border: 0;
-  display: block;
-  padding: 0 .25rem;
-  position: relative; }
-
 meter,
 progress {
   width: 100%; }
@@ -426,6 +366,66 @@ video {
     position: absolute;
     top: 0;
     width: 100%; }
+
+input,
+select,
+textarea {
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font: 400 1rem/1.5 Arial, sans-serif;
+  margin: 0;
+  outline-color: #2e719e;
+  padding: 0;
+  transition: all .3s; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #bdbdbd; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #bdbdbd; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #bdbdbd; }
+
+input::placeholder,
+textarea::placeholder {
+  color: #bdbdbd; }
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  background: #95a5a6;
+  color: #fff;
+  cursor: pointer; }
+  input[type="reset"]:focus, input[type="reset"]:hover, input[type="submit"]:focus, input[type="submit"]:hover {
+    background: #798d8f; }
+input[type="search"] {
+  -webkit-appearance: textfield; }
+
+textarea {
+  max-width: 100%;
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+  width: 100%; }
+
+label {
+  color: inherit;
+  display: inline-block;
+  font: inherit;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: auto; }
+
+legend {
+  border: 0;
+  display: block;
+  padding: 0 .25rem;
+  position: relative; }
 
 .form {
   margin-bottom: 3rem; }

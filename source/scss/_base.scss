@@ -203,15 +203,15 @@ footer {
 
 %headings {
   color: $heading-color;
-  font-family: $font-family-headings, $base-font-family-fallback;
-  font-weight: $font-weight-headings;
+  font-family: $headings-font-family, $base-font-family-fallback;
+  font-weight: $headings-font-weight;
 }
 
-@for $i from 1 through length($font-size-headings) {
+@for $i from 1 through length($headings-font-size) {
 
   h#{$i} {
     @extend %headings;
-    font-size: nth($font-size-headings, $i);
+    font-size: nth($headings-font-size, $i);
     line-height: 1.2;
     margin: 0 0 .5rem;
   }
@@ -230,75 +230,6 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-}
-
-input,
-select,
-textarea {
-  border: 0;
-  border-radius: 0;
-  color: inherit;
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, $base-font-family-fallback;
-  margin: 0;
-  outline-color: $primary-color;
-  padding: 0;
-  transition: all .3s;
-}
-
-input,
-textarea {
-
-  &::placeholder {
-    color: $placeholder-color;
-  }
-
-}
-
-input {
-
-  &[type="reset"],
-  &[type="submit"] {
-    -webkit-appearance: button;
-    background: $btn-bgcolor;
-    color: $btn-color;
-    cursor: pointer;
-
-    &:focus,
-    &:hover {
-      background: $btn-bgcolor-hover;
-    }
-
-  }
-
-  &[type="search"] {
-    -webkit-appearance: textfield;
-  }
-
-}
-
-textarea {
-  max-width: 100%;
-  overflow: auto;
-  resize: none;
-  vertical-align: top;
-  width: 100%;
-}
-
-label {
-  color: inherit;
-  display: inline-block;
-  font: inherit;
-  margin: 0;
-  max-width: 100%;
-  padding: 0;
-  width: auto;
-}
-
-legend {
-  border: 0;
-  display: block;
-  padding: 0 .25rem;
-  position: relative;
 }
 
 meter,
