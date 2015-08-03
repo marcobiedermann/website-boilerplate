@@ -750,6 +750,13 @@ th {
   margin-left: auto;
   margin-right: auto; }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
 .text--lower {
   text-transform: lowercase; }
 .text--upper {
