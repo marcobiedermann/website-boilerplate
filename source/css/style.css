@@ -801,9 +801,6 @@ legend {
   position: absolute;
   top: -9999px; }
 
-.subline {
-  color: #808080; }
-
 @media print {
   * {
     background: transparent;
