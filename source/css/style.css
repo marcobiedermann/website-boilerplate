@@ -261,19 +261,6 @@ svg {
   svg:not(:root) {
     overflow: hidden; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin: 0 0 1.5rem;
-  text-align: left;
-  width: 100%; }
-
-caption,
-td,
-th {
-  padding: 0;
-  vertical-align: top; }
-
 video {
   height: auto;
   max-width: 100%; }
@@ -635,6 +622,19 @@ legend {
     float: left; }
   .pagination .next {
     float: right; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+  width: 100%; }
+
+caption,
+td,
+th {
+  padding: 0;
+  vertical-align: top; }
 
 .table {
   margin-bottom: 3rem;
