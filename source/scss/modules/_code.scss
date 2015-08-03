@@ -1,0 +1,17 @@
+$code-bgcolor: #fff;
+$code-font-family: 'Courier New';
+$code-font-family-fallback: monospace;
+
+code {
+  font-family: $code-font-family, $code-font-family-fallback;
+  font-size: .75em;
+}
+
+pre {
+  background-color: $code-bgcolor;
+  display: block;
+  margin: 0 0 1.5rem;
+  overflow: auto;
+  padding: 1rem;
+  word-break: break-all;
+}

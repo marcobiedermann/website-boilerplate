@@ -146,11 +146,6 @@ canvas {
   vertical-align: middle;
 }
 
-code {
-  font-family: $code-font-family, $code-font-family-fallback;
-  font-size: .75em;
-}
-
 details {
   margin: 0 0 1.5rem;
 }
@@ -262,15 +257,6 @@ ul {
 
 p {
   margin: 0 0 1.5rem;
-}
-
-pre {
-  background-color: $code-bgcolor;
-  display: block;
-  margin: 0 0 1.5rem;
-  overflow: auto;
-  padding: 1rem;
-  word-break: break-all;
 }
 
 q {

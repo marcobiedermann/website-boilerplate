@@ -115,10 +115,6 @@ button {
 canvas {
   vertical-align: middle; }
 
-code {
-  font-family: "Courier New", monospace;
-  font-size: .75em; }
-
 details {
   margin: 0 0 1.5rem; }
 
@@ -237,14 +233,6 @@ ul {
 p {
   margin: 0 0 1.5rem; }
 
-pre {
-  background-color: #fff;
-  display: block;
-  margin: 0 0 1.5rem;
-  overflow: auto;
-  padding: 1rem;
-  word-break: break-all; }
-
 q {
   quotes: '\201C' '\201D' '\2018' '\2019'; }
 
@@ -350,6 +338,18 @@ video {
     background: #b83c2e; }
     .btn--error:focus, .btn--error:hover {
       background: #8f2f24; }
+
+code {
+  font-family: "Courier New", monospace;
+  font-size: .75em; }
+
+pre {
+  background-color: #fff;
+  display: block;
+  margin: 0 0 1.5rem;
+  overflow: auto;
+  padding: 1rem;
+  word-break: break-all; }
 
 .embed {
   height: 0;
