@@ -536,7 +536,7 @@ video {
       .form .checkbox-container,
       .form .radio-container {
         width: 50%; } }
-    @media (min-width: 40rem) {
+    @media (min-width: 48rem) {
       .form .checkbox-container,
       .form .radio-container {
         width: 33.33333%; } }
@@ -610,7 +610,7 @@ video {
 .nav--dropdown li ul {
   display: none;
   position: absolute; }
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   .nav__btn {
     display: none; } }
 
@@ -649,7 +649,7 @@ video {
     padding: .5rem; }
   .table caption {
     font-weight: bold; }
-  @media (min-width: 40rem) {
+  @media (min-width: 48rem) {
     .table {
       -webkit-overflow-scrolling: none;
       overflow-x: none; } }
@@ -708,7 +708,7 @@ video {
 .grid__col {
   margin: 0 1%;
   min-height: 1px; }
-  @media (min-width: 40rem) {
+  @media (min-width: 48rem) {
     .grid__col--1 {
       float: left;
       width: 6.33333%; }
