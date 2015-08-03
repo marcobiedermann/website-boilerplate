@@ -615,9 +615,9 @@ legend {
   .pagination a {
     display: block;
     padding: .25rem .5rem; }
-  .pagination .prev {
+  .pagination__previous {
     float: left; }
-  .pagination .next {
+  .pagination__next {
     float: right; }
 
 table {
