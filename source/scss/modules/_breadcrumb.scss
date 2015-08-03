@@ -1,10 +1,7 @@
 .breadcrumb {
-
-  ul {
-    @include clearfix();
-    @include list-unstyled();
-    margin: 0 -.5rem;
-  }
+  @include clearfix();
+  @include list-unstyled();
+  margin: 0 -.5rem;
 
   li {
     float: left;
