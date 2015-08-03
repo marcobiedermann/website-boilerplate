@@ -532,11 +532,11 @@ video {
     .form .checkbox-container label,
     .form .radio-container label {
       overflow: hidden; }
-    @media (min-width: 30rem) {
+    @media (min-width: 30em) {
       .form .checkbox-container,
       .form .radio-container {
         width: 50%; } }
-    @media (min-width: 48rem) {
+    @media (min-width: 48em) {
       .form .checkbox-container,
       .form .radio-container {
         width: 33.33333%; } }
@@ -559,7 +559,7 @@ video {
       float: left;
       padding: .25rem;
       width: 50%; }
-      @media (min-width: 30rem) {
+      @media (min-width: 30em) {
         .gallery .images li {
           width: 33.33333%; } }
 
@@ -573,7 +573,7 @@ video {
             align-items: center; }
   .media__obj {
     margin-bottom: 1.5rem; }
-    @media (min-width: 30rem) {
+    @media (min-width: 30em) {
       .media__obj--left, .media__obj--right {
         max-width: 50%; } }
     .media__obj--left {
@@ -610,7 +610,7 @@ video {
 .nav--dropdown li ul {
   display: none;
   position: absolute; }
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .nav__btn {
     display: none; } }
 
@@ -649,7 +649,7 @@ video {
     padding: .5rem; }
   .table caption {
     font-weight: bold; }
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     .table {
       -webkit-overflow-scrolling: none;
       overflow-x: none; } }
@@ -708,7 +708,7 @@ video {
 .grid__col {
   margin: 0 1%;
   min-height: 1px; }
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     .grid__col--1 {
       float: left;
       width: 6.33333%; }
