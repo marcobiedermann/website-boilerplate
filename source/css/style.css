@@ -419,9 +419,6 @@ legend {
   .form fieldset {
     margin: -.5rem 0; }
   .form__field {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     padding: .5rem 0; }
     .form__field:before, .form__field:after {
       content: ' ';

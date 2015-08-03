@@ -86,7 +86,6 @@ legend {
 
   &__field {
     @include clearfix();
-    display: flex;
     padding: .5rem 0;
   }
 
