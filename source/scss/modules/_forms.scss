@@ -7,6 +7,11 @@ $input-color: $base-color;
 
 $placeholder-color: $border-color;
 
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
 input,
 select,
@@ -59,14 +64,6 @@ input {
 
 }
 
-textarea {
-  max-width: 100%;
-  overflow: auto;
-  resize: none;
-  vertical-align: top;
-  width: 100%;
-}
-
 label {
   color: inherit;
   display: inline-block;
@@ -82,6 +79,14 @@ legend {
   display: block;
   padding: 0 .25rem;
   position: relative;
+}
+
+textarea {
+  max-width: 100%;
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+  width: 100%;
 }
 
 .form {

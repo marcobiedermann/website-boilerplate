@@ -59,15 +59,10 @@ section,
 summary {
   display: block; }
 
-audio,
 canvas,
-progress,
-video {
+progress {
   display: inline-block;
   vertical-align: baseline; }
-
-audio:not([controls]) {
-  display: none; }
 
 a {
   background: transparent;
@@ -131,17 +126,6 @@ dialog {
     top: 0; }
   dialog[open] {
     display: block; }
-
-embed,
-iframe,
-svg {
-  border: 0;
-  width: 100%; }
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
 
 figure,
 figcaption,
@@ -231,14 +215,12 @@ sub {
   bottom: -.25rem; }
 
 svg {
+  border: 0;
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
   svg:not(:root) {
     overflow: hidden; }
-
-video {
-  height: auto;
-  max-width: 100%; }
 
 .breadcrumb {
   list-style: none;
@@ -313,6 +295,18 @@ pre {
   padding: 1rem;
   word-break: break-all; }
 
+audio,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none; }
+
+video {
+  height: auto;
+  max-width: 100%; }
+
 .embed {
   height: 0;
   margin-bottom: 3rem;
@@ -323,11 +317,17 @@ pre {
   .embed embed,
   .embed iframe,
   .embed object {
+    border: 0;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
 input,
 select,
@@ -374,13 +374,6 @@ input[type="reset"], input[type="submit"] {
 input[type="search"] {
   -webkit-appearance: textfield; }
 
-textarea {
-  max-width: 100%;
-  overflow: auto;
-  resize: none;
-  vertical-align: top;
-  width: 100%; }
-
 label {
   color: inherit;
   display: inline-block;
@@ -395,6 +388,13 @@ legend {
   display: block;
   padding: 0 .25rem;
   position: relative; }
+
+textarea {
+  max-width: 100%;
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+  width: 100%; }
 
 .form {
   margin-bottom: 3rem; }
