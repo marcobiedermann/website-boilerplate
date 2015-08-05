@@ -205,31 +205,6 @@ meter,
 progress {
   width: 100%; }
 
-dl,
-ol,
-ul {
-  margin: 0 0 1.5rem;
-  padding: 0 0 0 1.25rem; }
-  dl dd,
-  dl ol,
-  dl ul,
-  ol dd,
-  ol ol,
-  ol ul,
-  ul dd,
-  ul ol,
-  ul ul {
-    margin: .5rem 0 0;
-    padding-left: 1.25rem; }
-  dl dd,
-  ol dd,
-  ul dd {
-    margin-left: 0; }
-  dl li,
-  ol li,
-  ul li {
-    margin-bottom: .25rem; }
-
 p {
   margin: 0 0 1.5rem; }
 
@@ -513,6 +488,31 @@ legend {
       @media (min-width: 30em) {
         .gallery .images li {
           width: 33.33333%; } }
+
+dl,
+ol,
+ul {
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 1.25rem; }
+  dl dd,
+  dl ol,
+  dl ul,
+  ol dd,
+  ol ol,
+  ol ul,
+  ul dd,
+  ul ol,
+  ul ul {
+    margin: .5rem 0 0;
+    padding-left: 1.25rem; }
+  dl dd,
+  ol dd,
+  ul dd {
+    margin-left: 0; }
+  dl li,
+  ol li,
+  ul li {
+    margin-bottom: .25rem; }
 
 .media {
   display: -webkit-flex;
