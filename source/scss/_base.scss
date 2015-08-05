@@ -62,8 +62,17 @@ summary {
   display: block;
 }
 
+audio,
 canvas,
 progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+}
 
 a {
   background: transparent;
@@ -161,6 +170,8 @@ dialog {
 
 }
 
+embed,
+iframe,
 svg {
   border: 0;
   width: 100%;
@@ -265,4 +276,9 @@ svg {
     overflow: hidden;
   }
 
+}
+
+video {
+  height: auto;
+  max-width: 100%;
 }

@@ -59,26 +59,26 @@ section,
 summary {
   display: block; }
 
+audio,
 canvas,
 progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none; }
+
 a {
   background: transparent;
   border: 0;
   color: #2e719e;
   text-decoration: none;
   transition: background-color .3s, color .3s; }
-  canvas:active,
-  progress:active,
   a:active {
     color: #3a8dc6; }
-  canvas:focus, canvas:hover,
-  progress:focus,
-  progress:hover,
-  a:focus,
-  a:hover {
+  a:focus, a:hover {
     color: #235577; }
-  canvas:focus,
-  progress:focus,
   a:focus {
     outline: none; }
 
@@ -236,6 +236,10 @@ svg {
   svg:not(:root) {
     overflow: hidden; }
 
+video {
+  height: auto;
+  max-width: 100%; }
+
 .breadcrumb {
   list-style: none;
   margin: 0;
@@ -308,18 +312,6 @@ pre {
   overflow: auto;
   padding: 1rem;
   word-break: break-all; }
-
-audio,
-video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-audio:not([controls]) {
-  display: none; }
-
-video {
-  height: auto;
-  max-width: 100%; }
 
 .embed {
   height: 0;
