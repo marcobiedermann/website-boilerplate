@@ -823,14 +823,14 @@ add(a, b);</code></pre>
 
           <h3>Navigation Dropdown</h3>
 
-          <nav class="navigation navigation--inline navigation--dropdown" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <nav class="navigation navigation--inline" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
               <li><a href="#" itemprop="url"><span itemprop="name">Level 1 Item 1</span></a></li>
-              <li><a href="#" aria-haspopup="true" itemprop="url"><span itemprop="name">Level 1 Item 2</span></a>
+              <li class="navigation__dropdown navigation__dropdown--bottom"><a href="#" aria-haspopup="true" itemprop="url"><span itemprop="name">Level 1 Item 2</span></a>
 
                 <ul aria-hidden="true" aria-label="submenu">
                   <li><a href="#" itemprop="url"><span itemprop="name">Level 2 Item 1</span></a></li>
-                  <li><a href="#" aria-haspopup="true" itemprop="url"><span itemprop="name">Level 2 Item 2</span></a>
+                  <li class="navigation__dropdown navigation__dropdown--right"><a href="#" aria-haspopup="true" itemprop="url"><span itemprop="name">Level 2 Item 2</span></a>
 
                     <ul aria-hidden="true" aria-label="submenu">
                       <li><a href="#" itemprop="url"><span itemprop="name">Level 3 Item 1</span></a></li>
@@ -847,14 +847,14 @@ add(a, b);</code></pre>
             </ul>
           </nav>
 
-          <pre><code>&lt;nav class="navigation navigation--inline navigation--dropdown" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement"&gt;
+          <pre><code>&lt;nav class="navigation navigation--inline" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement"&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 1 Item 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-haspopup="true" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 1 Item 2&lt;/span&gt;&lt;/a&gt;
+    &lt;li class="navigation__dropdown navigation__dropdown--bottom"&gt;&lt;a href="#" aria-haspopup="true" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 1 Item 2&lt;/span&gt;&lt;/a&gt;
 
       &lt;ul aria-hidden="true" aria-label="submenu"&gt;
         &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 2 Item 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#" aria-haspopup="true" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 2 Item 2&lt;/span&gt;&lt;/a&gt;
+        &lt;li class="navigation__dropdown navigation__dropdown--right"&gt;&lt;a href="#" aria-haspopup="true" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 2 Item 2&lt;/span&gt;&lt;/a&gt;
 
           &lt;ul aria-hidden="true" aria-label="submenu"&gt;
             &lt;li&gt;&lt;a href="#" itemprop="url"&gt;&lt;span itemprop="name"&gt;Level 3 Item 1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
