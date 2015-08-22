@@ -161,14 +161,23 @@ add(a, b);</code></pre>
 
         <section id="images">
 
+          <h2>Images</h2>
+
           <p>
             <picture>
               <source media="(min-width: 960px)" srcset="http://dummyimage.com/1248x936/808080/fff.png">
               <source media="(min-width: 640px)" srcset="http://dummyimage.com/960x720/808080/fff.png">
               <source media="(min-width: 480px)" srcset="http://dummyimage.com/640x480/808080/fff.png">
-              <img src="http://dummyimage.com/460x345/808080/fff.png">
+              <img src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="">
             </picture>
           </p>
+
+          <pre><code>&lt;picture&gt;
+  &lt;source media="(min-width: 960px)" srcset="http://dummyimage.com/1248x936/808080/fff.png"&gt;
+  &lt;source media="(min-width: 640px)" srcset="http://dummyimage.com/960x720/808080/fff.png"&gt;
+  &lt;source media="(min-width: 480px)" srcset="http://dummyimage.com/640x480/808080/fff.png"&gt;
+  &lt;img src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt=""&gt;
+&lt;/picture&gt;</code></pre>
 
         </section>
 
