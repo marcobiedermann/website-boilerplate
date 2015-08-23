@@ -21,23 +21,3 @@
   }
 
 }
-
-@if (rtl == true) {
-
-  html[dir="rtl"] {
-
-    .pagination {
-
-      .prev {
-        float: right;
-      }
-
-      .next {
-        float: left;
-      }
-
-    }
-
-  }
-
-}

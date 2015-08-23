@@ -20,19 +20,3 @@
   }
 
 }
-
-@if (rtl == true) {
-
-  html[dir="rtl"] {
-
-    .gallery {
-
-      li {
-        float: right;
-      }
-
-    }
-
-  }
-
-}

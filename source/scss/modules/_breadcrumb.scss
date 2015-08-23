@@ -13,19 +13,3 @@
   }
 
 }
-
-@if (rtl == true) {
-
-  html[dir="rtl"] {
-
-    .breadcrumb {
-
-      li {
-        float: right;
-      }
-
-    }
-
-  }
-
-}

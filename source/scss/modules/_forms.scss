@@ -176,27 +176,3 @@ textarea {
   }
 
 }
-
-@if (rtl == true) {
-
-  html[dir="rtl"] {
-
-    .form {
-
-      input[type="checkbox"],
-      input[type="radio"] {
-        float: right;
-        margin: .25rem 0 0 .5rem;
-      }
-
-      .checkbox-container,
-      .radio-container {
-        float: right;
-
-      }
-
-    }
-
-  }
-
-}
