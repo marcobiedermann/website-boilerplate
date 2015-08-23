@@ -11,7 +11,7 @@
       padding: .25rem;
       width: (100% / 2);
 
-      @media (min-width: $media-tiny) {
+      @media (min-width: $media-sm) {
         width: (100% / 3);
       }
 

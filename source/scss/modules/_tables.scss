@@ -33,7 +33,7 @@ th {
     font-weight: bold;
   }
 
-  @media (min-width: $media-small) {
+  @media (min-width: $media-md) {
     -webkit-overflow-scrolling: none;
     overflow-x: none;
   }

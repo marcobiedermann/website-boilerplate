@@ -165,11 +165,11 @@ textarea {
       overflow: hidden;
     }
 
-    @media (min-width: $media-tiny) {
+    @media (min-width: $media-sm) {
       width: (100% / 2);
     }
 
-    @media (min-width: $media-small) {
+    @media (min-width: $media-md) {
       width: (100% / 3);
     }
 

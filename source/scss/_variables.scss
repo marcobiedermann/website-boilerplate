@@ -34,11 +34,11 @@ $headings-font-size: (
 $margin-element-bottom: 3rem;
 
 // Media Queries
-$media-micro: 20em; // 320
-$media-tiny: 30em; // 480
-$media-small: 48em; // 768
-$media-medium: 60em; // 960
-$media-large: 80em; // 1280
+$media-xs: 20em; // 320
+$media-sm: 30em; // 480
+$media-md: 48em; // 768
+$media-lg: 60em; // 960
+$media-xl: 80em; // 1280
 
 // Paths
 $path-fonts: '../fonts';

@@ -20,7 +20,7 @@ $grid-gutter: 2%;
     margin: 0 $grid-gutter / 2;
     min-height: 1px;
 
-    @media (min-width: $media-small) {
+    @media (min-width: $media-md) {
 
       @for $i from 1 through $grid-columns {
 
