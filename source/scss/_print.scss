@@ -1,12 +1,4 @@
 @media print {
-
-  * {
-    background: transparent;
-    box-shadow: none;
-    color: $base-color;
-    text-shadow: none;
-  }
-
   a,
   a:visited {
     text-decoration: underline;
@@ -31,28 +23,8 @@
     page-break-inside: avoid;
   }
 
-  blockquote {
-    border-left: 3px solid $base-color;
-  }
-
   thead {
     display: table-header-group;
-  }
-
-  select {
-    background: $base-bgcolor;
-  }
-
-  .container {
-    width: auto;
-  }
-
-  .left {
-    display: none;
-  }
-
-  .main {
-    width: 100%;
   }
 
 }

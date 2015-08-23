@@ -775,12 +775,6 @@ th {
   top: -9999px; }
 
 @media print {
-  * {
-    background: transparent;
-    box-shadow: none;
-    color: #111;
-    text-shadow: none; }
-
   a,
   a:visited {
     text-decoration: underline; }
@@ -801,22 +795,7 @@ th {
   tr {
     page-break-inside: avoid; }
 
-  blockquote {
-    border-left: 3px solid #111; }
-
   thead {
-    display: table-header-group; }
-
-  select {
-    background: #fff; }
-
-  .container {
-    width: auto; }
-
-  .left {
-    display: none; }
-
-  .main {
-    width: 100%; } }
+    display: table-header-group; } }
 
 /*# sourceMappingURL=style.css.map */
