@@ -678,42 +678,32 @@ th {
   margin: 0 1%;
   min-height: 1px; }
   @media (min-width: 48em) {
-    .grid__col--1 {
-      float: left;
-      width: 6.33333%; }
-    .grid__col--2 {
-      float: left;
-      width: 14.66667%; }
-    .grid__col--3 {
-      float: left;
-      width: 23%; }
-    .grid__col--4 {
-      float: left;
-      width: 31.33333%; }
-    .grid__col--5 {
-      float: left;
-      width: 39.66667%; }
-    .grid__col--6 {
-      float: left;
-      width: 48%; }
-    .grid__col--7 {
-      float: left;
-      width: 56.33333%; }
-    .grid__col--8 {
-      float: left;
-      width: 64.66667%; }
-    .grid__col--9 {
-      float: left;
-      width: 73%; }
-    .grid__col--10 {
-      float: left;
-      width: 81.33333%; }
-    .grid__col--11 {
-      float: left;
-      width: 89.66667%; }
-    .grid__col--12 {
-      float: left;
-      width: 98%; } }
+    .grid__col {
+      float: left; }
+      .grid__col--1 {
+        width: 6.33333%; }
+      .grid__col--2 {
+        width: 14.66667%; }
+      .grid__col--3 {
+        width: 23%; }
+      .grid__col--4 {
+        width: 31.33333%; }
+      .grid__col--5 {
+        width: 39.66667%; }
+      .grid__col--6 {
+        width: 48%; }
+      .grid__col--7 {
+        width: 56.33333%; }
+      .grid__col--8 {
+        width: 64.66667%; }
+      .grid__col--9 {
+        width: 73%; }
+      .grid__col--10 {
+        width: 81.33333%; }
+      .grid__col--11 {
+        width: 89.66667%; }
+      .grid__col--12 {
+        width: 98%; } }
 
 .icon {
   display: inline-block;

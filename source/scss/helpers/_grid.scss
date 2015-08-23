@@ -21,11 +21,11 @@ $grid-gutter: 2%;
     min-height: 1px;
 
     @media (min-width: $media-md) {
+      float: left;
 
       @for $i from 1 through $grid-columns {
 
         &--#{$i} {
-          float: left;
           width: (100% / $grid-columns * $i - $grid-gutter);
         }
 
