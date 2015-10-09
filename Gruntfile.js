@@ -220,6 +220,15 @@ module.exports = function(grunt) {
       html: '<%= config.source %>/index.html'
     },
 
+    webp: {
+      files: {
+        expand: true,
+        cwd: '<%= config.source %>/content',
+        dest: '<%= config.build %>/content',
+        src: '**/*.{gif,ico,jpg,jpeg,png}'
+      }
+    },
+
     watch: {
       options: {
         livereload: true
@@ -248,7 +257,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/**/*.{gif,ico,jpg,jpeg,png}'
         ],
-        tasks: []
+        tasks: ['imagemin', 'webp']
       },
       sass: {
         files: [
@@ -325,6 +334,7 @@ module.exports = function(grunt) {
 
     // Images
     'imagemin',
+    'webp',
 
     // Clean
     'clean:tmp',
