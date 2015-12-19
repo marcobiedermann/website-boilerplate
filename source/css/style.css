@@ -294,6 +294,11 @@ pre {
   padding: 1rem;
   word-break: break-all; }
 
+.comments {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 audio,
 video {
   display: inline-block;
@@ -483,6 +488,9 @@ textarea {
         .gallery .images li {
           width: 33.33333%; } }
 
+figure {
+  margin: 0 0 1.5rem; }
+
 dl,
 ol,
 ul {
@@ -594,6 +602,14 @@ ul {
   .pagination__next {
     float: right; }
 
+.posts {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0; }
+
+.post {
+  margin: 0 0 1.5rem; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -624,6 +640,23 @@ th {
     .table {
       -webkit-overflow-scrolling: none;
       overflow-x: none; } }
+
+.tags {
+  font-size: .875rem;
+  list-style: none;
+  margin: 0 -.25rem 1.5rem;
+  padding: 0; }
+  .tags:after {
+    clear: both;
+    content: '';
+    display: table; }
+
+.tag {
+  float: left;
+  margin: 0 .25rem; }
+  .tag a {
+    border: 1px solid #bdbdbd;
+    padding: .25rem .5rem; }
 
 .site__header {
   background: inherit;
