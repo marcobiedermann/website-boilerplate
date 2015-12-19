@@ -641,6 +641,16 @@ th {
       -webkit-overflow-scrolling: none;
       overflow-x: none; } }
 
+.tablist {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.tab {
+  display: none; }
+  .tab--active {
+    display: block; }
+
 .tags {
   font-size: .875rem;
   list-style: none;
