@@ -201,16 +201,8 @@ module.exports = function(grunt) {
       }
     },
 
-    usemin: {
-      options: {
-        assetsDirs: [
-          '<%= config.dist %>',
-          '<%= config.dist %>/img',
-          '<%= config.dist %>/css'
-        ]
-      },
-      html: '<%= config.build %>/index.html',
-      css: '<%= config.build %>/css/**/*.css'
+    usemin:
+      html: '<%= config.build %>/**/*.html',
     },
 
     useminPrepare: {
