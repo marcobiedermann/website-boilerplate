@@ -703,50 +703,50 @@ th {
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite; }
 
-.grid__container {
+.grid {
   margin: 0 auto;
   max-width: 78rem;
   width: 90%; }
-  .grid__container::after {
+  .grid::after {
     clear: both;
     content: '';
     display: table; }
-.grid__row {
-  margin: 0 -1%; }
-  .grid__row::after {
-    clear: both;
-    content: '';
-    display: table; }
-.grid__col {
-  margin: 0 1%;
-  min-height: 1px; }
-  @media (min-width: 48em) {
-    .grid__col {
-      float: left; }
-      .grid__col--1 {
-        width: 6.33333%; }
-      .grid__col--2 {
-        width: 14.66667%; }
-      .grid__col--3 {
-        width: 23%; }
-      .grid__col--4 {
-        width: 31.33333%; }
-      .grid__col--5 {
-        width: 39.66667%; }
-      .grid__col--6 {
-        width: 48%; }
-      .grid__col--7 {
-        width: 56.33333%; }
-      .grid__col--8 {
-        width: 64.66667%; }
-      .grid__col--9 {
-        width: 73%; }
-      .grid__col--10 {
-        width: 81.33333%; }
-      .grid__col--11 {
-        width: 89.66667%; }
-      .grid__col--12 {
-        width: 98%; } }
+  .grid__row {
+    margin: 0 -1%; }
+    .grid__row::after {
+      clear: both;
+      content: '';
+      display: table; }
+  .grid__col {
+    margin: 0 1%;
+    min-height: 1px; }
+    @media (min-width: 48em) {
+      .grid__col {
+        float: left; }
+        .grid__col--1 {
+          width: 6.33333%; }
+        .grid__col--2 {
+          width: 14.66667%; }
+        .grid__col--3 {
+          width: 23%; }
+        .grid__col--4 {
+          width: 31.33333%; }
+        .grid__col--5 {
+          width: 39.66667%; }
+        .grid__col--6 {
+          width: 48%; }
+        .grid__col--7 {
+          width: 56.33333%; }
+        .grid__col--8 {
+          width: 64.66667%; }
+        .grid__col--9 {
+          width: 73%; }
+        .grid__col--10 {
+          width: 81.33333%; }
+        .grid__col--11 {
+          width: 89.66667%; }
+        .grid__col--12 {
+          width: 98%; } }
 
 .icon {
   display: inline-block;

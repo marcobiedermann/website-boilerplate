@@ -3,13 +3,10 @@ $grid-container: 78rem;
 $grid-gutter: 2%;
 
 .grid {
-
-  &__container {
-    @include clearfix();
-    margin: 0 auto;
-    max-width: $grid-container;
-    width: 90%;
-  }
+  @include clearfix();
+  margin: 0 auto;
+  max-width: $grid-container;
+  width: 90%;
 
   &__row {
     @include clearfix();
