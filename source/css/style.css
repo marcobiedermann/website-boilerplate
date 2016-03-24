@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
-  *:before, *:after {
+  *::before, *::after {
     box-sizing: border-box; }
 
 ::-moz-selection {
@@ -88,9 +88,9 @@ strong {
 blockquote {
   margin: 0 0 1.5rem;
   quotes: '\201C' '\201D' '\2018' '\2019'; }
-  blockquote p:before {
+  blockquote p::before {
     content: open-quote; }
-  blockquote p:after {
+  blockquote p::after {
     content: close-quote; }
 
 button {
@@ -227,7 +227,7 @@ svg {
   margin: 0;
   padding: 0;
   margin: 0 -.5rem; }
-  .breadcrumb:after {
+  .breadcrumb::after {
     clear: both;
     content: '';
     display: table; }
@@ -406,7 +406,7 @@ textarea {
     margin: -.5rem 0; }
   .form__field {
     padding: .5rem 0; }
-    .form__field:after {
+    .form__field::after {
       clear: both;
       content: '';
       display: table; }
@@ -450,8 +450,8 @@ textarea {
   .form .radio-container {
     float: left;
     width: 100%; }
-    .form .checkbox-container:after,
-    .form .radio-container:after {
+    .form .checkbox-container::after,
+    .form .radio-container::after {
       clear: both;
       content: '';
       display: table; }
@@ -474,7 +474,7 @@ textarea {
     margin: 0;
     padding: 0;
     margin: -.25rem; }
-    .gallery .images:after {
+    .gallery .images::after {
       clear: both;
       content: '';
       display: table; }
@@ -549,7 +549,7 @@ ul {
     margin: 0; }
 .navigation a {
   display: block; }
-.navigation--inline > ul:after {
+.navigation--inline > ul::after {
   clear: both;
   content: '';
   display: table; }
@@ -586,7 +586,7 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center; }
-  .pagination:after {
+  .pagination::after {
     clear: both;
     content: '';
     display: table; }
@@ -656,7 +656,7 @@ th {
   list-style: none;
   margin: 0 -.25rem 1.5rem;
   padding: 0; }
-  .tags:after {
+  .tags::after {
     clear: both;
     content: '';
     display: table; }
@@ -707,13 +707,13 @@ th {
   margin: 0 auto;
   max-width: 78rem;
   width: 90%; }
-  .grid__container:after {
+  .grid__container::after {
     clear: both;
     content: '';
     display: table; }
 .grid__row {
   margin: 0 -1%; }
-  .grid__row:after {
+  .grid__row::after {
     clear: both;
     content: '';
     display: table; }
