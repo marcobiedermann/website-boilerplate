@@ -201,7 +201,7 @@ module.exports = function(grunt) {
       }
     },
 
-    usemin:
+    usemin: {
       html: '<%= config.build %>/**/*.html',
     },
 
