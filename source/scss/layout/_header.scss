@@ -1,6 +1,10 @@
 $header-bgcolor: inherit;
 $header-color: inherit;
 
+header {
+  display: block;
+}
+
 .site__header {
   background: $header-bgcolor;
   color: $header-color;

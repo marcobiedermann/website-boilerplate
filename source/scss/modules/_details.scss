@@ -1,0 +1,13 @@
+details {
+  display: block;
+  margin: 0 0 1.5rem;
+}
+
+summary {
+  display: block;
+
+  &:focus {
+    outline: none;
+  }
+
+}

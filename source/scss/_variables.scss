@@ -9,27 +9,6 @@ $base-font-size: 1rem;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
-// Headings
-$heading-color: inherit;
-$headings-font-family: inherit;
-$headings-font-weight: 700;
-
-$h1-font-size: 2rem;
-$h2-font-size: 1.5rem;
-$h3-font-size: 1.25rem;
-$h4-font-size: 1rem;
-$h5-font-size: .875rem;
-$h6-font-size: .75rem;
-
-$headings-font-size: (
-  $h1-font-size,
-  $h2-font-size,
-  $h3-font-size,
-  $h4-font-size,
-  $h5-font-size,
-  $h6-font-size
-);
-
 // Spacing
 $margin-element-bottom: 3rem;
 
@@ -64,11 +43,6 @@ $warning-color-hover: darken($warning-color, 10%);
 $error-color: #b83c2e;
 $error-color-active: lighten($error-color, 10%);
 $error-color-hover: darken($error-color, 10%);
-
-// Links
-$link-color: $primary-color;
-$link-color-active: lighten($link-color, 10%);
-$link-color-hover: darken($link-color, 10%);
 
 // Border
 $border-color: #bdbdbd;

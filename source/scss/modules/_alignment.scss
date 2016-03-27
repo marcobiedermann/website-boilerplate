@@ -1,0 +1,18 @@
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  &__item {
+
+    &--top {
+      align-self: flex-start;
+    }
+
+    &--bottom {
+      align-self: flex-end;
+    }
+
+  }
+
+}

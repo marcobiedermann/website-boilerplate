@@ -1,6 +1,12 @@
 $footer-bgcolor: inherit;
 $footer-color: inherit;
 
+footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 .site__footer {
   background: $footer-bgcolor;
   color: $footer-color;

@@ -6,7 +6,8 @@
 // Mixins
 
 @import
-'helpers/mixins';
+'mixins/clearfix',
+'mixins/list-unstyled';
 
 // Base
 
@@ -15,39 +16,54 @@
 // Modules
 
 @import
+'modules/alignment',
+'modules/audio',
 'modules/breadcrumb',
 'modules/buttons',
+'modules/canvas',
 'modules/code',
 'modules/comments',
+'modules/details',
+'modules/dialog',
 'modules/embed',
 'modules/forms',
 'modules/gallery',
+'modules/grid',
+'modules/headline',
+'modules/icons',
 'modules/images',
+'modules/link',
 'modules/lists',
 'modules/media',
 'modules/navigations',
 'modules/pagination',
 'modules/posts',
+'modules/progress',
+'modules/quote',
+'modules/rule',
 'modules/tables',
 'modules/tabs',
-'modules/tags';
+'modules/tags',
+'modules/template',
+'modules/text',
+'modules/video';
 
 // Layout
 
 @import
-'layout/header',
 'layout/container',
-'layout/main',
+'layout/footer',
+'layout/header',
 'layout/left',
+'layout/main',
 'layout/right',
-'layout/footer';
+'layout/section',
+'layout/sidebar';
 
 // Helpers
 
 @import
 'helpers/animations',
-'helpers/grid',
-'helpers/icons',
 'helpers/utilities';
 
 // Print

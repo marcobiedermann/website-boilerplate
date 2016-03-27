@@ -1,24 +1,5 @@
 // Positioning //
 
-.align {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-
-  &__item {
-
-    &--top {
-      align-self: flex-start;
-    }
-
-    &--bottom {
-      align-self: flex-end;
-    }
-
-  }
-
-}
-
 .center-block {
   display: block;
   margin-left: auto;
@@ -29,24 +10,6 @@
   position: sticky;
   top: 0;
   transform: translateZ(0);
-}
-
-// Typography //
-
-.text {
-
-  &--lower {
-    text-transform: lowercase;
-  }
-
-  &--upper {
-    text-transform: uppercase;
-  }
-
-  &--center {
-    text-align: center;
-  }
-
 }
 
 // Visual //

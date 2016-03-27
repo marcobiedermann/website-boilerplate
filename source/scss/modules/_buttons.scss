@@ -3,6 +3,24 @@ $button-bgcolor-hover: darken($button-bgcolor, 10%);
 $button-color: #fff;
 $button-color-hover: darken($button-color, 10%);
 
+button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  text-transform: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+}
+
 .button {
   background: $button-bgcolor;
   color: $button-color;

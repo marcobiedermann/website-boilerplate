@@ -1,0 +1,36 @@
+$heading-color: inherit;
+$headings-font-family: inherit;
+$headings-font-weight: 700;
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1rem;
+$h5-font-size: .875rem;
+$h6-font-size: .75rem;
+
+$headings-font-size: (
+  $h1-font-size,
+  $h2-font-size,
+  $h3-font-size,
+  $h4-font-size,
+  $h5-font-size,
+  $h6-font-size
+);
+
+%headings {
+  color: $heading-color;
+  font-family: $headings-font-family, $base-font-family-fallback;
+  font-weight: $headings-font-weight;
+}
+
+@for $i from 1 through length($headings-font-size) {
+
+  h#{$i} {
+    @extend %headings;
+    font-size: nth($headings-font-size, $i);
+    line-height: 1.2;
+    margin: 0 0 .5rem;
+  }
+
+}

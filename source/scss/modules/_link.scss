@@ -1,0 +1,25 @@
+$link-color: $primary-color;
+$link-color-active: lighten($link-color, 10%);
+$link-color-hover: darken($link-color, 10%);
+
+a {
+  background: transparent;
+  border: 0;
+  color: $link-color;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+
+  &:active {
+    color: $link-color-active;
+  }
+
+  &:focus,
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}

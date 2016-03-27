@@ -1,3 +1,24 @@
+img,
+svg {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg {
+
+  &:not(:root) {
+    overflow: hidden;
+  }
+
+}
+
 figure {
+  display: block;
   margin: 0 0 1.5rem;
+}
+
+figcaption {
+  display: block;
 }
