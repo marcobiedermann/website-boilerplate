@@ -2,15 +2,14 @@
   width: device-width;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 * {
-  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-
 }
 
 ::selection {
@@ -20,6 +19,7 @@
 }
 
 html {
+  box-sizing: border-box;
   -webkit-font-font-smoothing: antialiased;
   font-size: $root-font-size;
   -moz-osx-font-smoothing: grayscale;

@@ -1,10 +1,12 @@
 @-ms-viewport {
   width: device-width; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
 * {
-  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
-  *::before, *::after {
-    box-sizing: border-box; }
 
 ::-moz-selection {
   background: #111;
@@ -17,6 +19,7 @@
   text-shadow: none; }
 
 html {
+  box-sizing: border-box;
   -webkit-font-font-smoothing: antialiased;
   font-size: 100%;
   -moz-osx-font-smoothing: grayscale;
