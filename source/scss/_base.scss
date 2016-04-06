@@ -8,10 +8,6 @@
   box-sizing: inherit;
 }
 
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
 ::selection {
   background: $base-color;
   color: $base-bgcolor;
@@ -20,14 +16,10 @@
 
 html {
   box-sizing: border-box;
-  -webkit-font-font-smoothing: antialiased;
   font-size: $root-font-size;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: grayscale;
   height: 100%;
   text-rendering: optimizeLegibility;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
