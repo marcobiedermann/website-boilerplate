@@ -157,7 +157,8 @@ code {
 pre {
   background-color: #f5f5f5;
   display: block;
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   overflow: auto;
   padding: 1rem;
   word-break: break-all; }
@@ -169,7 +170,8 @@ pre {
 
 details {
   display: block;
-  margin: 0 0 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-top: 0; }
 
 summary {
   display: block; }
@@ -322,7 +324,8 @@ textarea {
     height: 6rem; }
   .form input[type="checkbox"], .form input[type="radio"] {
     float: left;
-    margin: .25rem .5rem 0 0; }
+    margin-right: .5rem;
+    margin-top: .25rem; }
   .form input[type="reset"], .form input[type="submit"] {
     background-color: #2e719e;
     padding: .25rem 1rem; }
@@ -479,7 +482,10 @@ svg:not(:root) {
 
 figure {
   display: block;
-  margin: 0 0 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0; }
 
 figcaption {
   display: block; }
