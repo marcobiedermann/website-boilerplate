@@ -1,5 +1,7 @@
 'use strict';
 
+var webp = require('imagemin-webp');
+
 module.exports = function(grunt) {
 
   require('jit-grunt')(grunt, {
@@ -143,11 +145,26 @@ module.exports = function(grunt) {
     },
 
     imagemin: {
-      files: {
-        expand: true,
-        cwd: '<%= config.source %>',
-        src: '**/*.{gif,ico,jpg,jpeg,png}',
-        dest: '<%= config.build %>'
+      images: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.source %>',
+          src: '**/*.{gif,ico,jpg,jpeg,png}',
+          dest: '<%= config.build %>'
+        }]
+      },
+      webp: {
+        options: {
+          use: [
+            webp()
+          ]
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.source %>/content/images',
+          src: '**/*.{gif,jpg,jpeg,png}',
+          dest: '<%= config.build %>/content/images'
+        }]
       }
     },
 
@@ -212,15 +229,6 @@ module.exports = function(grunt) {
       html: '<%= config.source %>/index.html'
     },
 
-    webp: {
-      files: {
-        expand: true,
-        cwd: '<%= config.source %>/content',
-        dest: '<%= config.build %>/content',
-        src: '**/*.{gif,ico,jpg,jpeg,png}'
-      }
-    },
-
     watch: {
       options: {
         livereload: true
@@ -249,7 +257,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/**/*.{gif,ico,jpg,jpeg,png}'
         ],
-        tasks: ['imagemin', 'webp']
+        tasks: ['imagemin']
       },
       sass: {
         files: [
@@ -326,7 +334,6 @@ module.exports = function(grunt) {
 
     // Images
     'imagemin',
-    'webp',
 
     // Clean
     'clean:tmp',
