@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/marcobiedermann/website-template.svg)](https://travis-ci.org/marcobiedermann/website-template) [![devDependency Status](https://david-dm.org/marcobiedermann/website-template/dev-status.svg)](https://david-dm.org/marcobiedermann/website-template#info=devDependencies)
+[![Build Status](https://travis-ci.org/marcobiedermann/website-boilerplate.svg)](https://travis-ci.org/marcobiedermann/website-boilerplate) [![devDependency Status](https://david-dm.org/marcobiedermann/website-boilerplate/dev-status.svg)](https://david-dm.org/marcobiedermann/website-boilerplate#info=devDependencies)
 # Website Template
 
 ## Requirements

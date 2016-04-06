@@ -270,7 +270,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     // Linting
     'jshint',
-    'scsslint',
+    // 'scsslint',
 
     // CSS
     'sass',
@@ -291,13 +291,13 @@ module.exports = function(grunt) {
   grunt.registerTask('test', [
     // Linting
     'jshint',
-    'scsslint'
+    // 'scsslint'
   ]);
 
   grunt.registerTask('build', [
     // Linting
     'jshint',
-    'scsslint',
+    // 'scsslint',
 
     // Clean
     'clean:dist',
@@ -331,11 +331,6 @@ module.exports = function(grunt) {
     // Clean
     'clean:tmp',
     'clean:sass',
-
-    // Server
-    'connect:develop',
-    'connect:build',
-    'watch'
   ]);
 
 };

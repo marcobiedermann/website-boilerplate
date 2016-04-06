@@ -1,10 +1,10 @@
 language: node_js
 node_js:
+  - "5.1"
+  - "4.4"
   - "0.12"
-  - "0.11"
-  - "0.10"
+script: npm run build
 before_install:
   - gem install sass
   - gem install scss-lint
   - npm install -g grunt-cli
-install: npm install
