@@ -38,7 +38,10 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  font: 400 1rem/1.5 Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
   margin: 0;
   min-height: 100%;
   position: relative; }
@@ -72,7 +75,7 @@ audio {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin: 0 -.5rem; }
+  margin: -.5rem; }
   .breadcrumb::after {
     clear: both;
     content: '';
@@ -80,7 +83,8 @@ audio {
   .breadcrumb > li {
     margin: 0; }
   .breadcrumb li {
-    float: left; }
+    float: left;
+    margin: .5rem; }
   .breadcrumb a {
     display: block;
     padding: .25rem .5rem; }
@@ -100,7 +104,7 @@ button {
     padding: 0; }
 
 .button {
-  background: #95a5a6;
+  background-color: #95a5a6;
   color: #fff;
   display: inline-block;
   padding: .5rem 1rem; }
@@ -122,25 +126,25 @@ button {
     text-align: center;
     width: 100%; }
   .button--primary {
-    background: #2e719e; }
+    background-color: #2e719e; }
     .button--primary:focus, .button--primary:hover {
-      background: #235577; }
+      background-color: #235577; }
   .button--secondary {
-    background: #964db3; }
+    background-color: #964db3; }
     .button--secondary:focus, .button--secondary:hover {
-      background: #783d90; }
+      background-color: #783d90; }
   .button--success {
-    background: #367d53; }
+    background-color: #367d53; }
     .button--success:focus, .button--success:hover {
-      background: #27593b; }
+      background-color: #27593b; }
   .button--warning {
-    background: #f1c40f; }
+    background-color: #f1c40f; }
     .button--warning:focus, .button--warning:hover {
-      background: #c29d0b; }
+      background-color: #c29d0b; }
   .button--error {
-    background: #b83c2e; }
+    background-color: #b83c2e; }
     .button--error:focus, .button--error:hover {
-      background: #8f2f24; }
+      background-color: #8f2f24; }
 
 canvas {
   display: inline-block;
@@ -177,7 +181,7 @@ dialog {
   display: none;
   padding: 1rem; }
   dialog::backdrop {
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     left: 0;
     position: fixed;
@@ -215,7 +219,10 @@ textarea {
   border: 1px solid #bdbdbd;
   border-radius: 0;
   color: inherit;
-  font: 400 1rem/1.5 Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
   margin: 0;
   outline-color: #2e719e;
   padding: 0;
@@ -245,11 +252,11 @@ textarea::placeholder {
 
 input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
-  background: #95a5a6;
+  background-color: #95a5a6;
   color: #fff;
   cursor: pointer; }
   input[type="reset"]:focus, input[type="reset"]:hover, input[type="submit"]:focus, input[type="submit"]:hover {
-    background: #798d8f; }
+    background-color: #798d8f; }
 input[type="search"] {
   -webkit-appearance: textfield; }
 
@@ -364,7 +371,8 @@ textarea {
           width: 33.33333%; } }
 
 .grid {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 78rem;
   width: 90%; }
   .grid::after {
@@ -372,13 +380,13 @@ textarea {
     content: '';
     display: table; }
   .grid__row {
-    margin: 0 -1%; }
+    margin: -1%; }
     .grid__row::after {
       clear: both;
       content: '';
       display: table; }
   .grid__col {
-    margin: 0 1%;
+    margin: 1%;
     min-height: 1px; }
     @media (min-width: 48em) {
       .grid__col {
@@ -477,7 +485,7 @@ figcaption {
   display: block; }
 
 a {
-  background: transparent;
+  background-color: transparent;
   border: 0;
   color: #2e719e;
   text-decoration: none;
@@ -492,8 +500,9 @@ a {
 dl,
 ol,
 ul {
-  margin: 0 0 1.5rem;
-  padding: 0 0 0 1.25rem; }
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  padding-left: 1.25rem; }
   dl dd,
   dl ol,
   dl ul,
@@ -503,12 +512,7 @@ ul {
   ul dd,
   ul ol,
   ul ul {
-    margin: .5rem 0 0;
-    padding-left: 1.25rem; }
-  dl dd,
-  ol dd,
-  ul dd {
-    margin-left: 0; }
+    margin-top: .5rem; }
   dl li,
   ol li,
   ul li {
@@ -608,11 +612,11 @@ article {
 
 .posts {
   list-style: none;
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
   padding: 0; }
 
 .post {
-  margin: 0 0 1.5rem; }
+  margin-bottom: 1.5rem; }
 
 meter {
   width: 100%; }
@@ -623,7 +627,8 @@ progress {
   width: 100%; }
 
 blockquote {
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   quotes: '\201C' '\201D' '\2018' '\2019'; }
   blockquote p::before {
     content: open-quote; }
@@ -638,12 +643,14 @@ hr {
   border: 0;
   box-sizing: content-box;
   height: 1px;
-  margin: 0 0 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-top: 0; }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   text-align: left;
   width: 100%; }
 
@@ -684,7 +691,9 @@ th {
 .tags {
   font-size: .875rem;
   list-style: none;
-  margin: 0 -.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  margin-left: -.25rem;
+  margin-right: -.25rem;
   padding: 0; }
   .tags::after {
     clear: both;
@@ -693,7 +702,7 @@ th {
 
 .tag {
   float: left;
-  margin: 0 .25rem; }
+  margin: .25rem; }
   .tag a {
     border: 1px solid #bdbdbd;
     padding: .25rem .5rem; }
@@ -711,7 +720,8 @@ strong {
   font-weight: bold; }
 
 p {
-  margin: 0 0 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-top: 0; }
 
 small {
   font-size: .75rem; }
@@ -755,7 +765,8 @@ footer {
 .site__footer {
   background: inherit;
   color: inherit;
-  padding: 2rem 0; }
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
 
 header {
   display: block; }
@@ -763,10 +774,12 @@ header {
 .site__header {
   background: inherit;
   color: inherit;
-  padding: 2rem 0; }
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
 
 .site__logo img {
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 .site__aside--left {
   -webkit-order: -1;
@@ -777,7 +790,8 @@ main {
   display: block; }
 
 .site__main {
-  padding: 3rem 0; }
+  padding-bottom: 3rem;
+  padding-top: 3rem; }
 
 section {
   display: block; }

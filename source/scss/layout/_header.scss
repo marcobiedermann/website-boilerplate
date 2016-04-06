@@ -8,13 +8,15 @@ header {
 .site__header {
   background: $header-bgcolor;
   color: $header-color;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .site__logo {
 
   img {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

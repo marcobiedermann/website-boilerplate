@@ -20,7 +20,10 @@ textarea {
   border: 1px solid $border-color;
   border-radius: 0;
   color: inherit;
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family, $base-font-family-fallback;
+  font-family: $base-font-family, $base-font-family-fallback;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
   margin: 0;
   outline-color: $primary-color;
   padding: 0;
@@ -47,13 +50,13 @@ input {
   &[type="reset"],
   &[type="submit"] {
     -webkit-appearance: button;
-    background: $input-button-bgcolor;
+    background-color: $input-button-bgcolor;
     color: $input-button-color;
     cursor: pointer;
 
     &:focus,
     &:hover {
-      background: $input-button-bgcolor-hover;
+      background-color: $input-button-bgcolor-hover;
     }
 
   }
@@ -138,7 +141,8 @@ textarea {
     &[type="checkbox"],
     &[type="radio"] {
       float: left;
-      margin: .25rem .5rem 0 0;
+      margin-right: .5rem;
+      margin-top: .25rem;
     }
 
     &[type="reset"],

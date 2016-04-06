@@ -22,7 +22,7 @@ button {
 }
 
 .button {
-  background: $button-bgcolor;
+  background-color: $button-bgcolor;
   color: $button-color;
   display: inline-block;
   padding: .5rem 1rem;
@@ -58,51 +58,51 @@ button {
   }
 
   &--primary {
-    background: $primary-color;
+    background-color: $primary-color;
 
     &:focus,
     &:hover {
-      background: $primary-color-hover;
+      background-color: $primary-color-hover;
     }
 
   }
 
   &--secondary {
-    background: $secondary-color;
+    background-color: $secondary-color;
 
     &:focus,
     &:hover {
-      background: $secondary-color-hover;
+      background-color: $secondary-color-hover;
     }
 
   }
 
   &--success {
-    background: $success-color;
+    background-color: $success-color;
 
     &:focus,
     &:hover {
-      background: $success-color-hover;
+      background-color: $success-color-hover;
     }
 
   }
 
   &--warning {
-    background: $warning-color;
+    background-color: $warning-color;
 
     &:focus,
     &:hover {
-      background: $warning-color-hover;
+      background-color: $warning-color-hover;
     }
 
   }
 
   &--error {
-    background: $error-color;
+    background-color: $error-color;
 
     &:focus,
     &:hover {
-      background: $error-color-hover;
+      background-color: $error-color-hover;
     }
 
   }
