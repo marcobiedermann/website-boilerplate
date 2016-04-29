@@ -1,0 +1,49 @@
+:root {
+  --htmlFontSize: 100%;
+
+  --bodyBgColor: var(--baseBgColor);
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: var(--baseFontFamily);
+  --bodyFontFamilyFallback: var(--baseFontFamilyFallback);
+  --bodyFontSize: var(--baseFontSize);
+  --bodyFontWeight: var(--baseFontWeight);
+  --bodyLineHeight: var(--baseLineHeight);
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background: var(--bodyColor);
+  color: var(--bodyBgColor);
+  text-shadow: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--htmlFontSize);
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bodyBgColor);
+  color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+  font-size: var(--bodyFontSize);
+  font-weight: var(--bodyFontWeight);
+  line-height: var(--bodyLineHeight);
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+}

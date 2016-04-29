@@ -1,0 +1,120 @@
+:root {
+  --buttonBgColor: #95a5a6;
+  --buttonColor: #fff;
+  --buttonHoverBgColor: color(var(--buttonBgColor) blackness(10%));
+  --buttonHoverColor: color(var(--buttonColor) blackness(10%));
+
+  --buttonPrimaryBgColor: var(--colorPrimary);
+  --buttonPrimaryHoverBgColor: color(var(--buttonPrimaryBgColor) blackness(10%));
+
+  --buttonSecondaryBgColor: var(--colorSecondary);
+  --buttonSecondaryHoverBgColor: color(var(--buttonSecondaryBgColor) blackness(10%));
+
+  --buttonSuccessBgColor: var(--colorSuccess);
+  --buttonSuccessHoverBgColor: color(var(--buttonSuccessBgColor) blackness(10%));
+
+  --buttonWarningBgColor: var(--colorWarning);
+  --buttonWarningHoverBgColor: color(var(--buttonWarningBgColor) blackness(10%));
+
+  --buttonErrorBgColor: var(--colorError);
+  --buttonErrorHoverBgColor: color(var(--buttonErrorBgColor) blackness(10%));
+}
+
+button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  text-transform: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: var(--buttonBgColor);
+  color: var(--buttonColor);
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+
+.button:focus,
+.button:hover {
+  background: var(--buttonHoverBgColor);
+  color: var(--buttonHoverBgColor);
+}
+
+.button--large {
+  font-size: 2rem;
+}
+
+.button--small {
+  font-size: .75rem;
+}
+
+.button--rounded {
+  border-radius: .5rem;
+}
+
+.button--pill {
+  border-radius: 9999px;
+}
+
+.button--full {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.button--primary {
+  background-color: var(--buttonPrimaryBgColor);
+}
+
+.button--primary:focus,
+.button--primary:hover {
+  background-color: var(--buttonPrimaryHoverBgColor);
+}
+
+.button--secondary {
+  background-color: var(--buttonSecondaryBgColor);
+}
+
+.button--secondary:focus,
+.button--secondary:hover {
+  background-color: var(--buttonSecondaryHoverBgColor);
+}
+
+.button--success {
+  background-color: var(--buttonSuccessBgColor);
+}
+
+.button--success:focus,
+.button--success:hover {
+  background-color: var(--buttonSuccessHoverBgColor);
+}
+
+.button--warning {
+  background-color: var(--buttonWarningBgColor);
+}
+
+.button--warning:focus,
+.button--warning:hover {
+  background-color: var(--buttonWarningHoverBgColor);
+}
+
+.button--error {
+  background-color: var(--buttonErrorBgColor);
+}
+
+.button--error:focus,
+.button--error:hover {
+  background-color: var(--buttonErrorHoverBgColor);
+}

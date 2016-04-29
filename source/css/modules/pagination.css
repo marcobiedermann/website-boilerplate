@@ -1,0 +1,29 @@
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pagination::after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a {
+  display: block;
+  padding: .25rem .5rem;
+}
+
+.pagination__previous {
+  float: left;
+}
+
+.pagination__next {
+  float: right;
+}

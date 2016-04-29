@@ -1,0 +1,33 @@
+article {
+  display: block;
+}
+
+.posts {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.post {
+  margin-bottom: 1.5rem;
+}
+
+.post__title {
+
+}
+
+.post__author {
+
+}
+
+.post__date {
+
+}
+
+.post__thumbnail {
+
+}
+
+.post__body {
+
+}

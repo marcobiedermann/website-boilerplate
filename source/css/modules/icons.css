@@ -1,0 +1,19 @@
+.icon {
+  display: inline-block;
+  fill: var(--baseColor);
+  height: 1em;
+  vertical-align: middle;
+  width: 1em;
+}
+
+.icon--2x {
+  font-size: 2rem;
+}
+
+.icon--3x {
+  font-size: 3rem;
+}
+
+.icon--4x {
+  font-size: 4rem;
+}

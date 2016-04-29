@@ -1,0 +1,17 @@
+:root {
+  --footerBgColor: inherit;
+  --footerColor: inherit;
+}
+
+footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.site__footer {
+  background: var(--footerBgColor);
+  color: var(--footerColor);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}

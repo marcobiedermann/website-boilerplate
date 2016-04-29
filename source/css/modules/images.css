@@ -1,0 +1,23 @@
+img,
+svg {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  display: block;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+figcaption {
+  display: block;
+}

@@ -1,0 +1,25 @@
+.tabs {
+
+}
+
+.tablist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tablist__item {
+
+}
+
+.tablist__item--active {
+
+}
+
+.tab {
+  display: none;
+}
+
+.tab--active {
+  display: block;
+}

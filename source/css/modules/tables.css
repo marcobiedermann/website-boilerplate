@@ -1,0 +1,44 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  text-align: left;
+  width: 100%;
+}
+
+caption,
+td,
+th {
+  padding: 0;
+  vertical-align: top;
+}
+
+.table {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+@media (min-width: 48em) {
+
+  .table {
+    -webkit-overflow-scrolling: none;
+    overflow-x: none;
+  }
+
+}
+
+.table table {
+  width: 100%;
+}
+
+.table caption,
+.table td,
+.table th {
+  border: 1px solid var(--borderColor);
+  padding: .5rem;
+}
+
+.table caption {
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+blockquote {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+blockquote p::before {
+  content: open-quote;
+}
+
+blockquote p::after {
+  content: close-quote;
+}
+
+q {
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}

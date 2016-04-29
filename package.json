@@ -27,14 +27,15 @@
     "grunt-contrib-htmlmin": "^1.2.0",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-scss-lint": "^0.3.8",
+    "grunt-postcss": "^0.8.0",
     "grunt-svgmin": "^3.1.2",
     "grunt-svgstore": "^1.0.0",
     "grunt-usemin": "^3.1.1",
     "imagemin-webp": "^3.1.1",
-    "jit-grunt": "^0.10.0"
+    "jit-grunt": "^0.10.0",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-import": "^8.1.0"
   }
 }

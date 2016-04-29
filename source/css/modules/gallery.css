@@ -1,0 +1,28 @@
+.gallery {
+  margin-bottom: 1.5rem;
+}
+
+.gallery .images {
+  list-style: none;
+  margin: -.25rem;
+  padding: 0;
+}
+
+.gallery .images::after {
+  content: ' ';
+  display: table;
+}
+
+.gallery .images li {
+  float: left;
+  padding: .25rem;
+  width: calc(100% / 2);
+}
+
+@media (min-width: 30em) {
+
+  .gallery .images li {
+    width: calc(100% / 3);
+  }
+
+}

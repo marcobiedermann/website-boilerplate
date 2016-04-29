@@ -1,9 +1,0 @@
-@import '../../variables';
-
-@font-face {
-  font-family: 'FontName';
-  font-style: normal;
-  font-weight: 400;
-  src: url('#{$path-fonts}/fontname.woff') format('woff'),
-      url('#{$path-fonts}/fontname.woff2') format('woff2');
-}

@@ -1,0 +1,20 @@
+:root {
+  --headerBgColor: inherit;
+  --headerColor: inherit;
+}
+
+header {
+  display: block;
+}
+
+.site__header {
+  background: var(--headerBgColor);
+  color: var(--headerColor);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.site__logo img {
+  margin-left: auto;
+  margin-right: auto;
+}

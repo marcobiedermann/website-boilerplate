@@ -1,0 +1,21 @@
+.embed {
+  height: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.embed--16-9 {
+  padding-bottom: calc(100% / (16 / 9));
+}
+
+.embed embed,
+.embed iframe,
+.embed object {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

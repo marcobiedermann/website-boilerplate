@@ -47,15 +47,14 @@ module.exports = function(grunt) {
 
     clean: {
       dist: ['<%= config.build %>'],
-      tmp: ['<%= config.tmp %>'],
-      sass: ['.sass-cache']
+      tmp: ['<%= config.tmp %>']
     },
 
     cmq: {
       files: {
         expand: true,
-        cwd: '<%= config.tmp %>/concat/css',
-        dest: '<%= config.tmp %>/concat/css',
+        cwd: '<%= config.build %>/css',
+        dest: '<%= config.build %>/css',
         src: '*.css'
       }
     },
@@ -114,6 +113,12 @@ module.exports = function(grunt) {
     cssmin: {
       options: {
         keepSpecialComments: 0
+      },
+      files: {
+        expand: true,
+        cwd: '<%= config.build %>/css',
+        dest: '<%= config.build %>/css',
+        src: '**/*.css'
       }
     },
 
@@ -179,18 +184,25 @@ module.exports = function(grunt) {
       ]
     },
 
-    sass: {
-      files: {
-        expand: true,
-        cwd: '<%= config.source %>/scss',
-        dest: '<%= config.source %>/css',
-        src: '**/*.scss',
-        ext: '.css'
+    postcss: {
+      options: {
+        map: {
+            inline: false
+        },
+        processors: [
+          require('postcss-import')(),
+          require('postcss-cssnext')({
+            features: {
+              rem: false
+            },
+          })
+        ]
+      },
+      target: {
+        files: {
+          '<%= config.build %>/css/style.css': ['<%= config.source %>/css/style.css']
+        }
       }
-    },
-
-    scsslint: {
-      files: ['<%= config.source %>/scss/**/*.scss']
     },
 
     svgmin: {
@@ -237,7 +249,7 @@ module.exports = function(grunt) {
         files: [
           '<%= config.source %>/css/**/*.css'
         ],
-        tasks: []
+        tasks: ['postcss']
       },
       gruntfile: {
         files: ['gruntfile.js'],
@@ -259,12 +271,6 @@ module.exports = function(grunt) {
         ],
         tasks: ['imagemin']
       },
-      sass: {
-        files: [
-          '<%= config.source %>/scss/**/*.scss'
-        ],
-        tasks: ['scsslint', 'sass', 'autoprefixer']
-      },
       svg: {
         files: [
           '<%= config.source %>/img/icons/*.svg'
@@ -278,11 +284,9 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     // Linting
     'jshint',
-    'scsslint',
 
     // CSS
-    'sass',
-    'autoprefixer',
+    'postcss',
 
     // Images
     'svgmin',
@@ -298,14 +302,12 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', [
     // Linting
-    'jshint',
-    'scsslint'
+    'jshint'
   ]);
 
   grunt.registerTask('build', [
     // Linting
     'jshint',
-    'scsslint',
 
     // Clean
     'clean:dist',
@@ -315,8 +317,7 @@ module.exports = function(grunt) {
     'copy',
 
     // CSS
-    'sass',
-    'autoprefixer',
+    'postcss',
 
     // HTML
     'assemble',
@@ -325,7 +326,7 @@ module.exports = function(grunt) {
     'useminPrepare',
     'concat:generated',
     'cmq',
-    'cssmin:generated',
+    'cssmin',
     'uglify:generated',
     'usemin',
 
@@ -336,8 +337,7 @@ module.exports = function(grunt) {
     'imagemin',
 
     // Clean
-    'clean:tmp',
-    'clean:sass',
+    'clean:tmp'
   ]);
 
 };

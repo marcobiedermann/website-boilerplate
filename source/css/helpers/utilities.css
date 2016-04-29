@@ -1,0 +1,17 @@
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  transform: translateZ(0);
+}
+
+.invisible {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}

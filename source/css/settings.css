@@ -1,0 +1,18 @@
+:root {
+  --baseBgColor: #fff;
+  --baseColor: #111;
+  --baseFontFamily: Arial;
+  --baseFontFamilyFallback: sans-serif;
+  --baseFontSize: 1rem;
+  --baseFontWeight: 400;
+  --baseLineHeight: 1.5;
+
+  --colorPrimary: #2e719e;
+  --colorSecondary: #964db3;
+  --colorSuccess: #367d53;
+  --colorWarning: #f1c40f;
+  --colorError: #b83c2e;
+
+  --borderColor: #bdbdbd;
+  --borderHoverColor: color(var(--borderColor), darkness(20%));
+}

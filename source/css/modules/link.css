@@ -1,0 +1,26 @@
+:root {
+  --linkColor: var(--colorPrimary);
+  --linkActiveColor: color(var(--linkColor) lightness(10%));
+  --linkHoverColor: color(var(--linkColor) blackness(10%));
+}
+
+a {
+  background-color: transparent;
+  border: 0;
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+}
+
+a:active {
+  color: var(--linkActiveColor);
+}
+
+a:focus,
+a:hover {
+  color: var(--linkHoverColor);
+}
+
+a:focus {
+  outline: none;
+}
