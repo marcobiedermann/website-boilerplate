@@ -10,10 +10,6 @@
   --bodyLineHeight: var(--baseLineHeight);
 }
 
-@-ms-viewport {
-  width: device-width;
-}
-
 *,
 *::before,
 *::after {
