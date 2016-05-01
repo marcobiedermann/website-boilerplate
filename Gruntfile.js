@@ -39,8 +39,8 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true,
-        cwd: '<%= config.source %>/css',
-        dest: '<%= config.source %>/css',
+        cwd: '<%= config.source %>/assets/css',
+        dest: '<%= config.source %>/assets/css',
         src: '*.css'
       }
     },
@@ -53,8 +53,8 @@ module.exports = function(grunt) {
     cmq: {
       files: {
         expand: true,
-        cwd: '<%= config.build %>/css',
-        dest: '<%= config.build %>/css',
+        cwd: '<%= config.build %>/assets/css',
+        dest: '<%= config.build %>/assets/css',
         src: '*.css'
       }
     },
@@ -86,8 +86,8 @@ module.exports = function(grunt) {
     copy: {
       fonts: {
         expand: true,
-        cwd: '<%= config.source %>/fonts',
-        dest: '<%= config.build %>/fonts',
+        cwd: '<%= config.source %>/assets/fonts',
+        dest: '<%= config.build %>/assets/fonts',
         src: '**/*.{otf,svg,ttf,woff,woff2}',
       },
       html: {
@@ -104,8 +104,8 @@ module.exports = function(grunt) {
       },
       svg: {
         expand: true,
-        cwd: '<%= config.source %>/img',
-        dest: '<%= config.build %>/img',
+        cwd: '<%= config.source %>/assets/img',
+        dest: '<%= config.build %>/assets/img',
         src: ['icons.svg'],
       }
     },
@@ -116,8 +116,8 @@ module.exports = function(grunt) {
       },
       files: {
         expand: true,
-        cwd: '<%= config.build %>/css',
-        dest: '<%= config.build %>/css',
+        cwd: '<%= config.build %>/assets/css',
+        dest: '<%= config.build %>/assets/css',
         src: '**/*.css'
       }
     },
@@ -179,8 +179,8 @@ module.exports = function(grunt) {
       },
       files: [
         'gruntfile.js',
-        '<%= config.source %>/js/**/*.js',
-        '!source/js/libs/**/*.js'
+        '<%= config.source %>/assets/js/**/*.js',
+        '!source/assets/js/libs/**/*.js'
       ]
     },
 
@@ -200,7 +200,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          '<%= config.build %>/css/style.css': ['<%= config.source %>/css/style.css']
+          '<%= config.build %>/assets/css/style.css': ['<%= config.source %>/assets/css/style.css']
         }
       }
     },
@@ -208,8 +208,8 @@ module.exports = function(grunt) {
     svgmin: {
       files: {
         expand: true,
-        cwd: '<%= config.source %>/img/icons',
-        dest: '<%= config.tmp %>/img/icons',
+        cwd: '<%= config.source %>/assets/img/icons',
+        dest: '<%= config.tmp %>/assets/img/icons',
         ext: '.svg',
         src: ['**/*.svg']
       }
@@ -225,7 +225,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          '<%= config.source %>/img/icons.svg': ['<%= config.tmp %>/img/icons/*.svg'],
+          '<%= config.source %>/assets/img/icons.svg': ['<%= config.tmp %>/assets/img/icons/*.svg'],
         }
       }
     },
@@ -247,7 +247,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: [
-          '<%= config.source %>/css/**/*.css'
+          '<%= config.source %>/assets/css/**/*.css'
         ],
         tasks: ['postcss']
       },
@@ -261,7 +261,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          '<%= config.source %>/js/**/*.js'
+          '<%= config.source %>/assets/js/**/*.js'
         ],
         tasks: ['jshint']
       },
@@ -273,7 +273,7 @@ module.exports = function(grunt) {
       },
       svg: {
         files: [
-          '<%= config.source %>/img/icons/*.svg'
+          '<%= config.source %>/assets/img/icons/*.svg'
         ],
         tasks: ['svgmin', 'svgstore']
       }
