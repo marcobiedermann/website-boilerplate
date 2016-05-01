@@ -1,12 +1,16 @@
 .embed {
   height: 0;
   margin-bottom: 1.5rem;
-  padding-bottom: 100%;
+  padding-top: 100%;
   position: relative;
 }
 
+.embed--4-3 {
+  padding-top: calc(100% / (4 / 3));
+}
+
 .embed--16-9 {
-  padding-bottom: calc(100% / (16 / 9));
+  padding-top: calc(100% / (16 / 9));
 }
 
 .embed embed,
