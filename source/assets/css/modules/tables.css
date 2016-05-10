@@ -1,6 +1,5 @@
 :root {
   --tableMarginBottom: 1.5rem;
-  --tableMarginTop: 0;
 
   --tableCellPadding: .5rem;
 }
@@ -9,7 +8,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: var(--tableMarginBottom);
-  margin-top: var(--tableMarginTop);
   text-align: left;
   width: 100%;
 }
