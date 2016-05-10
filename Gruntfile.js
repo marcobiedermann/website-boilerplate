@@ -110,18 +110,6 @@ module.exports = function(grunt) {
       }
     },
 
-    cssmin: {
-      options: {
-        keepSpecialComments: 0
-      },
-      files: {
-        expand: true,
-        cwd: '<%= config.build %>/assets/css',
-        dest: '<%= config.build %>/assets/css',
-        src: '**/*.css'
-      }
-    },
-
     htmlmin: {
       options: {
         removeComments: true,
@@ -195,7 +183,9 @@ module.exports = function(grunt) {
             features: {
               rem: false
             },
-          })
+          }),
+          require('css-mqpacker')(),
+          require('cssnano')()
         ]
       },
       target: {
@@ -325,8 +315,7 @@ module.exports = function(grunt) {
     // Usemin
     'useminPrepare',
     'concat:generated',
-    'cmq',
-    'cssmin',
+    // 'cmq',
     'uglify:generated',
     'usemin',
 
