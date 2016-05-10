@@ -50,7 +50,7 @@ button::-moz-focus-inner {
   background-color: var(--buttonBgColor);
   color: var(--buttonColor);
   display: inline-block;
-  padding: var(--buttonPaddingVertical) var(--buttonPaddingHorizonta);
+  padding: var(--buttonPaddingVertical) var(--buttonPaddingHorizontal);
 }
 
 .button:focus,
