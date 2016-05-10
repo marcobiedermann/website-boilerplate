@@ -19,7 +19,6 @@
     "cssnano": "^3.5.2",
     "grunt": "~1.0.1",
     "grunt-assemble": "~0.4.0",
-    "grunt-autoprefixer": "~3.0.4",
     "grunt-combine-media-queries": "~1.0.20",
     "grunt-contrib-clean": "~1.0.0",
     "grunt-contrib-concat": "~1.0.1",

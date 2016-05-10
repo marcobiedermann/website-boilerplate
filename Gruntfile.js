@@ -32,19 +32,6 @@ module.exports = function(grunt) {
       }
     },
 
-    autoprefixer: {
-      options: {
-        browsers: ['last 3 versions'],
-        map: true
-      },
-      files: {
-        expand: true,
-        cwd: '<%= config.source %>/assets/css',
-        dest: '<%= config.source %>/assets/css',
-        src: '*.css'
-      }
-    },
-
     clean: {
       dist: ['<%= config.build %>'],
       tmp: ['<%= config.tmp %>']
