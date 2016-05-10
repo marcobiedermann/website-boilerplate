@@ -10,6 +10,7 @@ a {
   background-color: transparent;
   border: 0;
   color: var(--linkColor);
+  outline: none;
   text-decoration: var(--linkTextDecoration);
   transition: background-color .3s, color .3s;
 }
@@ -21,8 +22,4 @@ a:active {
 a:focus,
 a:hover {
   color: var(--linkHoverColor);
-}
-
-a:focus {
-  outline: none;
 }
