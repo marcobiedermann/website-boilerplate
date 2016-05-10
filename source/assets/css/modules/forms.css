@@ -9,6 +9,19 @@
   --inputButtonHoverBgColor: #7e8b8c;
 
   --placeholderColor: #ccc;
+
+  --formFieldPadding: .5rem;
+
+  --formInputPaddingHorizontal: .5rem;
+  --formInputPaddingVertical: .25rem;
+
+  --formInputButtonPaddingHorizontal: .5rem;
+  --formInputButtonPaddingVertical: 1rem;
+
+  --formTextreaHeight: 6rem;
+
+  --formCheckboxMarginRight: .5rem;
+  --formCheckboxMarginTop: .25rem;
 }
 
 fieldset {
@@ -94,11 +107,11 @@ textarea {
 }
 
 .form fieldset {
-  margin: -.5rem 0;
+  margin: calc(var(--formFieldPadding) * -1);
 }
 
 .form__field {
-  padding: .5rem 0;
+  padding: var(--formFieldPadding);
 }
 
 .form__field::after {
@@ -130,24 +143,24 @@ textarea {
 .form input[type="time"],
 .form input[type="url"],
 .form input[type="week"] {
-  padding: .25rem .5rem;
+  padding: var(--formInputPaddingVertical) var(--formInputPaddingHorizontal);
   width: 100%;
 }
 
 .form textarea {
-  height: 6rem;
+  height: var(--formTextreaHeight);
 }
 
 .form input[type="reset"],
 .form input[type="submit"] {
-  padding: .25rem 1rem;
+  padding: var(--formInputButtonPaddingVertical) var(--formInputButtonPaddingHorizontal);
 }
 
 .form input[type="checkbox"],
 .form input[type="radio"] {
   float: left;
-  margin-right: .5rem;
-  margin-top: .25rem;
+  margin-right: var(--formCheckboxMarginRight);
+  margin-top: var(--formCheckboxMarginTop);
 }
 
 .form .checkbox-container,

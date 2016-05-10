@@ -1,6 +1,7 @@
 :root {
   --footerBgColor: inherit;
   --footerColor: inherit;
+  --footerPaddingVertical: 2rem;
 }
 
 footer {
@@ -12,6 +13,6 @@ footer {
 .site__footer {
   background: var(--footerBgColor);
   color: var(--footerColor);
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: var(--footerPaddingVertical);
+  padding-top: var(--footerPaddingVertical);
 }

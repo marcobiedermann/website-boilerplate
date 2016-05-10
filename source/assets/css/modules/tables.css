@@ -1,8 +1,15 @@
+:root {
+  --tableMarginBottom: 1.5rem;
+  --tableMarginTop: 0;
+
+  --tableCellPadding: .5rem;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 1.5rem;
-  margin-top: 0;
+  margin-bottom: var(--tableMarginBottom);
+  margin-top: var(--tableMarginTop);
   text-align: left;
   width: 100%;
 }
@@ -36,7 +43,7 @@ th {
 .table td,
 .table th {
   border: 1px solid var(--borderColor);
-  padding: .5rem;
+  padding: var(--tableCellPadding);
 }
 
 .table caption {

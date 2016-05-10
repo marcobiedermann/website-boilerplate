@@ -1,6 +1,7 @@
 :root {
   --headerBgColor: inherit;
   --headerColor: inherit;
+  --headerPaddingVertical: 2rem;
 }
 
 header {
@@ -10,8 +11,8 @@ header {
 .site__header {
   background: var(--headerBgColor);
   color: var(--headerColor);
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: var(--headerPaddingVertical);
+  padding-top: var(--headerPaddingVertical);
 }
 
 .site__logo img {

@@ -1,8 +1,12 @@
+:root {
+  --mainPaddingVertical: 1.5rem;
+}
+
 main {
   display: block;
 }
 
 .site__main {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  padding-bottom: var(--mainPaddingVertical);
+  padding-top: var(--mainPaddingVertical);
 }

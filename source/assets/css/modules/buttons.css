@@ -1,8 +1,17 @@
 :root {
   --buttonBgColor: #95a5a6;
   --buttonColor: #fff;
+  --buttonPaddingHorizontal: 1rem;
+  --buttonPaddingVertical: .5rem;
+
   --buttonHoverBgColor: color(var(--buttonBgColor) blackness(10%));
   --buttonHoverColor: color(var(--buttonColor) blackness(10%));
+
+  --buttonLargeFontSize: 2rem;
+
+  --buttonSmallFontSize: .75rem;
+
+  --buttonRoundBorderRadius: .5rem;
 
   --buttonPrimaryBgColor: var(--colorPrimary);
   --buttonPrimaryHoverBgColor: color(var(--buttonPrimaryBgColor) blackness(10%));
@@ -41,7 +50,7 @@ button::-moz-focus-inner {
   background-color: var(--buttonBgColor);
   color: var(--buttonColor);
   display: inline-block;
-  padding: .5rem 1rem;
+  padding: var(--buttonPaddingVertical) var(--buttonPaddingHorizonta);
 }
 
 .button:focus,
@@ -51,15 +60,15 @@ button::-moz-focus-inner {
 }
 
 .button--large {
-  font-size: 2rem;
+  font-size: var(--buttonLargeFontSize);
 }
 
 .button--small {
-  font-size: .75rem;
+  font-size: var(--buttonSmallFontSize);
 }
 
 .button--rounded {
-  border-radius: .5rem;
+  border-radius: var(--buttonRoundBorderRadius);
 }
 
 .button--pill {

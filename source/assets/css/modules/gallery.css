@@ -1,10 +1,15 @@
+:root {
+  --galleryGutter: .25rem;
+  --galleryMarginBottom: 1.5rem;
+}
+
 .gallery {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--galleryMarginBottom);
 }
 
 .gallery .images {
   list-style: none;
-  margin: -.25rem;
+  margin: calc(var(--galleryGutter) * -1);
   padding: 0;
 }
 
@@ -15,7 +20,7 @@
 
 .gallery .images li {
   float: left;
-  padding: .25rem;
+  padding: var(--galleryGutter);
   width: calc(100% / 2);
 }
 

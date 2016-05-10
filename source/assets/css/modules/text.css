@@ -1,3 +1,8 @@
+:root {
+  --paragraphMarginBottom: 1.5rem;
+  --paragraphMarginTop: 0;
+}
+
 address,
 em {
   font-style: italic;
@@ -9,8 +14,8 @@ strong {
 }
 
 p {
-  margin-bottom: 1.5rem;
-  margin-top: 0;
+  margin-bottom: var(--paragraphMarginBottom);
+  margin-top: var(--paragraphMarginTop);
 }
 
 small {

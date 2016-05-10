@@ -1,9 +1,13 @@
+:root {
+  --iconSize: 1em;
+}
+
 .icon {
   display: inline-block;
   fill: var(--baseColor);
-  height: 1em;
+  height: var(--iconSize);
   vertical-align: middle;
-  width: 1em;
+  width: var(--iconSize);
 }
 
 .icon--2x {

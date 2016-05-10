@@ -1,11 +1,13 @@
 :root {
+  --dialogPadding: 1rem;
+
   --dialogBackdropBgBolor: rgba(0, 0, 0, .85);
 }
 
 dialog {
   border: 0;
   display: none;
-  padding: 1rem;
+  padding: var(--dialogPadding);
 }
 
 dialog::backdrop {

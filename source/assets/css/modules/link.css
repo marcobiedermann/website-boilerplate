@@ -1,5 +1,7 @@
 :root {
   --linkColor: var(--colorPrimary);
+  --linkTextDecoration: none;
+
   --linkActiveColor: color(var(--linkColor) lightness(10%));
   --linkHoverColor: color(var(--linkColor) blackness(10%));
 }
@@ -8,7 +10,7 @@ a {
   background-color: transparent;
   border: 0;
   color: var(--linkColor);
-  text-decoration: none;
+  text-decoration: var(--linkTextDecoration);
   transition: background-color .3s, color .3s;
 }
 

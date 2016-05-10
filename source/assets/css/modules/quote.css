@@ -1,6 +1,11 @@
+:root {
+  --blockquoteMarginBottom: 1.5rem;
+  --blockquoteMarginTop: 0;
+}
+
 blockquote {
-  margin-bottom: 1.5rem;
-  margin-top: 0;
+  margin-bottom: var(--blockquoteMarginBottom);
+  margin-top: var(--blockquoteMarginTop);
   quotes: '\201C' '\201D' '\2018' '\2019';
 }
 

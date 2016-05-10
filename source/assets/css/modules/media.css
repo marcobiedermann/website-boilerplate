@@ -1,3 +1,9 @@
+:root {
+  --mediaObjMarginBottom: 1.5rem;
+  --mediaObjLeftMarginRight: 1rem;
+  --mediaObjRightMarginLeft: 1rem;
+}
+
 .media {
   display: flex;
 }
@@ -7,7 +13,7 @@
 }
 
 .media__obj {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--mediaObjMarginBottom);
 }
 
 @media (min-width: 30em) {
@@ -20,11 +26,11 @@
 }
 
 .media__obj--left {
-  margin-right: 1rem;
+  margin-right: var(--mediaObjLeftMarginRight);
 }
 
 .media__obj--right {
-  margin-left: 1rem;
+  margin-left: var(--mediaObjRightMarginLeft);
   order: 1;
 }
 

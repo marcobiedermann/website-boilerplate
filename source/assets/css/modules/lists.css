@@ -1,9 +1,19 @@
+:root {
+  --listMarginBottom: 1.5rem;
+  --listMarginTop: 0;
+  --listPadding: 1.25rem;
+
+  --listListMarginTop: .5rem;
+
+  --listItemMarginBottom: .25rem;
+}
+
 dl,
 ol,
 ul {
-  margin-bottom: 1.5rem;
-  margin-top: 0;
-  padding-left: 1.25rem;
+  margin-bottom: var(--listMarginBottom);
+  margin-top: var(--listMarginTop);
+  padding-left: var(--listPadding);
 }
 
 dd dd,
@@ -15,11 +25,9 @@ ul ul,
 ol dd,
 ol ol,
 ol ul {
-  margin-top: .5rem;
+  margin-top: var(--listListMarginTop);
 }
 
-dl li,
-ol li,
-ul li {
-  margin-bottom: .25rem;
+li {
+  margin-bottom: var(--listItemMarginBottom);
 }

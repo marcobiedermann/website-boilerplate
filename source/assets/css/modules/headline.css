@@ -1,67 +1,127 @@
 :root {
-  --headlineColor: inherit;
-  --headlineFontFamily: inherit;
-  --headlineFontFamilyFallback: var(--baseFontFamilyFallback);
-  --headlineFontWeight: 700;
-
+  --h1Color: inherit;
+  --h1FontFamily: inherit;
+  --h1FontFamilyFallback: var(--baseFontFamilyFallback);
   --h1FontSize: 2rem;
+  --h1FontWeight: 700;
+  --h1LineHeight: 1.2;
+  --h1MarginBottom: .5rem;
+  --h1MarginTop: 0;
+  --h1TextTransform: uppercase;
+
+  --h2Color: inherit;
+  --h2FontFamily: inherit;
+  --h2FontFamilyFallback: var(--baseFontFamilyFallback);
   --h2FontSize: 1.5rem;
+  --h2FontWeight: 700;
+  --h2LineHeight: 1.2;
+  --h2MarginBottom: .5rem;
+  --h2MarginTop: 0;
+  --h2TextTransform: uppercase;
+
+  --h3Color: inherit;
+  --h3FontFamily: inherit;
+  --h3FontFamilyFallback: var(--baseFontFamilyFallback);
   --h3FontSize: 1.25rem;
+  --h3FontWeight: 700;
+  --h3LineHeight: 1.2;
+  --h3MarginBottom: .5rem;
+  --h3MarginTop: 0;
+  --h3TextTransform: uppercase;
+
+  --h4Color: inherit;
+  --h4FontFamily: inherit;
+  --h4FontFamilyFallback: var(--baseFontFamilyFallback);
   --h4FontSize: 1rem;
+  --h4FontWeight: 700;
+  --h4LineHeight: 1.2;
+  --h4MarginBottom: .5rem;
+  --h4MarginTop: 0;
+  --h4TextTransform: uppercase;
+
+  --h5Color: inherit;
+  --h5FontFamily: inherit;
+  --h5FontFamilyFallback: var(--baseFontFamilyFallback);
   --h5FontSize: .875rem;
+  --h5FontWeight: 700;
+  --h5LineHeight: 1.2;
+  --h5MarginBottom: .5rem;
+  --h5MarginTop: 0;
+  --h5TextTransform: uppercase;
+
+  --h6Color: inherit;
+  --h6FontFamily: inherit;
+  --h6FontFamilyFallback: var(--baseFontFamilyFallback);
   --h6FontSize: .75rem;
+  --h6FontWeight: 700;
+  --h6LineHeight: 1.2;
+  --h6MarginBottom: .5rem;
+  --h6MarginTop: 0;
+  --h6TextTransform: uppercase;
 }
 
 h1 {
-  color: var(--headlineColor);
-  font-family: var(--headlineFontFamily), var(--headlineFontFamilyFallback);
+  color: var(--h1Color);
+  font-family: var(--h1FontFamily), var(--h1FontFamilyFallback);
   font-size: var(--h1FontSize);
-  font-weight: var(--headlineFontWeight);
-  line-height: 1.2;
-  margin: 0 0 .5rem;
+  font-weight: var(--h1FontWeight);
+  line-height: var(--h1LineHeight);
+  margin-bottom: var(--h1MarginBottom);
+  margin-top: var(--h1MarginTop);
+  text-transform: var(--h1TextTransform);
 }
 
 h2 {
-  color: var(--headlineColor);
-  font-family: var(--headlineFontFamily), var(--headlineFontFamilyFallback);
+  color: var(--h2Color);
+  font-family: var(--h2FontFamily), var(--h2FontFamilyFallback);
   font-size: var(--h2FontSize);
-  font-weight: var(--headlineFontWeight);
-  line-height: 1.2;
-  margin: 0 0 .5rem;
+  font-weight: var(--h2FontWeight);
+  line-height: var(--h2LineHeight);
+  margin-bottom: var(--h2MarginBottom);
+  margin-top: var(--h2MarginTop);
+  text-transform: var(--h2TextTransform);
 }
 
 h3 {
-  color: var(--headlineColor);
-  font-family: var(--headlineFontFamily), var(--headlineFontFamilyFallback);
+  color: var(--h3Color);
+  font-family: var(--h3FontFamily), var(--h3FontFamilyFallback);
   font-size: var(--h3FontSize);
-  font-weight: var(--headlineFontWeight);
-  line-height: 1.2;
-  margin: 0 0 .5rem;
+  font-weight: var(--h3FontWeight);
+  line-height: var(--h3LineHeight);
+  margin-bottom: var(--h3MarginBottom);
+  margin-top: var(--h3MarginTop);
+  text-transform: var(--h3TextTransform);
 }
 
 h4 {
-  color: var(--headlineColor);
-  font-family: var(--headlineFontFamily), var(--headlineFontFamilyFallback);
+  color: var(--h4Color);
+  font-family: var(--h4FontFamily), var(--h4FontFamilyFallback);
   font-size: var(--h4FontSize);
-  font-weight: var(--headlineFontWeight);
-  line-height: 1.2;
-  margin: 0 0 .5rem;
+  font-weight: var(--h4FontWeight);
+  line-height: var(--h4LineHeight);
+  margin-bottom: var(--h4MarginBottom);
+  margin-top: var(--h4MarginTop);
+  text-transform: var(--h4TextTransform);
 }
 
 h5 {
-  color: var(--headlineColor);
-  font-family: var(--headlineFontFamily), var(--headlineFontFamilyFallback);
+  color: var(--h5Color);
+  font-family: var(--h5FontFamily), var(--h5FontFamilyFallback);
   font-size: var(--h5FontSize);
-  font-weight: var(--headlineFontWeight);
-  line-height: 1.2;
-  margin: 0 0 .5rem;
+  font-weight: var(--h5FontWeight);
+  line-height: var(--h5LineHeight);
+  margin-bottom: var(--h5MarginBottom);
+  margin-top: var(--h5MarginTop);
+  text-transform: var(--h5TextTransform);
 }
 
 h6 {
-  color: var(--headlineColor);
-  font-family: var(--headlineFontFamily), var(--headlineFontFamilyFallback);
+  color: var(--h6Color);
+  font-family: var(--h6FontFamily), var(--h6FontFamilyFallback);
   font-size: var(--h6FontSize);
-  font-weight: var(--headlineFontWeight);
-  line-height: 1.2;
-  margin: 0 0 .5rem;
+  font-weight: var(--h6FontWeight);
+  line-height: var(--h6LineHeight);
+  margin-bottom: var(--h6MarginBottom);
+  margin-top: var(--h6MarginTop);
+  text-transform: var(--h6TextTransform);
 }

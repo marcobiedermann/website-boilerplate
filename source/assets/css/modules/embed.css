@@ -1,6 +1,10 @@
+:root {
+  --embedMarginBottom: 1.5rem;
+}
+
 .embed {
   height: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--embedMarginBottom);
   padding-top: 100%;
   position: relative;
 }
