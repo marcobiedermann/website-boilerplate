@@ -163,18 +163,18 @@ add(a, b);</code></pre>
 
           <p>
             <picture>
-              <source media="(min-width: 960px)" srcset="http://dummyimage.com/1248x936/808080/fff.png">
-              <source media="(min-width: 640px)" srcset="http://dummyimage.com/960x720/808080/fff.png">
-              <source media="(min-width: 480px)" srcset="http://dummyimage.com/640x480/808080/fff.png">
-              <img src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="">
+              <source media="(min-width: 960px)" data-srcset="http://dummyimage.com/1248x936/808080/fff.png">
+              <source media="(min-width: 640px)" data-srcset="http://dummyimage.com/960x720/808080/fff.png">
+              <source media="(min-width: 480px)" data-srcset="http://dummyimage.com/640x480/808080/fff.png">
+              <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="" class="lazyload">
             </picture>
           </p>
 
           <pre><code>&lt;picture&gt;
-  &lt;source media="(min-width: 960px)" srcset="http://dummyimage.com/1248x936/808080/fff.png"&gt;
-  &lt;source media="(min-width: 640px)" srcset="http://dummyimage.com/960x720/808080/fff.png"&gt;
-  &lt;source media="(min-width: 480px)" srcset="http://dummyimage.com/640x480/808080/fff.png"&gt;
-  &lt;img src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt=""&gt;
+  &lt;source media="(min-width: 960px)" data-srcset="http://dummyimage.com/1248x936/808080/fff.png"&gt;
+  &lt;source media="(min-width: 640px)" data-srcset="http://dummyimage.com/960x720/808080/fff.png"&gt;
+  &lt;source media="(min-width: 480px)" data-srcset="http://dummyimage.com/640x480/808080/fff.png"&gt;
+  &lt;img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="" class="lazyload"&gt;
 &lt;/picture&gt;</code></pre>
 
         </section>
@@ -188,7 +188,11 @@ add(a, b);</code></pre>
           <div class="media">
 
             <figure class="media__obj media__obj--left">
-              <a href="#"><img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48"></a>
+              <a href="#">
+                <picture>
+                  <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" class="lazyload">
+                </picture>
+              </a>
             </figure>
 
             <div class="media__body">
@@ -209,7 +213,11 @@ add(a, b);</code></pre>
           <div class="media">
 
             <figure class="media__obj media__obj--right">
-              <a href="#"><img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48"></a>
+              <a href="#">
+                <picture>
+                  <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" class="lazyload">
+                </picture>
+              </a>
             </figure>
 
             <div class="media__body">
@@ -230,7 +238,11 @@ add(a, b);</code></pre>
           <div class="media media--center">
 
             <figure class="media__obj media__obj--left">
-              <a href="#"><img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48"></a>
+              <a href="#">
+                <picture>
+                  <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" class="lazyload">
+                </picture>
+              </a>
             </figure>
 
             <div class="media__body">
@@ -251,7 +263,11 @@ add(a, b);</code></pre>
           <div class="media">
 
             <figure class="media__obj media__obj--left">
-              <a href="#"><img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48"></a>
+              <a href="#">
+                <picture>
+                  <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" class="lazyload">
+                </picture>
+              </a>
             </figure>
 
             <div class="media__body">
@@ -261,7 +277,11 @@ add(a, b);</code></pre>
               <div class="media">
 
                 <figure class="media__obj media__obj--left">
-                  <a href="#"><img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48"></a>
+                  <a href="#">
+                    <picture>
+                      <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" class="lazyload">
+                    </picture>
+                  </a>
                 </figure>
 
                 <div class="media__body">
@@ -419,7 +439,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -428,7 +450,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -437,7 +461,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -446,7 +472,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -455,7 +483,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -464,7 +494,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -473,7 +505,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -482,7 +516,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -491,7 +527,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -500,7 +538,9 @@ add(a, b);</code></pre>
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                   <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
-                    <img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
                   </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
@@ -508,14 +548,22 @@ add(a, b);</code></pre>
 
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl"><img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail"></a>
+                  <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
+                  </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
               </li>
 
               <li>
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl"><img src="http://dummyimage.com/460x345/808080/fff.png" alt="Alt Text" title="Title Text" itemprop="thumbnail"></a>
+                  <a href="http://dummyimage.com/460x345/808080/fff.png" title="" itemprop="contentUrl">
+                    <picture>
+                      <img data-src="http://dummyimage.com/460x345/808080/fff.png" width="460" height="345" alt="Alt Text" itemprop="thumbnail" class="lazyload">
+                    </picture>
+                  </a>
                   <figcaption itemprop="caption description">Figcaption</figcaption>
                 </figure>
               </li>
@@ -530,7 +578,9 @@ add(a, b);</code></pre>
     &lt;li&gt;
       &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"&gt;
         &lt;a href="#" title=" itemprop="contentUrl"&gt;
-          &lt;img src=" width="" height="" alt=" itemprop="thumbnail"&gt;
+          &lt;picture&gt;
+            &lt;img data-src=" width="" height="" alt=" itemprop="thumbnail" class="lazyload"&gt;
+          &lt;/picture&gt;
         &lt;/a&gt;
         &lt;figcaption itemprop="caption description"&gt;…&lt;/figcaption&gt;
       &lt;/figure&gt;
@@ -1208,7 +1258,7 @@ add(a, b);</code></pre>
                 <figure class="post__thumbnail media__obj--left">
                   <a href="posts/post-title" itemprop="url">
                     <picture>
-                      <img src="http://dummyimage.com/300x200/808080/fff.png" width="300" height="200" alt="" itemprop="image">
+                      <img data-src="http://dummyimage.com/300x200/808080/fff.png" width="300" height="200" alt="" itemprop="image" class="lazyload">
                     </picture>
                   </a>
                 </figure>
@@ -1239,7 +1289,7 @@ add(a, b);</code></pre>
                 <figure class="post__thumbnail media__obj--left">
                   <a href="posts/post-title" itemprop="url">
                     <picture>
-                      <img src="http://dummyimage.com/300x200/808080/fff.png" width="300" height="200" alt="" itemprop="image">
+                      <img data-src="http://dummyimage.com/300x200/808080/fff.png" width="300" height="200" alt="" itemprop="image" class="lazyload">
                     </picture>
                   </a>
                 </figure>
@@ -1270,7 +1320,7 @@ add(a, b);</code></pre>
                 <figure class="post__thumbnail media__obj--left">
                   <a href="posts/post-title" itemprop="url">
                     <picture>
-                      <img src="http://dummyimage.com/300x200/808080/fff.png" width="300" height="200" alt="" itemprop="image">
+                      <img data-src="http://dummyimage.com/300x200/808080/fff.png" width="300" height="200" alt="" itemprop="image" class="lazyload">
                     </picture>
                   </a>
                 </figure>
@@ -1306,7 +1356,7 @@ add(a, b);</code></pre>
 
               <figure>
                 <picture>
-                  <img src="http://dummyimage.com/930x443/808080/fff.png" width="930" height="443" alt="">
+                  <img data-src="http://dummyimage.com/930x443/808080/fff.png" width="930" height="443" alt="" class="lazyload">
                 </picture>
               </figure>
 
@@ -1328,7 +1378,9 @@ add(a, b);</code></pre>
 
                 <div class="media__obj--left">
                   <a href="users/author" itemprop="url">
-                    <img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" alt="">
+                    <picture>
+                      <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" alt="" class="lazyload">
+                    </picture>
                   </a>
                 </div>
 
@@ -1347,7 +1399,9 @@ add(a, b);</code></pre>
 
                 <div class="media__obj--left">
                   <a href="users/author" itemprop="url">
-                    <img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" alt="">
+                    <picture>
+                      <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" alt="" class="lazyload">
+                    </picture>
                   </a>
                 </div>
 
@@ -1366,7 +1420,9 @@ add(a, b);</code></pre>
 
                 <div class="media__obj--left">
                   <a href="users/author" itemprop="url">
-                    <img src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" alt="">
+                    <picture>
+                      <img data-src="http://dummyimage.com/48x48/808080/fff.png" width="48" height="48" alt="" class="lazyload">
+                    </picture>
                   </a>
                 </div>
 
@@ -1478,6 +1534,7 @@ add(a, b);</code></pre>
   </script>
   <script async src='//www.google-analytics.com/analytics.js'></script>
   <!-- build:js assets/js/script.js -->
+  <script src="bower_components/lazysizes/lazysizes.js"></script>
   <script src="assets/js/script.js"></script>
   <!-- endbuild -->
 
