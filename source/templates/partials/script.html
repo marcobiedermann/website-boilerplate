@@ -1,0 +1,21 @@
+<script>
+(function(window) {
+  'use strict';
+
+  // Google Analytics
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  };
+
+  ga.l = +new Date;
+
+  ga('create', '{{ config.googleAnalytics }}', 'auto');
+  ga('send', 'pageview');
+}(window));
+
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+<!-- build:js assets/js/script.js -->
+<script src="bower_components/lazysizes/lazysizes.js"></script>
+<script src="assets/js/script.js"></script>
+<!-- endbuild -->

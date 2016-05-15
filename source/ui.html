@@ -1520,12 +1520,20 @@ add(a, b);</code></pre>
   </footer>
 
   <script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  };
-  ga.l = +new Date;
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
+  (function(window) {
+    'use strict';
+  
+    // Google Analytics
+    window.ga = window.ga || function() {
+      (ga.q = ga.q || []).push(arguments)
+    };
+  
+    ga.l = +new Date;
+  
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  }(window));
+  
   </script>
   <script async src='//www.google-analytics.com/analytics.js'></script>
   <!-- build:js assets/js/script.js -->
