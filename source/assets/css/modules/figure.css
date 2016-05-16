@@ -1,0 +1,18 @@
+:root {
+  --figureMarginBottom: 1.5rem;
+  --figureMarginLeft: 0;
+  --figureMarginRight: 0;
+  --figureMarginTop: 0;
+}
+
+figure {
+  display: block;
+  margin-bottom: var(--figureMarginBottom);
+  margin-left: var(--figureMarginLeft);
+  margin-right: var(--figureMarginRight);
+  margin-top: var(--figureMarginTop);
+}
+
+figcaption {
+  display: block;
+}
