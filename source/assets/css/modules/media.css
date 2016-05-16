@@ -1,7 +1,7 @@
 :root {
-  --mediaObjMarginBottom: 1.5rem;
-  --mediaObjLeftMarginRight: 1rem;
-  --mediaObjRightMarginLeft: 1rem;
+  --mediaObjectMarginBottom: 1.5rem;
+  --mediaObjectLeftMarginRight: 1rem;
+  --mediaObjectRightMarginLeft: 1rem;
 }
 
 .media {
@@ -12,25 +12,25 @@
   align-items: center;
 }
 
-.media__obj {
-  margin-bottom: var(--mediaObjMarginBottom);
+.media__object {
+  margin-bottom: var(--mediaObjectMarginBottom);
 }
 
 @media (min-width: 30em) {
 
-  .media__obj--left,
-  .media__obj--right {
+  .media__object--left,
+  .media__object--right {
     max-width: 50%;
   }
 
 }
 
-.media__obj--left {
-  margin-right: var(--mediaObjLeftMarginRight);
+.media__object--left {
+  margin-right: var(--mediaObjectLeftMarginRight);
 }
 
-.media__obj--right {
-  margin-left: var(--mediaObjRightMarginLeft);
+.media__object--right {
+  margin-left: var(--mediaObjectRightMarginLeft);
   order: 1;
 }
 
