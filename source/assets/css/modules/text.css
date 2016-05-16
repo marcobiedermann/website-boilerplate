@@ -38,14 +38,30 @@ sup {
   top: -.5em;
 }
 
-.text--lower {
+.text--center {
+  text-align: center;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--capitalize {
+  text-transform: capitalize;
+}
+
+.text--lowercase {
   text-transform: lowercase;
 }
 
-.text--upper {
+.text--uppercase {
   text-transform: uppercase;
-}
-
-.text--center {
-  text-align: center;
 }
