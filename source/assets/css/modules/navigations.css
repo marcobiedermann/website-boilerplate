@@ -12,6 +12,10 @@ nav {
   padding: 0;
 }
 
+.navigation li {
+  position: relative;
+}
+
 .navigation a {
   display: block;
 }
@@ -34,10 +38,6 @@ nav {
   float: left;
 }
 
-.navigation__dropdown {
-  position: relative;
-}
-
 .navigation__dropdown:focus > ul,
 .navigation__dropdown:hover > ul {
   display: block;
@@ -45,30 +45,28 @@ nav {
 
 .navigation__dropdown > ul {
   display: none;
-  left: 0;
   position: absolute;
-  top: 0;
   white-space: nowrap;
 }
 
 .navigation__dropdown--bottom > ul {
-  bottom: auto;
+  left: 0;
   top: 100%;
 }
 
 .navigation__dropdown--left > ul {
-  left: auto;
   right: 100%;
+  top: 0;
 }
 
 .navigation__dropdown--right > ul {
   left: 100%;
-  right: auto;
+  top: 0;
 }
 
 .navigation__dropdown--top > ul {
   bottom: 100%;
-  top: auto;
+  left: 0;
 }
 
 @media (min-width: 48em) {
