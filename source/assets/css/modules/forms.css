@@ -24,6 +24,10 @@
   --formCheckboxMarginTop: .25rem;
 }
 
+::placeholder {
+  color: var(--placeholderColor);
+}
+
 fieldset {
   border: 0;
   margin: 0;
@@ -51,11 +55,6 @@ select:hover,
 textarea:focus,
 textarea:hover {
   border-color: var(--inputHoverBorderColor);
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--placeholderColor);
 }
 
 input[type="reset"],
