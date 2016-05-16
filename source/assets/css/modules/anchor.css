@@ -1,0 +1,25 @@
+:root {
+  --anchorColor: var(--colorPrimary);
+  --anchorTextDecoration: none;
+
+  --anchorActiveColor: color(var(--anchorColor) lightness(10%));
+  --anchorHoverColor: color(var(--anchorColor) blackness(10%));
+}
+
+a {
+  background-color: transparent;
+  border: 0;
+  color: var(--anchorColor);
+  outline: none;
+  text-decoration: var(--anchorTextDecoration);
+  transition: background-color .3s, color .3s;
+}
+
+a:active {
+  color: var(--anchorActiveColor);
+}
+
+a:focus,
+a:hover {
+  color: var(--anchorHoverColor);
+}

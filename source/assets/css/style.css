@@ -3,6 +3,7 @@
 @import 'base.css';
 
 @import 'modules/align.css';
+@import 'modules/anchor.css';
 @import 'modules/audio.css';
 @import 'modules/breadcrumb.css';
 @import 'modules/buttons.css';
@@ -18,7 +19,6 @@
 @import 'modules/headline.css';
 @import 'modules/icons.css';
 @import 'modules/images.css';
-@import 'modules/link.css';
 @import 'modules/lists.css';
 @import 'modules/media.css';
 @import 'modules/navigations.css';
