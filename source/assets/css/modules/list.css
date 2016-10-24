@@ -4,8 +4,6 @@
   --listPadding: 1.25rem;
 
   --listListMarginTop: .5rem;
-
-  --listItemMarginBottom: .25rem;
 }
 
 dl,
@@ -26,8 +24,4 @@ ol dd,
 ol ol,
 ol ul {
   margin-top: var(--listListMarginTop);
-}
-
-li {
-  margin-bottom: var(--listItemMarginBottom);
 }

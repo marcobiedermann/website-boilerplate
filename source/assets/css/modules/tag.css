@@ -17,10 +17,14 @@
   padding: 0;
 }
 
+.tags::before,
 .tags::after {
-  clear: both;
   content: ' ';
   display: table;
+}
+
+.tags::after {
+  clear: both;
 }
 
 .tag {

@@ -113,10 +113,14 @@ textarea {
   padding: var(--formFieldPadding);
 }
 
+.form__field::before,
 .form__field::after {
-  clear: both;
   content: ' ';
   display: table;
+}
+
+.form__field::after {
+  clear: both;
 }
 
 .form__input {
@@ -191,9 +195,15 @@ textarea {
   overflow: hidden;
 }
 
+.form .checkbox-container::before,
+.form .checkbox-container::after,
+.form .radio-container::before,
+.form .radio-container::after {
+  content: ' ';
+  display: table;
+}
+
 .form .checkbox-container::after,
 .form .radio-container::after {
   clear: both;
-  content: ' ';
-  display: table;
 }

@@ -28,10 +28,14 @@ nav {
 
 }
 
+.navigation--inline > ul::before,
 .navigation--inline > ul::after {
-  clear: both;
   content: ' ';
   display: table;
+}
+
+.navigation--inline > ul::after {
+  clear: both;
 }
 
 .navigation--inline > ul > li {
@@ -71,7 +75,7 @@ nav {
 
 @media (min-width: 48em) {
 
-  .navigation__btn {
+  .navigation__button {
     display: none;
   }
 

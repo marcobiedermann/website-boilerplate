@@ -1,15 +1,13 @@
 @import 'settings.css';
 
-@import 'base.css';
-
 @import 'modules/align.css';
 @import 'modules/anchor.css';
 @import 'modules/audio.css';
 @import 'modules/breadcrumb.css';
-@import 'modules/buttons.css';
+@import 'modules/button.css';
 @import 'modules/canvas.css';
 @import 'modules/code.css';
-@import 'modules/comments.css';
+@import 'modules/comment.css';
 @import 'modules/details.css';
 @import 'modules/dialog.css';
 @import 'modules/embed.css';
@@ -18,23 +16,24 @@
 @import 'modules/gallery.css';
 @import 'modules/grid.css';
 @import 'modules/headline.css';
-@import 'modules/icons.css';
-@import 'modules/images.css';
-@import 'modules/lists.css';
+@import 'modules/icon.css';
+@import 'modules/image.css';
+@import 'modules/list.css';
 @import 'modules/media.css';
-@import 'modules/navigations.css';
+@import 'modules/navigation.css';
 @import 'modules/pagination.css';
-@import 'modules/posts.css';
+@import 'modules/post.css';
 @import 'modules/progress.css';
 @import 'modules/quote.css';
 @import 'modules/rule.css';
-@import 'modules/tables.css';
-@import 'modules/tabs.css';
-@import 'modules/tags.css';
+@import 'modules/table.css';
+@import 'modules/tab.css';
+@import 'modules/tag.css';
 @import 'modules/template.css';
 @import 'modules/text.css';
 @import 'modules/video.css';
 
+@import 'layout/base.css';
 @import 'layout/container.css';
 @import 'layout/footer.css';
 @import 'layout/header.css';
