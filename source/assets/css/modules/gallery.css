@@ -13,9 +13,14 @@
   padding: 0;
 }
 
+.gallery .images::before,
 .gallery .images::after {
   content: ' ';
   display: table;
+}
+
+.gallery .images::after {
+  clear: both;
 }
 
 .gallery .images li {

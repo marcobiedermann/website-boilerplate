@@ -10,10 +10,14 @@
   text-align: center;
 }
 
+.pagination::before,
 .pagination::after {
-  clear: both;
   content: ' ';
   display: table;
+}
+
+.pagination::after {
+  clear: both;
 }
 
 .pagination li {

@@ -12,18 +12,28 @@
   width: var(--gridWidth);
 }
 
+.grid::before,
 .grid::after {
   content: ' ';
   display: table;
+}
+
+.grid::after {
+  clear: both;
 }
 
 .grid__row {
   margin: calc(var(--gridGutter) / -2);
 }
 
+.grid__row::before,
 .grid__row::after {
   content: ' ';
   display: table;
+}
+
+.grid__row::after {
+  clear: both;
 }
 
 .grid__col {
