@@ -18,27 +18,27 @@
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
     "babelify": "^7.3.0",
-    "browserify": "^13.1.0",
+    "browserify": "^13.1.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-ejs-locals": "0.0.1",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-imagemin": "^3.0.3",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.2.0",
     "gulp-rev": "^7.1.2",
-    "gulp-sourcemaps": "^2.1.1",
+    "gulp-sourcemaps": "^2.2.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
     "gulp-uglify": "^2.0.0",
     "gulp-webp": "^2.3.0",
     "mkdirp": "^0.5.1",
     "postcss-cssnext": "^2.8.0",
-    "postcss-import": "^8.1.2",
+    "postcss-import": "^8.2.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "lazysizes": "^2.0.6",
-    "svg4everybody": "^2.1.0"
+    "lazysizes": "^2.0.7",
+    "svg4everybody": "^2.1.3"
   }
 }
