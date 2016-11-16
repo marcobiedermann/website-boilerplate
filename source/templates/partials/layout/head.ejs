@@ -1,13 +1,15 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>{{ title }}</title>
+  <title><%= page.title %></title>
+
+  <base href="/">
 
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <!-- Search Engine -->
-  <meta content="/favicon-128x128.png" itemprop="image">
-  <meta name="description" content="{{ description }}">
+  <meta content="favicon-128x128.png" itemprop="image">
+  <meta name="description" content="<%= page.description %>">
 
   <!-- Mobile & Windows 8 -->
 
@@ -21,7 +23,7 @@
 
   <!-- Stylesheets -->
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/<%= rev['style.css'] %>">
 
   <!-- Icons -->
 

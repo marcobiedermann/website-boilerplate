@@ -7,8 +7,7 @@
 * Install Node DevDependencies via `npm install`
 
 ## Usage
-* Development: `grunt`
-* Testing: `grunt test`
+* Development: `gulp`
 * Production: `grunt build`
 
 ## Copyright

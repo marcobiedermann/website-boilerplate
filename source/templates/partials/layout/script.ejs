@@ -1,0 +1,18 @@
+<script>
+(function(window) {
+  'use strict';
+
+  // Google Analytics
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  };
+
+  ga.l = +new Date;
+
+  ga('create', 'UA-XXX-XXX-XXX', 'auto');
+  ga('send', 'pageview');
+}(window));
+
+</script>
+<script async defer src="//www.google-analytics.com/analytics.js"></script>
+<script async defer src="assets/js/<%= rev['script.js'] %>"></script>
