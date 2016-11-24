@@ -21,6 +21,14 @@
 
   <meta name="theme-color" content="#fff">
 
+  <!-- Scripts -->
+
+  <script>
+    (function(documentElement) {
+      documentElement.className = documentElement.className.replace(/\bno-js\b/, 'js')
+    }(document.documentElement));
+  </script>
+
   <!-- Stylesheets -->
 
   <link rel="stylesheet" href="assets/css/<%= rev['style.css'] %>">
