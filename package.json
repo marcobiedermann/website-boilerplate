@@ -18,7 +18,7 @@
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
     "babelify": "^7.3.0",
-    "browserify": "^13.1.1",
+    "browserify": "^14.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-ejs-locals": "0.0.1",
