@@ -3,7 +3,7 @@ import browserify        from 'browserify';
 import fs                from 'fs';
 import gulp              from 'gulp';
 import gulpCleanCss      from 'gulp-clean-css';
-import gulpEjsLocals     from 'gulp-ejs-locals';
+import gulpEjs           from 'gulp-ejs';
 import gulpHtmlmin       from 'gulp-htmlmin';
 import gulpImagemin      from 'gulp-imagemin';
 import gulpPostcss       from 'gulp-postcss';
@@ -63,8 +63,10 @@ gulp.task('fonts', () => {
 
 gulp.task('html', ['css', 'js', 'svg:icons'], () => {
   return gulp.src(`${dirs.source}/templates/pages/**/*.ejs`)
-    .pipe(gulpEjsLocals({
-      rev      : getRev()
+    .pipe(gulpEjs({
+      rev: getRev()
+    }, {}, {
+      ext: '.html'
     }))
     .pipe(gulp.dest(`${dirs.dest}`));
 });
