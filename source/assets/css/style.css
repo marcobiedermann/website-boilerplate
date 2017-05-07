@@ -45,4 +45,6 @@
 @import 'helpers/animations.css';
 @import 'helpers/utilities.css';
 
+@import 'vendor/lazysizes.css';
+
 @import 'print.css';
