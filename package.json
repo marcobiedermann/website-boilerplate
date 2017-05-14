@@ -33,7 +33,7 @@
     "gulp-webp": "^2.3.0",
     "mkdirp": "^0.5.1",
     "postcss-cssnext": "^2.10.0",
-    "postcss-import": "^9.1.0",
+    "postcss-import": "^10.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
