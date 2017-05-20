@@ -29,7 +29,7 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "gulp-uglify": "^2.1.2",
+    "gulp-uglify": "^3.0.0",
     "gulp-webp": "^2.3.0",
     "mkdirp": "^0.5.1",
     "postcss-cssnext": "^2.10.0",
